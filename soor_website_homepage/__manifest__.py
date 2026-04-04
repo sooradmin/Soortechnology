@@ -3,7 +3,7 @@
     "name": "SOOR Website",
     "version": "16.0.1.0.0",
     "summary": "Website Design for SOOR website",
-    "category": "Website",
+    "category": "Website", 
     "author": "Qsim Ali",
     "website":"kashiawan0042@gmail.com(+923144171940)"
     "license": "LGPL-3",
