@@ -1,0 +1,693 @@
+// Contact Us page — SOOR (Figma-aligned)
+
+// Do NOT use Bootstrap `.container` here — its max-width is 960–1140px below xxl,
+// which is narrower than contact column + form + gap, so the grid always wrapped.
+
+.soor-contact-page {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #fff;
+    overflow-x: hidden;
+    position: relative;
+
+    // Ensure editor / theme wrappers do not change grid to flex
+    &#wrap {
+        display: block;
+        width: 100%;
+    }
+}
+
+.soor-contact-container {
+    width: 100%;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    // Plain padding — Sass `max()` is not CSS `max()`; avoid env() inside max() here.
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+
+// ——— Top nav (glass bar) ———
+.soor-contact-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 32px;
+    z-index: 20;
+    padding: 0 16px;
+    pointer-events: none;
+
+    a,
+    label,
+    .soor-nav-more,
+    .soor-topbar__mobile,
+    .soor-mnav__burger {
+        pointer-events: auto;
+    }
+}
+
+.soor-contact-nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 22px 28px 22px 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 54px;
+    backdrop-filter: blur(8.45px);
+}
+
+.soor-contact-logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.soor-contact-nav-inner .soor-contact-logo.soor-nav-logo-link {
+    font-size: 0;
+    letter-spacing: 0;
+}
+
+.soor-contact-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    flex: 1;
+    justify-content: center;
+
+    > a {
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+        line-height: 27px;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+
+    .soor-nav-more__trigger:hover {
+        opacity: 0.85;
+    }
+}
+
+.soor-contact-nav-cta {
+    flex-shrink: 0;
+}
+
+// ——— Hero (match Services / Figma: dark navy + soft blue center + 48px grid) ———
+.soor-contact-hero {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    min-height: 480px;
+
+    @media (min-width: 992px) {
+        min-height: 520px;
+    }
+    overflow: hidden;
+    padding: 100px 16px 88px;
+    background-color: #070b12;
+    background-image:
+        radial-gradient(ellipse 78% 58% at 50% 36%, rgba(42, 88, 168, 0.62) 0%, rgba(24, 42, 82, 0.38) 42%, transparent 68%),
+        radial-gradient(ellipse 110% 85% at 50% 118%, rgba(22, 55, 112, 0.35) 0%, transparent 58%),
+        linear-gradient(180deg, #0a1224 0%, #0c1730 45%, #080f1a 100%);
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        background-image:
+            linear-gradient(rgba(130, 178, 255, 0.085) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(130, 178, 255, 0.085) 1px, transparent 1px);
+        background-size: 48px 48px;
+        background-position: center 0;
+    }
+}
+
+// Legacy markup — hide rings/extra bloom so background matches homepage / Services
+.soor-contact-hero-deco,
+.soor-contact-hero-glow {
+    display: none;
+}
+
+.soor-contact-hero-inner {
+    position: relative;
+    z-index: 2;
+    flex: 1 1 auto;
+    max-width: 877px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px 0 8px;
+    min-height: 220px;
+}
+
+// White “cloud” + arrow — flush with card top (no gap, no dark seam from shadows)
+.soor-contact-hero-bridge {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    z-index: 2;
+    line-height: 0;
+    pointer-events: none;
+    transform: translate(-50%, 1px);
+
+    svg {
+        display: block;
+        width: #{"clamp(136px, 22vw, 171px)"};
+        height: auto;
+    }
+
+    .soor-hero-bridge-arrow {
+        fill: #161616;
+    }
+}
+
+.soor-contact-title {
+    margin: 0;
+    color: #fff;
+    font-size: #{"clamp(32px, 5vw, 46px)"};
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.12;
+    letter-spacing: 0.08em;
+    font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.25);
+}
+
+.soor-contact-sub {
+    margin: 0;
+    max-width: 36em;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: #{"clamp(15px, 1.8vw, 17px)"};
+    line-height: 1.65;
+    font-weight: 400;
+}
+
+// ——— White card + form: transparent overlap so contact hero shows through corners (no second fake gradient) ———
+.soor-contact-main {
+    position: relative;
+    z-index: 5;
+    margin-top: calc(-1 * #{"clamp(76px, 9vw, 104px)"});
+    padding: 0 0 48px;
+    background: transparent;
+}
+
+.soor-contact-main-card {
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+    background: #fff;
+    border-radius: #{"clamp(72px, 9.5vw, 100px)"} #{"clamp(72px, 9.5vw, 100px)"} 0 0;
+    padding: 88px 0 72px;
+    // Bottom spacing under card stays white (parent is transparent)
+    box-shadow:
+        0 -8px 44px rgba(7, 20, 45, 0.1),
+        0 48px 0 0 #fff;
+}
+
+.soor-contact-main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 32px;
+}
+
+// Two columns: info cards (left) + form (right). Fractional columns fit any viewport ≥992px.
+@media (min-width: 992px) {
+    .soor-contact-main-grid {
+        grid-template-columns: minmax(280px, 430px) minmax(0, 1fr);
+        column-gap: 40px;
+        row-gap: 32px;
+    }
+}
+
+.soor-contact-info-col {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.soor-contact-info-card {
+    padding: 32px;
+    background: #f8f8f8;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.soor-contact-info-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    > span:first-child {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+        color: #000;
+    }
+}
+
+.soor-contact-icon-wrap {
+    padding: 20px;
+    background: #fff;
+    border-radius: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.soor-contact-fa {
+    font-size: 22px;
+    color: #000;
+}
+
+.soor-contact-info-val {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000;
+    word-break: break-word;
+}
+
+.soor-contact-form-card {
+    width: 100%;
+    min-width: 0;
+    padding: 40px 32px;
+    background: #fff;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 992px) {
+    .soor-contact-form-card {
+        justify-self: stretch;
+        padding: 48px 40px 56px;
+        max-width: 776px;
+        width: 100%;
+    }
+}
+
+.soor-contact-form-title {
+    margin: 0 0 8px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.soor-contact-form-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+
+    > .soor-contact-form-title {
+        margin-bottom: 0;
+    }
+}
+
+// Inline thank-you (website form success mode: sibling of form)
+.soor-contact-form-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 8px 8px 16px;
+    gap: 16px;
+}
+
+.soor-contact-form-success__icon-wrap {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #14b8a6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(20, 184, 166, 0.35);
+}
+
+.soor-contact-form-success__thumb {
+    font-size: 32px;
+    color: #0f172a;
+    line-height: 1;
+}
+
+.soor-contact-form-success__title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #000;
+    letter-spacing: 0.02em;
+}
+
+.soor-contact-form-success__rule {
+    width: 100%;
+    max-width: 280px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.soor-contact-form-success__line {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 17px;
+    line-height: 1.45;
+    color: #161616;
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+.soor-contact-form-success__check {
+    font-size: 20px;
+    color: #14b8a6;
+    flex-shrink: 0;
+}
+
+.soor-contact-form-success__sub {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.soor-contact-form-row2 {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.soor-contact-field {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+}
+
+.soor-contact-field-grow {
+    flex: 1 1 100%;
+}
+
+.soor-contact-label {
+    font-size: 16px;
+    line-height: 27px;
+    color: #000;
+    font-weight: 400;
+}
+
+.soor-contact-input,
+.soor-contact-textarea {
+    width: 100%;
+    padding: 16px 24px;
+    background: #f8f8f8;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000;
+    box-sizing: border-box;
+}
+
+.soor-contact-textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.soor-contact-submit {
+    align-self: flex-end;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+    padding: 10px 26px 10px 28px;
+    line-height: 1.25;
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+
+    svg {
+        display: block;
+    }
+}
+
+.soor-contact-submit-arrow {
+    display: flex;
+    line-height: 0;
+    flex-shrink: 0;
+    color: currentColor;
+    opacity: 0.98;
+}
+
+// Partners strip: visual styles live in soor_homepage.scss (`.soor-partners-band` + `.soor-partner-marquee`)
+
+// ——— Footer ———
+.soor-contact-footer {
+    position: relative;
+    background: #000;
+    color: #fff;
+    padding: 120px 16px 48px;
+    overflow: hidden;
+}
+
+.soor-contact-footer-glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.9;
+    background:
+        radial-gradient(ellipse 450px 450px at 80% 30%, rgba(30, 99, 175, 0.35), transparent 60%),
+        radial-gradient(ellipse 450px 450px at 15% 40%, rgba(43, 55, 183, 0.35), transparent 60%),
+        radial-gradient(ellipse 540px 350px at 50% 10%, rgba(0, 121, 255, 0.12), transparent 70%);
+}
+
+.soor-contact-footer-inner {
+    position: relative;
+    z-index: 2;
+}
+
+.soor-contact-footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 128px;
+    justify-content: space-between;
+}
+
+.soor-contact-footer-brand {
+    width: 432px;
+    max-width: 100%;
+
+    p {
+        margin: 16px 0 0;
+        color: #b9b9b9;
+        font-size: 14px;
+        line-height: 27px;
+    }
+}
+
+.soor-contact-footer-logo {
+    color: #fff;
+}
+
+.soor-contact-footer-cols {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 96px;
+    justify-content: flex-start;
+}
+
+.soor-contact-footer-col {
+    min-width: 140px;
+
+    h4 {
+        margin: 0 0 16px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25px;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+    a {
+        display: block;
+        color: #b9b9b9;
+        font-size: 14px;
+        line-height: 27px;
+        text-decoration: none;
+        margin-bottom: 12px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    p {
+        margin: 0;
+        color: #fff;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.soor-contact-footer-loc {
+    flex: 1 1 220px;
+    max-width: 320px;
+}
+
+.soor-contact-kuwait-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.soor-contact-flag-kw {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    background: linear-gradient(
+        to bottom,
+        #007a3d 0%,
+        #007a3d 33%,
+        #fff 33%,
+        #fff 66%,
+        #ce1126 66%,
+        #ce1126 100%
+    );
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 5px;
+        height: 100%;
+        background: #fff;
+    }
+}
+
+.soor-contact-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.soor-contact-social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    min-width: 1.25em;
+    min-height: 1.25em;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 1;
+
+    i {
+        line-height: 1;
+    }
+
+    &:hover {
+        background: transparent;
+        color: rgba(255, 255, 255, 0.75);
+    }
+}
+
+.soor-contact-footer-rule {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 40px 0 24px;
+}
+
+.soor-contact-footer-copy {
+    text-align: center;
+    color: #b9b9b9;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+@media (max-width: 991px) {
+    .soor-contact-nav-inner {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .soor-contact-nav-inner .soor-topbar__mobile {
+        margin-left: auto;
+    }
+
+    .soor-contact-nav-links {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .soor-contact-title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .soor-contact-form-card {
+        padding: 40px 24px;
+    }
+
+    .soor-contact-footer-top {
+        flex-direction: column;
+    }
+
+    .soor-contact-main {
+        margin-top: calc(-1 * #{"clamp(48px, 12vw, 72px)"});
+    }
+
+    .soor-contact-main-card {
+        border-radius: #{"clamp(36px, 11vw, 56px)"} #{"clamp(36px, 11vw, 56px)"} 0 0;
+    }
+}

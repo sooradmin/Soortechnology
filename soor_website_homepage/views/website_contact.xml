@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="soor_contactus_override" inherit_id="website.contactus" name="SOOR Contact Us">
+        <xpath expr="//t[@t-set='logged_partner']" position="before">
+            <t t-set="no_header" t-value="True"/>
+            <t t-set="no_footer" t-value="True"/>
+        </xpath>
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="oe_structure oe_empty soor-page soor-contact-page">
+                <div class="soor-contact-nav">
+                    <div class="soor-contact-container soor-contact-nav-inner">
+                        <a href="/" class="soor-contact-logo soor-nav-logo-link">
+                            <img src="/soor_website_homepage/static/src/logos/nav-logo.png" alt="SOOR Technologies" class="soor-nav-logo-img" width="160" height="44" loading="eager"/>
+                        </a>
+                        <nav class="soor-contact-nav-links soor-nav--desktop">
+                            <a href="/">Home</a>
+                            <a href="/services">Services</a>
+                            <a href="/about">About Us</a>
+                            <a href="/blogs">Blogs</a>
+                            <a href="/#partners">Partners</a>
+                            <div class="soor-nav-more">
+                                <span class="soor-nav-more__trigger" tabindex="0">
+                                    More
+                                    <span class="soor-nav-more__caret" aria-hidden="true">
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <div class="soor-nav-more__panel" role="menu">
+                                    <a href="/odoo" role="menuitem">Odoo</a>
+                                    <a href="/hessapay" role="menuitem">Hessa Pay</a>
+                                    <a href="/soor_website_homepage/static/src/pdf/Digital-Profile.pdf" target="_blank" rel="noopener noreferrer" role="menuitem">Digital Profile</a>
+                                </div>
+                            </div>
+                        </nav>
+                        <a href="/contactus" class="soor-nav-contact-cta soor-contact-nav-cta soor-topbar__cta--desktop">
+                            <span class="soor-nav-contact-cta__label">Contact Us</span>
+                            <span class="soor-nav-contact-cta__arrow" aria-hidden="true">
+                                <svg width="16" height="11" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6h12M11 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <t t-call="soor_website_homepage.soor_mnav_toolbar">
+                            <t t-set="mnav_id" t-value="'soor-mnav-contact'"/>
+                        </t>
+                    </div>
+                </div>
+
+                <t t-call="soor_website_homepage.soor_mnav_overlay">
+                    <t t-set="mnav_id" t-value="'soor-mnav-contact'"/>
+                </t>
+
+                <section class="soor-contact-hero">
+                    <div class="soor-contact-hero-deco"/>
+                    <div class="soor-contact-hero-glow"/>
+                    <div class="soor-contact-container soor-contact-hero-inner">
+                        <h1 class="soor-contact-title">Contact Us</h1>
+                        <p class="soor-contact-sub">
+                            Let’s talk about how technology can move your business forward.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="soor-contact-main">
+                    <div class="soor-contact-main-card">
+                        <!-- Cloud tab is part of the white panel: anchored to top edge, protrudes into hero -->
+                        <div class="soor-contact-hero-bridge" aria-hidden="true">
+                            <!-- viewBox height 60 only: y 60–80 was transparent and showed blue between cloud and white card -->
+                            <svg width="171" height="60" viewBox="0 0 171 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M127.61 34.23C109.66 -0.13 60.49 -0.13 42.54 34.23C34.26 50.07 17.87 60 0 60H171C153.13 60 136.74 50.07 127.61 34.23Z" fill="#ffffff"/>
+                                <path class="soor-hero-bridge-arrow" fill="#161616" d="M85 30C85.4 29.6 86 29.6 86.4 30L90 33.6V20C90 19.4 90.4 19 91 19C91.6 19 92 19.4 92 20V33.6L95.6 30C96 29.6 96.6 29.6 97 30C97.4 30.4 97.4 31 97 31.4L91.8 36.6C91.4 37 90.8 37 90.4 36.6L85.2 31.4C84.8 31 84.8 30.4 85 30Z"/>
+                            </svg>
+                        </div>
+                        <div class="soor-contact-container soor-contact-main-grid">
+                            <div class="soor-contact-info-col">
+                                <div class="soor-contact-info-card">
+                                    <div class="soor-contact-info-head">
+                                        <span>Contact</span>
+                                        <span class="soor-contact-icon-wrap">
+                                            <i class="fa fa-phone soor-contact-fa"/>
+                                        </span>
+                                    </div>
+                                    <p class="soor-contact-info-val">+965 22008825</p>
+                                </div>
+                                <div class="soor-contact-info-card">
+                                    <div class="soor-contact-info-head">
+                                        <span>Email Address</span>
+                                        <span class="soor-contact-icon-wrap">
+                                            <i class="fa fa-envelope soor-contact-fa"/>
+                                        </span>
+                                    </div>
+                                    <p class="soor-contact-info-val">Info@soortechnologies.com</p>
+                                </div>
+                                <div class="soor-contact-info-card">
+                                    <div class="soor-contact-info-head">
+                                        <span>Location</span>
+                                        <span class="soor-contact-icon-wrap">
+                                            <i class="fa fa-map-marker soor-contact-fa"/>
+                                        </span>
+                                    </div>
+                                    <p class="soor-contact-info-val">
+                                        Fahad Alsalem St, Momentum Group, Kuwait City
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="soor-contact-form-card">
+                                <form
+                                    id="contactus_form"
+                                    action="/website/form/"
+                                    method="post"
+                                    enctype="multipart/form-data"
+                                    class="o_mark_required s_website_form soor-contact-form-inner"
+                                    data-mark="*"
+                                    data-model_name="crm.lead"
+                                    data-success-mode="message"
+                                    data-pre-fill="true"
+                                >
+                                    <h2 class="soor-contact-form-title">Send a Message</h2>
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                    <input type="hidden" name="name" class="s_website_form_input" value="Website contact — SOOR Technologies"/>
+                                    <div class="soor-contact-form-row2">
+                                        <label class="soor-contact-field">
+                                            <span class="soor-contact-label">First Name</span>
+                                            <input type="text" id="soor_first_name" class="soor-contact-input s_website_form_input" required="required"/>
+                                        </label>
+                                        <label class="soor-contact-field">
+                                            <span class="soor-contact-label">Last name</span>
+                                            <input type="text" id="soor_last_name" class="soor-contact-input s_website_form_input" required="required"/>
+                                        </label>
+                                    </div>
+                                    <input type="hidden" name="contact_name" id="soor_contact_name" class="s_website_form_input" value=""/>
+                                    <label class="soor-contact-field">
+                                        <span class="soor-contact-label">Email Address</span>
+                                        <input type="email" name="email_from" class="soor-contact-input s_website_form_input" required="required" data-fill-with="email"/>
+                                    </label>
+                                    <label class="soor-contact-field">
+                                        <span class="soor-contact-label">Phone numbers</span>
+                                        <input type="tel" name="phone" class="soor-contact-input s_website_form_input" data-fill-with="phone"/>
+                                    </label>
+                                    <label class="soor-contact-field soor-contact-field-grow">
+                                        <span class="soor-contact-label">Message</span>
+                                        <textarea name="description" class="soor-contact-textarea s_website_form_input" required="required" placeholder="Let us know how we can assist you"/>
+                                    </label>
+                                    <button type="submit" class="soor-btn soor-contact-submit s_website_form_send o_website_form_send">
+                                        <span>Submit now</span>
+                                        <span class="soor-contact-submit-arrow" aria-hidden="true">
+                                            <svg width="16" height="11" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 6h12M11 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </form>
+                                <div class="s_website_form_end_message d-none soor-contact-form-success" role="status" aria-live="polite">
+                                    <div class="soor-contact-form-success__icon-wrap" aria-hidden="true">
+                                        <i class="fa fa-thumbs-up soor-contact-form-success__thumb"/>
+                                    </div>
+                                    <h3 class="soor-contact-form-success__title">Thank You!</h3>
+                                    <div class="soor-contact-form-success__rule" aria-hidden="true"/>
+                                    <p class="soor-contact-form-success__line">
+                                        <i class="fa fa-check-circle soor-contact-form-success__check" aria-hidden="true"/>
+                                        <span>Your message has been sent <strong>successfully</strong></span>
+                                    </p>
+                                    <p class="soor-contact-form-success__sub">We will get back to you shortly.</p>
+                                </div>
+                                <script type="text/javascript"><![CDATA[
+                                    (function () {
+                                        function mergeNames() {
+                                            var f = document.getElementById("soor_first_name");
+                                            var l = document.getElementById("soor_last_name");
+                                            var n = document.getElementById("soor_contact_name");
+                                            if (f && l && n) {
+                                                n.value = (f.value.trim() + " " + l.value.trim()).trim();
+                                            }
+                                        }
+                                        var form = document.getElementById("contactus_form");
+                                        if (form) {
+                                            form.addEventListener("submit", mergeNames, true);
+                                        }
+                                    })();
+                                ]]></script>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="soor-contact-partners soor-partners-band">
+                    <div class="soor-contact-container soor-contact-partners-inner">
+                        <h2 class="soor-contact-partners-title">Our Partners</h2>
+                        <p class="soor-contact-partners-desc">
+                            We take pride in our collaborations with clients across various industries, helping them achieve their business objectives with Odoo. Our references showcase the trust and satisfaction of our clients:
+                        </p>
+                        <t t-call="soor_website_homepage.soor_partner_logos_marquee"/>
+                    </div>
+                </section>
+
+                <t t-call="soor_website_homepage.soor_site_footer"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

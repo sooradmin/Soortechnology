@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="soor_odoo_page" name="SOOR Odoo ERP">
+        <t t-set="no_header" t-value="True"/>
+        <t t-set="no_footer" t-value="True"/>
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty soor-page soor-odoo-page">
+
+                <div class="soor-contact-nav">
+                    <div class="soor-contact-container soor-contact-nav-inner">
+                        <a href="/" class="soor-contact-logo soor-nav-logo-link">
+                            <img src="/soor_website_homepage/static/src/logos/nav-logo.png" alt="SOOR Technologies" class="soor-nav-logo-img" width="160" height="44" loading="eager"/>
+                        </a>
+                        <nav class="soor-contact-nav-links soor-nav--desktop">
+                            <a href="/">Home</a>
+                            <a href="/services">Services</a>
+                            <a href="/about">About Us</a>
+                            <a href="/blogs">Blogs</a>
+                            <a href="/#partners">Partners</a>
+                            <div class="soor-nav-more">
+                                <span class="soor-nav-more__trigger" tabindex="0">
+                                    More
+                                    <span class="soor-nav-more__caret" aria-hidden="true">
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <div class="soor-nav-more__panel" role="menu">
+                                    <a href="/odoo" role="menuitem">Odoo</a>
+                                    <a href="/hessapay" role="menuitem">Hessa Pay</a>
+                                    <a href="/soor_website_homepage/static/src/pdf/Digital-Profile.pdf" target="_blank" rel="noopener noreferrer" role="menuitem">Digital Profile</a>
+                                </div>
+                            </div>
+                        </nav>
+                        <a href="/contactus" class="soor-nav-contact-cta soor-contact-nav-cta soor-topbar__cta--desktop">
+                            <span class="soor-nav-contact-cta__label">Contact Us</span>
+                            <span class="soor-nav-contact-cta__arrow" aria-hidden="true">
+                                <svg width="16" height="11" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6h12M11 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <t t-call="soor_website_homepage.soor_mnav_toolbar">
+                            <t t-set="mnav_id" t-value="'soor-mnav-odoo'"/>
+                        </t>
+                    </div>
+                </div>
+
+                <t t-call="soor_website_homepage.soor_mnav_overlay">
+                    <t t-set="mnav_id" t-value="'soor-mnav-odoo'"/>
+                </t>
+
+                <section class="soor-odoo-hero">
+                    <div class="soor-contact-container soor-odoo-hero__inner">
+                        <h1 class="soor-odoo-hero__title">Odoo ERP: One Platform for All Your Business Needs</h1>
+                        <p class="soor-odoo-hero__sub">Odoo ERP – Powering businesses with flexibility and innovation.</p>
+                    </div>
+                </section>
+
+                <section class="soor-odoo-panel-wrap">
+                    <div class="soor-odoo-panel">
+                        <div class="soor-odoo-panel__bridge" aria-hidden="true">
+                            <svg width="171" height="60" viewBox="0 0 171 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M127.61 34.23C109.66 -0.13 60.49 -0.13 42.54 34.23C34.26 50.07 17.87 60 0 60H171C153.13 60 136.74 50.07 127.61 34.23Z" fill="#ffffff"/>
+                                <path class="soor-hero-bridge-arrow" fill="#161616" d="M85 30C85.4 29.6 86 29.6 86.4 30L90 33.6V20C90 19.4 90.4 19 91 19C91.6 19 92 19.4 92 20V33.6L95.6 30C96 29.6 96.6 29.6 97 30C97.4 30.4 97.4 31 97 31.4L91.8 36.6C91.4 37 90.8 37 90.4 36.6L85.2 31.4C84.8 31 84.8 30.4 85 30Z"/>
+                            </svg>
+                        </div>
+                        <div class="soor-odoo-content">
+                            <div class="soor-odoo-logo-wrap">
+                                <div class="soor-odoo-logo-card">
+                                    <img
+                                        src="/soor_website_homepage/static/src/img/odoo_logo.png"
+                                        alt="Odoo"
+                                        width="240"
+                                        height="80"
+                                        loading="lazy"
+                                        decoding="async"
+                                        class="soor-odoo-logo"
+                                    />
+                                </div>
+                            </div>
+
+                            <p class="soor-odoo-lead">
+                                Odoo is more than just an ERP system – it&apos;s a complete suite of business applications designed to simplify your operations, streamline processes, and boost productivity. From accounting and sales to HR, inventory, and eCommerce, Odoo integrates everything in one powerful platform tailored for your success.
+                            </p>
+
+                            <div class="soor-odoo-block">
+                                <h2>What is Odoo ERP?</h2>
+                                <p class="soor-odoo-block__body">
+                                    Odoo is a powerful open-source Enterprise Resource Planning (ERP) system that helps businesses of all sizes manage their operations in one integrated platform. From accounting and inventory management to sales, CRM, HR, and eCommerce, Odoo provides a complete suite of business applications designed to streamline processes and increase efficiency.
+                                </p>
+                            </div>
+
+                            <div class="soor-odoo-block">
+                                <h2>Why Odoo?</h2>
+                                <ul class="soor-odoo-features">
+                                    <li><strong>All-in-One Platform:</strong> Replace multiple disconnected systems with one integrated solution.</li>
+                                    <li><strong>Modular &amp; Flexible:</strong> Start small with one app and add more as your business grows.</li>
+                                    <li><strong>User-Friendly:</strong> Intuitive interface that makes it easy for teams to adapt quickly.</li>
+                                    <li><strong>Cost-Effective:</strong> Save time, reduce costs, and improve productivity.</li>
+                                </ul>
+                            </div>
+
+                            <div class="soor-odoo-block">
+                                <h2>Odoo Modules</h2>
+                                <ul class="soor-odoo-features">
+                                    <li><strong>Accounting &amp; Finance:</strong> Real-time financial management.</li>
+                                    <li><strong>Inventory &amp; Warehouse:</strong> Smart stock management.</li>
+                                    <li><strong>Sales &amp; CRM:</strong> Manage leads, quotes, and customer relationships.</li>
+                                    <li><strong>Human Resources:</strong> Payroll, recruitment, attendance, and more.</li>
+                                    <li><strong>Manufacturing &amp; Projects:</strong> Control production and manage project timelines.</li>
+                                    <li><strong>eCommerce &amp; POS:</strong> Sell online or in-store with seamless integration.</li>
+                                </ul>
+                            </div>
+
+                            <div class="soor-odoo-block">
+                                <h2>Odoo in Kuwait</h2>
+                                <p class="soor-odoo-block__body">
+                                    At Soor Technologies, we specialize in <strong>Odoo ERP implementation in Kuwait</strong>. We understand local market needs, integrate with different local <strong>payment gateways</strong>, logistics providers and adapt Odoo to Arabic and English environments. Contact us today to schedule a free consultation and discover how Odoo can transform your business!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="soor-contact-partners soor-partners-band">
+                    <div class="soor-contact-container soor-contact-partners-inner">
+                        <h2 class="soor-contact-partners-title">Our Partners</h2>
+                        <p class="soor-contact-partners-desc">We take pride in our collaborations with clients across various industries, helping them achieve their business objectives with Odoo.</p>
+                        <t t-call="soor_website_homepage.soor_partner_logos_marquee"/>
+                    </div>
+                </section>
+
+                <t t-call="soor_website_homepage.soor_site_footer"/>
+            </div>
+        </t>
+    </template>
+</odoo>
