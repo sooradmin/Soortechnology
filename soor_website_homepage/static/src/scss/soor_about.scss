@@ -1,0 +1,389 @@
+// About Us page — SOOR
+
+.soor-about-page {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #fff;
+    color: #161616;
+    overflow-x: hidden;
+
+    &#wrap { display: block; width: 100%; }
+
+    .soor-contact-nav-links > a.active {
+        font-weight: 600;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
+    .soor-about-panel__bridge .soor-hero-bridge-arrow { fill: #161616; }
+}
+
+// ——— Hero (match homepage `.soor-hero`: dark–light navy + center blue glow + grid) ———
+.soor-about-hero {
+    position: relative;
+    z-index: 1;
+    min-height: 492px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    overflow: hidden;
+    padding: 128px 16px 128px;
+    background-color: #070b12;
+    background-image:
+        radial-gradient(ellipse 78% 58% at 50% 36%, rgba(42, 88, 168, 0.62) 0%, rgba(24, 42, 82, 0.38) 42%, transparent 68%),
+        radial-gradient(ellipse 110% 85% at 50% 118%, rgba(22, 55, 112, 0.35) 0%, transparent 58%),
+        linear-gradient(180deg, #0a1224 0%, #0c1730 45%, #080f1a 100%);
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        background-image:
+            linear-gradient(rgba(130, 178, 255, 0.085) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(130, 178, 255, 0.085) 1px, transparent 1px);
+        background-size: 48px 48px;
+        background-position: center 0;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+        max-width: 877px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding-top: 32px;
+        min-height: 220px;
+        justify-content: center;
+    }
+
+    &__title {
+        margin: 0;
+        color: #fff;
+        font-size: #{"clamp(36px, 5vw, 46px)"};
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 52px;
+        letter-spacing: 1px;
+        font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    &__sub {
+        margin: 0;
+        max-width: 36em;
+        color: rgba(255, 255, 255, 0.95);
+        font-size: #{"clamp(15px, 1.8vw, 17px)"};
+        line-height: 1.65;
+    }
+}
+
+// ——— White Panel 1 (image + text) ———
+.soor-about-panel-wrap {
+    position: relative;
+    z-index: 2;
+    margin-top: calc(-1 * #{"clamp(76px, 9vw, 104px)"});
+    padding: 0 0 80px;
+    background: transparent;
+}
+
+.soor-about-panel {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background: #fff;
+    border-radius: #{"clamp(72px, 9.5vw, 100px)"} #{"clamp(72px, 9.5vw, 100px)"} 0 0;
+    padding: #{"clamp(56px, 10vw, 96px)"} 0 #{"clamp(40px, 6vw, 56px)"};
+    box-sizing: border-box;
+    box-shadow: 0 -8px 44px rgba(7, 20, 45, 0.1), 0 80px 0 0 #fff;
+}
+
+.soor-about-panel__bridge {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%, 1px);
+    z-index: 3;
+    line-height: 0;
+
+    svg { display: block; width: #{"clamp(136px, 22vw, 171px)"}; height: auto; }
+}
+
+.soor-about-panel__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: #{"clamp(40px, 5vw, 64px)"};
+}
+
+.soor-about-panel__media { flex: 0 1 505px; max-width: 100%; }
+
+.soor-about-panel__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 505px;
+    margin: 0 auto;
+    border-radius: 25px;
+    box-shadow: 5px 4px 27px rgba(0, 0, 0, 0.10);
+    outline: 8px solid #fff;
+}
+
+.soor-about-panel__copy {
+    flex: 1 1 320px;
+    max-width: 552px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+
+    h2 {
+        margin: 0;
+        color: #000;
+        font-size: #{"clamp(28px, 3.5vw, 46px)"};
+        font-weight: 900;
+        line-height: 1.13;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    p { margin: 0; color: #777; font-size: 16px; line-height: 27px; }
+}
+
+// ——— Empower section (text left, image right) ———
+.soor-about-empower {
+    padding: #{"clamp(60px, 8vw, 120px)"} 0;
+    background: #fff;
+}
+
+.soor-about-empower__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: #{"clamp(40px, 5vw, 64px)"};
+}
+
+.soor-about-empower__copy {
+    flex: 1 1 320px;
+    max-width: 590px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+
+    h2 {
+        margin: 0;
+        color: #000;
+        font-size: #{"clamp(28px, 3.5vw, 46px)"};
+        font-weight: 900;
+        line-height: 1.13;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    p { margin: 0; color: #777; font-size: 16px; line-height: 27px; }
+}
+
+.soor-about-empower__media { flex: 0 1 505px; max-width: 100%; }
+
+.soor-about-empower__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 505px;
+    margin: 0 auto;
+    border-radius: 25px;
+    box-shadow: 5px 4px 27px rgba(0, 0, 0, 0.10);
+    outline: 8px solid #fff;
+}
+
+// ——— Uniqueness (new dark-card Figma design) ———
+.soor-about-unique {
+    background: #f8f8f8;
+    padding: 120px #{"clamp(16px, 7.9vw, 114px)"};
+    box-sizing: border-box;
+}
+
+.soor-about-unique__inner {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.soor-about-unique__intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: #{"clamp(32px, 6vw, 98px)"};
+
+    h2 {
+        margin: 0;
+        flex: 0 1 440px;
+        color: #000;
+        font-size: #{"clamp(28px, 3.5vw, 46px)"};
+        font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 52px;
+        letter-spacing: 1px;
+    }
+
+    p {
+        flex: 1 1 280px;
+        margin: 0;
+        max-width: 640px;
+        color: #7b7b7b;
+        font-size: 14px;
+        line-height: 27px;
+    }
+}
+
+.soor-about-unique__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 390px));
+    gap: 20px;
+    justify-content: center;
+}
+
+// ——— U-Card: chip header + dark body ———
+.soor-aucard {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.soor-aucard__chip {
+    height: 68px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(174deg, #A3CEFF 0%, #fff 100%);
+    border-radius: 14px;
+    outline: 1.5px solid rgba(30, 99, 175, 0.09);
+    outline-offset: -1.5px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.soor-aucard__chip-ico {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #1E63AF 9%, #8CC3FF 100%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    svg { display: block; }
+}
+
+.soor-aucard__chip-label {
+    padding-left: 9px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #161616;
+}
+
+.soor-aucard__body {
+    position: relative;
+    min-height: 160px;
+    background: #161616;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 32px;
+    box-sizing: border-box;
+
+    p {
+        position: relative;
+        z-index: 2;
+        margin: 0;
+        color: #F8F8F8;
+        font-size: 16px;
+        line-height: 27px;
+    }
+}
+
+.soor-aucard__glow {
+    position: absolute;
+    width: 169px;
+    height: 169px;
+    left: -62px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1E63AF;
+    border-radius: 50%;
+    filter: blur(84px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+// ——— KPI Card ———
+.soor-aukpi {
+    min-height: 236px;
+    padding: 24px;
+    background: linear-gradient(90deg, #1E63AF 9%, #8CC3FF 100%);
+    border-radius: 16px;
+    outline: 1.5px solid rgba(255, 255, 255, 0.08);
+    outline-offset: -1.5px;
+    backdrop-filter: blur(18px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.soor-aukpi__top {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    p { margin: 0; color: #F8F8F8; font-size: 16px; line-height: 24px; }
+    svg { display: block; flex-shrink: 0; }
+}
+
+.soor-aukpi__stat {
+    color: #F8F8F8;
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 54px;
+}
+
+.soor-aukpi--alt .soor-aukpi__stat {
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.2;
+}
+
+// ——— Responsive ———
+@media (max-width: 992px) {
+    .soor-about-hero { min-height: 400px; padding-top: 108px; padding-bottom: 100px; }
+
+    .soor-about-panel-wrap { margin-top: calc(-1 * #{"clamp(48px, 12vw, 72px)"}); }
+    .soor-about-panel { border-radius: #{"clamp(36px, 11vw, 56px)"} #{"clamp(36px, 11vw, 56px)"} 0 0; padding-top: 56px; }
+
+    .soor-about-unique__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+    .soor-about-unique__grid { grid-template-columns: 1fr; }
+    .soor-about-panel__copy h2,
+    .soor-about-empower__copy h2 { font-size: 28px; line-height: 36px; }
+}

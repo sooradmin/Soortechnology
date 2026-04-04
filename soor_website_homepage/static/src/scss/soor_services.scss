@@ -1,0 +1,494 @@
+// Services page — SOOR (Figma node Services hero + sections)
+
+.soor-services-page {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #fff;
+    color: #161616;
+    overflow-x: hidden;
+
+    &#wrap {
+        display: block;
+        width: 100%;
+    }
+
+    .soor-contact-nav-links > a.active {
+        font-weight: 600;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
+    .soor-services-help__bridge .soor-hero-bridge-arrow {
+        fill: #161616;
+    }
+}
+
+// ——— Hero: Figma Services — centered navy glow + fine grid (matches frame, no blobs) ———
+.soor-services-hero {
+    position: relative;
+    z-index: 1;
+    min-height: 560px;
+    padding: 128px 16px 128px;
+    overflow: hidden;
+    background-color: #070b12;
+    background-image:
+        radial-gradient(ellipse 78% 58% at 50% 36%, rgba(42, 88, 168, 0.62) 0%, rgba(24, 42, 82, 0.38) 42%, transparent 68%),
+        radial-gradient(ellipse 110% 85% at 50% 118%, rgba(22, 55, 112, 0.35) 0%, transparent 58%),
+        linear-gradient(180deg, #0a1224 0%, #0c1730 45%, #080f1a 100%);
+}
+
+.soor-services-hero__deco {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(130, 178, 255, 0.085) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(130, 178, 255, 0.085) 1px, transparent 1px);
+    background-size: 48px 48px;
+    background-position: center 0;
+}
+
+.soor-services-hero__inner {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-top: 32px;
+}
+
+.soor-services-hero__title {
+    margin: 0;
+    color: #fff;
+    font-size: #{"clamp(40px, 5.4vw, 56px)"};
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.soor-services-hero__sub {
+    margin: 0;
+    max-width: 620px;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.65;
+}
+
+// ——— White shell: overlap pulls over hero; transparent wrap = real hero in corner pockets (one background) ———
+.soor-services-help-wrap {
+    position: relative;
+    z-index: 2;
+    margin-top: calc(-1 * #{"clamp(76px, 9vw, 104px)"});
+    padding: 0 0 80px;
+    background: transparent;
+}
+
+.soor-services-help {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: #{"clamp(72px, 9.5vw, 100px)"} #{"clamp(72px, 9.5vw, 100px)"} 0 0;
+    padding: #{"clamp(56px, 10vw, 96px)"} 0 #{"clamp(40px, 6vw, 56px)"};
+    box-sizing: border-box;
+    box-shadow:
+        0 -8px 44px rgba(7, 20, 45, 0.1),
+        0 80px 0 0 #fff;
+}
+
+.soor-services-help__bridge {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%, 1px);
+    z-index: 3;
+    line-height: 0;
+}
+
+.soor-services-help__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: #{"clamp(40px, 5vw, 56px)"};
+}
+
+.soor-services-help__media {
+    flex: 0 1 560px;
+    max-width: 100%;
+}
+
+.soor-services-help__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 560px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.soor-services-help__copy {
+    flex: 1 1 320px;
+    max-width: 552px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+
+    h2 {
+        margin: 0;
+        color: #000;
+        font-size: 46px;
+        font-weight: 900;
+        line-height: 52px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 0;
+        color: #777777;
+        font-size: 16px;
+        line-height: 27px;
+    }
+}
+
+.soor-services-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border-radius: 500px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #1e63af 9%, #8cc3ff 100%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+    }
+}
+
+.soor-services-cta__sheen {
+    display: none;
+}
+
+.soor-services-cta__accent {
+    display: none;
+}
+
+.soor-services-cta__label {
+    position: relative;
+    z-index: 2;
+}
+
+.soor-services-cta__dot {
+    width: 7px;
+    height: 7px;
+    border: 1.5px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+// ——— Offering cards ———
+.soor-services-offerings {
+    padding: 48px 0 72px;
+    background: #fff;
+}
+
+.soor-services-offerings__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: flex-start;
+}
+
+.soor-services-offer-card {
+    position: relative;
+    flex: 1 1 280px;
+    max-width: 100%;
+    min-width: 0;
+    padding: 24px;
+    background: #f8f8f8;
+    border-radius: 21px;
+    overflow: hidden;
+    backdrop-filter: blur(12.35px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    box-sizing: border-box;
+
+    h3 {
+        margin: 0;
+        position: relative;
+        z-index: 2;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #161616;
+    }
+}
+
+.soor-services-offer-card__mesh {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: linear-gradient(240deg, rgba(30, 99, 175, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    opacity: 0.85;
+}
+
+.soor-services-offer-card__icon {
+    position: relative;
+    z-index: 2;
+    width: 68px;
+    height: 68px;
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// ——— Excel split (white) ———
+.soor-services-excel-split {
+    padding: 80px 16px;
+    background: #fff;
+}
+
+.soor-services-excel-split__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: #{"clamp(40px, 5vw, 56px)"};
+}
+
+.soor-services-excel-split__col {
+    flex: 1 1 380px;
+    max-width: 649px;
+}
+
+.soor-services-excel-split__title {
+    margin: 0 0 16px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.soor-services-excel-split__intro {
+    margin: 0 0 16px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000;
+    max-width: 649px;
+}
+
+.soor-services-excel-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.soor-services-excel-list li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 633px;
+    padding: 2px;
+    border: 1px solid rgba(117, 86, 252, 0.2);
+    box-sizing: border-box;
+}
+
+.soor-services-excel-list__ico {
+    flex-shrink: 0;
+    width: 45px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(173, 173, 173, 0.07);
+    position: relative;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 10px;
+        border: 2px solid #1e63af;
+        border-radius: 1px;
+        box-sizing: border-box;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &::before {
+        left: 10px;
+    }
+
+    &::after {
+        left: 19px;
+    }
+}
+
+.soor-services-excel-list li span:last-child {
+    flex: 1;
+    padding: 8px 8px 8px 0;
+    font-size: 16px;
+    line-height: 27px;
+    color: #777777;
+}
+
+.soor-services-excel-split__media {
+    flex: 0 1 505px;
+}
+
+.soor-services-excel-split__img {
+    display: block;
+    width: 100%;
+    max-width: 505px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 25px;
+    box-shadow: 5px 4px 27px rgba(0, 0, 0, 0.1);
+    outline: 8px solid #fff;
+}
+
+// ——— Excel band (#F8F8F8 + white pill cards) ———
+.soor-services-excel-band {
+    padding: 80px 16px 100px;
+    background: #f8f8f8;
+}
+
+.soor-services-excel-band__heading {
+    margin: 0 0 32px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.soor-services-excel-band__intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: #{"clamp(24px, 5vw, 56px)"};
+    margin-bottom: 32px;
+}
+
+.soor-services-excel-band__intro-title {
+    margin: 0;
+    flex: 0 1 320px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.soor-services-excel-band__intro p {
+    margin: 0;
+    flex: 1 1 280px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000;
+}
+
+.soor-services-excel-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.soor-services-excel-cards__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.soor-services-excel-card {
+    position: relative;
+    flex: 1 1 260px;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 72px;
+    padding: 24px;
+    background: #fff;
+    border-radius: 21px;
+    overflow: hidden;
+    backdrop-filter: blur(12.35px);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.soor-services-excel-card--tall {
+    align-items: center;
+}
+
+.soor-services-excel-card__mesh {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: linear-gradient(240deg, rgba(30, 99, 175, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    box-shadow: inset 0 0 0 0.31px rgba(30, 99, 175, 0.35);
+}
+
+.soor-services-excel-card__label {
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #161616;
+}
+
+@media (max-width: 992px) {
+    .soor-services-hero {
+        min-height: 480px;
+        padding-top: 108px;
+        padding-bottom: 100px;
+    }
+
+    .soor-services-hero__title {
+        font-size: #{"clamp(32px, 8vw, 46px)"};
+        line-height: 1.1;
+        letter-spacing: 0.1em;
+    }
+
+    .soor-services-help-wrap {
+        margin-top: calc(-1 * #{"clamp(48px, 12vw, 72px)"});
+    }
+
+    .soor-services-help {
+        border-radius: #{"clamp(36px, 11vw, 56px)"} #{"clamp(36px, 11vw, 56px)"} 0 0;
+        padding-top: 56px;
+    }
+
+    .soor-services-excel-band__intro {
+        flex-direction: column;
+    }
+}

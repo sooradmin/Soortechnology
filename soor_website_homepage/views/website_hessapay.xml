@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="soor_hessapay_page" name="SOOR Hessa Pay">
+        <t t-set="no_header" t-value="True"/>
+        <t t-set="no_footer" t-value="True"/>
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty soor-page soor-hessapay-page">
+
+                <div class="soor-contact-nav">
+                    <div class="soor-contact-container soor-contact-nav-inner">
+                        <a href="/" class="soor-contact-logo soor-nav-logo-link">
+                            <img src="/soor_website_homepage/static/src/logos/nav-logo.png" alt="SOOR Technologies" class="soor-nav-logo-img" width="160" height="44" loading="eager"/>
+                        </a>
+                        <nav class="soor-contact-nav-links soor-nav--desktop">
+                            <a href="/">Home</a>
+                            <a href="/services">Services</a>
+                            <a href="/about">About Us</a>
+                            <a href="/blogs">Blogs</a>
+                            <a href="/#partners">Partners</a>
+                            <div class="soor-nav-more">
+                                <span class="soor-nav-more__trigger" tabindex="0">
+                                    More
+                                    <span class="soor-nav-more__caret" aria-hidden="true">
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <div class="soor-nav-more__panel" role="menu">
+                                    <a href="/odoo" role="menuitem">Odoo</a>
+                                    <a href="/hessapay" role="menuitem">Hessa Pay</a>
+                                    <a href="/soor_website_homepage/static/src/pdf/Digital-Profile.pdf" target="_blank" rel="noopener noreferrer" role="menuitem">Digital Profile</a>
+                                </div>
+                            </div>
+                        </nav>
+                        <a href="/contactus" class="soor-nav-contact-cta soor-contact-nav-cta soor-topbar__cta--desktop">
+                            <span class="soor-nav-contact-cta__label">Contact Us</span>
+                            <span class="soor-nav-contact-cta__arrow" aria-hidden="true">
+                                <svg width="16" height="11" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6h12M11 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <t t-call="soor_website_homepage.soor_mnav_toolbar">
+                            <t t-set="mnav_id" t-value="'soor-mnav-hessapay'"/>
+                        </t>
+                    </div>
+                </div>
+
+                <t t-call="soor_website_homepage.soor_mnav_overlay">
+                    <t t-set="mnav_id" t-value="'soor-mnav-hessapay'"/>
+                </t>
+
+                <section class="soor-hessapay-hero">
+                    <div class="soor-contact-container soor-hessapay-hero__inner">
+                        <h1 class="soor-hessapay-hero__title">HessaPay — Our Newest Fintech Innovation</h1>
+                        <p class="soor-hessapay-hero__sub">One of Soor Technologies posts on LinkedIn</p>
+                    </div>
+                </section>
+
+                <section class="soor-hessapay-panel-wrap">
+                    <div class="soor-hessapay-panel">
+                        <div class="soor-hessapay-panel__bridge" aria-hidden="true">
+                            <svg width="171" height="60" viewBox="0 0 171 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M127.61 34.23C109.66 -0.13 60.49 -0.13 42.54 34.23C34.26 50.07 17.87 60 0 60H171C153.13 60 136.74 50.07 127.61 34.23Z" fill="#ffffff"/>
+                                <path class="soor-hero-bridge-arrow" fill="#161616" d="M85 30C85.4 29.6 86 29.6 86.4 30L90 33.6V20C90 19.4 90.4 19 91 19C91.6 19 92 19.4 92 20V33.6L95.6 30C96 29.6 96.6 29.6 97 30C97.4 30.4 97.4 31 97 31.4L91.8 36.6C91.4 37 90.8 37 90.4 36.6L85.2 31.4C84.8 31 84.8 30.4 85 30Z"/>
+                            </svg>
+                        </div>
+                        <div class="soor-hessapay-content">
+                            <img
+                                src="/soor_website_homepage/static/src/img/Hessa-Pay-1536x436.png"
+                                alt="HessaPay"
+                                width="1078"
+                                height="306"
+                                loading="lazy"
+                                decoding="async"
+                                class="soor-hessapay-heroimg"
+                            />
+                            <p class="soor-hessapay-lead">
+                                Bring you the simplest way to track shared expenses and settle balances instantly. Proudly selected by
+                                <a href="#" rel="nofollow">Motawer 2025</a>.
+                            </p>
+
+                            <div class="soor-hessapay-block">
+                                <h2>Overview</h2>
+                                <p class="soor-hessapay-block__body">
+                                    HessaPay is the GCC’s first social finance app designed to make splitting expenses effortless. Built in Kuwait and developed by Soor Technologies, the app helps friends, families, and groups track shared expenses, settle balances instantly, and manage activities — all in one smart, modern, and secure platform.
+                                    Whether it’s dinners, padel matches, trips, jam’iya contributions, or everyday group expenses, HessaPay keeps everything organized, transparent, and stress-free.
+                                </p>
+                            </div>
+
+                            <div class="soor-hessapay-block">
+                                <h2>Our Role</h2>
+                                <p class="soor-hessapay-block__body">
+                                    Soor Technologies is the official technology partner and system architect behind HessaPay.
+                                    Our team is leading:
+                                </p>
+                                <ul class="soor-hessapay-list">
+                                    <li>End-to-end product development</li>
+                                    <li>UX/UI design &amp; prototype testing</li>
+                                    <li>Mobile app engineering</li>
+                                    <li>Payments integration (Kuwait &amp; GCC)</li>
+                                    <li>Backend architecture &amp; data security</li>
+                                    <li>AI-powered features &amp; automation</li>
+                                    <li>Compliance alignment with GCC financial and regulatory standards</li>
+                                </ul>
+                                <p class="soor-hessapay-block__body">
+                                    HessaPay is currently one of our most innovative and fast-growing fintech initiatives.
+                                </p>
+                            </div>
+
+                            <div class="soor-hessapay-block">
+                                <h2>Key Features of HessaPay</h2>
+                                <ul class="soor-hessapay-features">
+                                    <li><strong>Smart Expense Splitting</strong> — Automatically split bills between friends and track who owes what.</li>
+                                    <li><strong>Circles (Groups)</strong> — Create circles for outings, trips, sports, events, or ongoing budgets.</li>
+                                    <li><strong>Jam’iya Tracking (Rotating Savings)</strong> — Fully localized financial management for GCC users.</li>
+                                    <li><strong>Receipt Scanning with AI</strong> — Instantly scan, detect, and categorize expenses.</li>
+                                    <li><strong>Instant Settlements</strong> — Pay or receive your share in seconds (KWD &amp; GCC currencies).</li>
+                                    <li><strong>Loans &amp; Qard Hasan Tracking</strong> — Simple and private way to track personal loans between friends.</li>
+                                    <li><strong>Multi-Platform Notifications</strong> — WhatsApp, email, and in-app alerts to keep everyone updated.</li>
+                                    <li><strong>Designed for GCC Culture</strong> — Built around how people in Kuwait and the GCC actually share expenses.</li>
+                                </ul>
+                            </div>
+
+                            <div class="soor-hessapay-block">
+                                <h2>Why HessaPay?</h2>
+                                <p class="soor-hessapay-block__body">
+                                    HessaPay fills a major gap in the region. While global apps exist, none truly address:
+                                </p>
+                                <ul class="soor-hessapay-list">
+                                    <li>Gulf cultural norms around group spending</li>
+                                    <li>Local currency support (KWD, SAR, etc.)</li>
+                                    <li>Features like Jam’iya and Qard Hasan</li>
+                                    <li>Arabic-first experience</li>
+                                    <li>GCC regulations and payment methods</li>
+                                </ul>
+                                <p class="soor-hessapay-block__body">
+                                    HessaPay is built FOR the region, BY the region — with innovation driven by Soor Technologies.
+                                </p>
+                            </div>
+
+                            <div class="soor-hessapay-block">
+                                <h2>Project Status</h2>
+                                <ul class="soor-hessapay-list">
+                                    <li>✔ Concept &amp; product design completed</li>
+                                    <li>✔ Prototype and UX testing in progress</li>
+                                    <li>✔ Accelerated development under the Motawer 2025 program</li>
+                                    <li>🚀 Public launch expected soon</li>
+                                </ul>
+                                <p class="soor-hessapay-block__body">
+                                    HessaPay is currently in private development with a growing waitlist of early users.
+                                </p>
+                            </div>
+
+                            <div class="soor-hessapay-block">
+                                <h2>Join the Journey</h2>
+                                <p class="soor-hessapay-block__body">
+                                    HessaPay represents the future of financial collaboration in the GCC — smart, simple, and culturally relevant.
+                                    Stay tuned for the official launch through Soor Technologies.
+                                    Learn more or join the waitlist:
+                                    <a href="https://hessapay.com/" target="_blank" rel="noopener noreferrer">https://hessapay.com/</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="soor-contact-partners soor-partners-band">
+                    <div class="soor-contact-container soor-contact-partners-inner">
+                        <h2 class="soor-contact-partners-title">Our Partners</h2>
+                        <p class="soor-contact-partners-desc">We take pride in our collaborations with clients across various industries, helping them achieve their business objectives with Odoo.</p>
+                        <t t-call="soor_website_homepage.soor_partner_logos_marquee"/>
+                    </div>
+                </section>
+
+                <t t-call="soor_website_homepage.soor_site_footer"/>
+            </div>
+        </t>
+    </template>
+</odoo>

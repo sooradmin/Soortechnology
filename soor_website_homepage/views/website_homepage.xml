@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Toolbar only (stays in header). Checkbox + drawer live under #wrap so .soor-hero overflow:hidden cannot clip the panel. -->
+    <template id="soor_mnav_toolbar" name="SOOR mobile nav toolbar">
+        <div class="soor-topbar__mobile">
+            <a href="/contactus" class="soor-nav-contact-cta soor-mnav__contact-cta">
+                <span class="soor-nav-contact-cta__label">Contact Us</span>
+                <span class="soor-nav-contact-cta__arrow" aria-hidden="true">
+                    <svg width="14" height="10" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6h12M11 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </a>
+            <label t-attf-for="#{mnav_id}" class="soor-mnav__burger" aria-label="Open menu">
+                <span class="soor-mnav__burger-line"/>
+                <span class="soor-mnav__burger-line"/>
+                <span class="soor-mnav__burger-line"/>
+            </label>
+        </div>
+    </template>
+
+    <template id="soor_mnav_overlay" name="SOOR mobile nav overlay">
+        <input type="checkbox" t-att-id="mnav_id" class="soor-mnav__chk" autocomplete="off" tabindex="-1"/>
+        <label t-attf-for="#{mnav_id}" class="soor-mnav__backdrop" aria-hidden="true"/>
+        <div class="soor-mnav__panel soor-mnav__panel--sheet" role="dialog" aria-label="Site menu">
+            <div class="soor-mnav__panel-head">
+                <label t-attf-for="#{mnav_id}" class="soor-mnav__close" aria-label="Close menu">×</label>
+            </div>
+            <div class="soor-mnav__panel-body">
+                <nav class="soor-mnav__links soor-mnav__links--sheet" aria-label="Site">
+                    <a href="/" class="soor-mnav__row">Home</a>
+                    <a href="/about" class="soor-mnav__row">About Us</a>
+                    <a href="/blogs" class="soor-mnav__row">Blogs</a>
+                    <a href="/services" class="soor-mnav__row">Services</a>
+                    <a href="/#partners" class="soor-mnav__row">Partners</a>
+                    <details class="soor-mnav__more-sheet">
+                        <summary class="soor-mnav__more-sheet__summary">
+                            <span class="soor-mnav__more-sheet__label">More</span>
+                            <span class="soor-mnav__more-sheet__caret" aria-hidden="true">
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="soor-mnav__more-sheet__list">
+                            <a href="/odoo" class="soor-mnav__row soor-mnav__row--sub">Odoo</a>
+                            <a href="/hessapay" class="soor-mnav__row soor-mnav__row--sub">Hessa Pay</a>
+                            <a href="/soor_website_homepage/static/src/pdf/Digital-Profile.pdf" target="_blank" rel="noopener noreferrer" class="soor-mnav__row soor-mnav__row--sub">Digital Profile</a>
+                        </div>
+                    </details>
+                </nav>
+            </div>
+        </div>
+    </template>
+
+    <template id="soor_homepage_override" inherit_id="website.homepage" name="SOOR Homepage">
+        <xpath expr="//t[@t-set='pageName']" position="after">
+            <t t-set="no_header" t-value="True"/>
+            <t t-set="no_footer" t-value="True"/>
+        </xpath>
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="oe_structure oe_empty soor-page">
+                <t t-call="soor_website_homepage.soor_mnav_overlay">
+                    <t t-set="mnav_id" t-value="'soor-mnav-home'"/>
+                </t>
+                <section class="soor-hero">
+                    <div class="container">
+                        <div class="soor-topbar" role="navigation" aria-label="Primary">
+                            <a href="/" class="soor-logo">
+                                <img src="/soor_website_homepage/static/src/logos/nav-logo.png" alt="SOOR Technologies" class="soor-logo__img" width="160" height="44" loading="eager"/>
+                            </a>
+                            <ul class="soor-nav soor-nav--desktop">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/services">Services</a></li>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/blogs">Blogs</a></li>
+                                <li><a href="#partners">Partners</a></li>
+                                <li class="soor-nav-more">
+                                    <span class="soor-nav-more__trigger" tabindex="0">
+                                        More
+                                        <span class="soor-nav-more__caret" aria-hidden="true">
+                                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                    <div class="soor-nav-more__panel" role="menu">
+                                        <a href="/odoo" role="menuitem">Odoo</a>
+                                        <a href="/hessapay" role="menuitem">Hessa Pay</a>
+                                        <a href="/soor_website_homepage/static/src/pdf/Digital-Profile.pdf" target="_blank" rel="noopener noreferrer" role="menuitem">Digital Profile</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="/contactus" class="soor-nav-contact-cta soor-topbar__cta--desktop">
+                                <span class="soor-nav-contact-cta__label">Contact Us</span>
+                                <span class="soor-nav-contact-cta__arrow" aria-hidden="true">
+                                    <svg width="16" height="11" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 6h12M11 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <t t-call="soor_website_homepage.soor_mnav_toolbar">
+                                <t t-set="mnav_id" t-value="'soor-mnav-home'"/>
+                            </t>
+                        </div>
+
+                        <div class="soor-hero-content">
+                            <h1>
+                                Elevate Your <span>Business</span><br/>
+                                with <span>SOOR Technologies</span>
+                            </h1>
+                            <p>
+                                Seamlessly integrate and scale your operations with Odoo.
+                                Our expert guidance and innovative solutions help you drive
+                                efficiency, growth, and long-term success.
+                            </p>
+                            <a href="/contactus" class="soor-btn soor-btn-lg">Get a Free Demo Today</a>
+                        </div>
+
+                        <div class="soor-stats">
+                            <article class="soor-stat">
+                                <div class="soor-stat__icon" aria-hidden="true">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="none" d="M35.2 7l1.3 3.9h4.1l-3.3 2.4 1.3 3.9-3.4-2.5-3.4 2.5 1.3-3.9-3.3-2.4h4.1L35.2 7z" stroke="#ffffff" stroke-width="1.35" stroke-linejoin="round"/>
+                                        <circle cx="17" cy="15" r="5.25" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+                                        <path fill="none" d="M6.75 40.25c0-7.2 6.6-12.5 14.5-12.5s14.5 5.3 14.5 12.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <p class="soor-stat__body">
+                                    95% of our clients report a significant and major improvements in operational efficiency after optimizing with our Odoo solutions.
+                                </p>
+                                <div class="soor-stat__value soor-js-count" data-soor-count="95" data-soor-suffix="%">0%</div>
+                            </article>
+                            <article class="soor-stat">
+                                <div class="soor-stat__icon" aria-hidden="true">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="24" cy="24" r="15" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+                                        <ellipse cx="24" cy="24" rx="6.5" ry="15" fill="none" stroke="#ffffff" stroke-width="1.45"/>
+                                        <path fill="none" d="M9 24h30" stroke="#ffffff" stroke-width="1.35" stroke-linecap="round"/>
+                                        <path fill="none" d="M11.5 17c4.5-3.2 9.8-3.6 27-1.2" stroke="#ffffff" stroke-width="1.15" stroke-linecap="round"/>
+                                        <path fill="none" d="M11.5 31c4.5 3.2 9.8 3.6 27 1.2" stroke="#ffffff" stroke-width="1.15" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <p class="soor-stat__body">
+                                    Successfully implemented Odoo for businesses across 15+ countries, helping them scale operations and reduce costs.
+                                </p>
+                                <div class="soor-stat__value soor-js-count" data-soor-count="15" data-soor-suffix="+">0+</div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="about" class="soor-about soor-home-after-hero">
+                    <div class="soor-home-main">
+                        <div class="soor-home-main-card">
+                            <div class="soor-home-hero-bridge" aria-hidden="true">
+                                <svg width="171" height="60" viewBox="0 0 171 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M127.61 34.23C109.66 -0.13 60.49 -0.13 42.54 34.23C34.26 50.07 17.87 60 0 60H171C153.13 60 136.74 50.07 127.61 34.23Z" fill="#ffffff"/>
+                                    <path class="soor-hero-bridge-arrow" fill="#161616" d="M85 30C85.4 29.6 86 29.6 86.4 30L90 33.6V20C90 19.4 90.4 19 91 19C91.6 19 92 19.4 92 20V33.6L95.6 30C96 29.6 96.6 29.6 97 30C97.4 30.4 97.4 31 97 31.4L91.8 36.6C91.4 37 90.8 37 90.4 36.6L85.2 31.4C84.8 31 84.8 30.4 85 30Z"/>
+                                </svg>
+                            </div>
+                            <div class="container soor-split">
+                                <div class="soor-media-card">
+                                    <div class="soor-about-visual">
+                                <img
+                                    src="/soor_website_homepage/static/src/img/soor_about_illustration.svg"
+                                    alt=""
+                                    width="506"
+                                    height="586"
+                                    loading="lazy"
+                                    decoding="async"
+                                    draggable="false"
+                                    class="soor-about-visual__art"
+                                />
+                                <a href="/contactus" class="soor-about-visual__contact-badge" aria-label="Contact us">
+                                    <span class="soor-about-visual__contact-badge-spin" aria-hidden="true">
+                                        <svg class="soor-about-visual__contact-arc" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path id="soor_about_cta_arc" d="M 100,100 m -78,0 a 78,78 0 1 1 156,0 a 78,78 0 1 1 -156,0"/>
+                                            </defs>
+                                            <text fill="white" font-size="10.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" letter-spacing="0.06em">
+                                                <textPath href="#soor_about_cta_arc" xlink:href="#soor_about_cta_arc" startOffset="0%">CONTACT US  ✦  CONTACT US  ✦  </textPath>
+                                            </text>
+                                        </svg>
+                                        <span class="soor-about-visual__contact-hub">
+                                            <svg class="soor-about-visual__globe-icon" width="136" height="136" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="24" cy="24" r="15.5" stroke="#ffffff" stroke-width="1.65" fill="none"/>
+                                                <ellipse cx="24" cy="24" rx="6.25" ry="15.5" stroke="#ffffff" stroke-width="1.45" fill="none"/>
+                                                <path d="M8.5 24h31" stroke="#ffffff" stroke-width="1.35" stroke-linecap="round"/>
+                                                <path d="M10 16.5c4.5-3.4 9.5-3.8 26.5-1" stroke="#ffffff" stroke-width="1.15" fill="none" stroke-linecap="round"/>
+                                                <path d="M10 31.5c4.5 3.4 9.5 3.8 26.5 1" stroke="#ffffff" stroke-width="1.15" fill="none" stroke-linecap="round"/>
+                                                <rect x="18.25" y="18.25" width="11.5" height="11.5" rx="2.2" stroke="#ffffff" stroke-width="1.65" fill="none"/>
+                                                <path d="M24 28.2V21.5 M20.6 24.1L24 21.5L27.4 24.1" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                    <span class="soor-about-visual__sr-only">Contact us</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="soor-about-copy">
+                            <h2>Driving Innovation, Inspiring Results</h2>
+                            <p>
+                                At SOOR Technologies, we are dedicated to helping businesses thrive by
+                                harnessing technology. Our Odoo solutions transform operations,
+                                streamline processes, and elevate customer experiences.
+                            </p>
+                            <a href="/contactus" class="soor-btn">Contact Us</a>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="soor-vision">
+                    <span class="soor-vision__glow soor-vision__glow--far" aria-hidden="true"/>
+                    <div class="soor-vision-inner">
+                        <div class="soor-vision-intro">
+                            <h2>What is <br/>Our Vision?</h2>
+                            <p>
+                                Our vision is to deliver impactful solutions that bring measurable success, drive meaningful transformation, and accelerate growth. We focus on implementing tailored Odoo strategies that unlock efficiency and scalability, setting your business up for long-term success.
+                            </p>
+                        </div>
+                        <div class="soor-vision-stack">
+                            <div class="soor-vision-row">
+                                <span class="soor-vision__glow soor-vision__glow--near" aria-hidden="true"/>
+                                <article class="soor-vision-card">
+                                    <span class="soor-vision-card__corner" aria-hidden="true">
+                                        <svg class="soor-vision-card__arrow" width="22" height="22" viewBox="0 0 22 22" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.5 16.5L16.5 5.5M16.5 5.5H8.5M16.5 5.5V13.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="soor-vision-card__iconwrap" aria-hidden="true">
+                                        <svg class="soor-vision-card__icon" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="4.5" y="2.5" width="18" height="18" rx="1" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M5 26.5h12v-9H5v9z" fill="currentColor"/>
+                                            <rect x="22.5" y="19.5" width="8" height="8" rx="1" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h3>Succeed</h3>
+                                    <p>Achieve measurable results and deliver tangible outcomes that align with your business goals.</p>
+                                </article>
+                                <article class="soor-vision-card">
+                                    <span class="soor-vision-card__corner" aria-hidden="true">
+                                        <svg class="soor-vision-card__arrow" width="22" height="22" viewBox="0 0 22 22" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.5 16.5L16.5 5.5M16.5 5.5H8.5M16.5 5.5V13.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="soor-vision-card__iconwrap" aria-hidden="true">
+                                        <svg class="soor-vision-card__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2.5" y="2.5" width="27" height="27" rx="3" stroke="currentColor" stroke-width="2"/>
+                                            <rect x="7" y="7" width="18" height="14" rx="1" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M16 24.5v2.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                            <circle cx="16" cy="15" r="4" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <h3>Transform</h3>
+                                    <p>Drive change within your organization and implement processes that foster growth and adaptability.</p>
+                                </article>
+                                <article class="soor-vision-card">
+                                    <span class="soor-vision-card__corner" aria-hidden="true">
+                                        <svg class="soor-vision-card__arrow" width="22" height="22" viewBox="0 0 22 22" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.5 16.5L16.5 5.5M16.5 5.5H8.5M16.5 5.5V13.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="soor-vision-card__iconwrap" aria-hidden="true">
+                                        <svg class="soor-vision-card__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="22.5" cy="11.5" r="7.5" stroke="currentColor" stroke-width="2"/>
+                                            <circle cx="11.5" cy="18.5" r="8.5" stroke="currentColor" stroke-width="2"/>
+                                            <circle cx="22" cy="12" r="2.5" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h3>Succeed</h3>
+                                    <p>Increase operational efficiency to achieve goals faster and stay ahead of the competition.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="services" class="soor-services">
+                    <div class="soor-services-inner">
+                        <div class="soor-services-intro">
+                            <h2>What Do We Do <br/>with Odoo?</h2>
+                            <p>
+                                We leverage Odoo&apos;s features to create tailored solutions that enhance efficiency. From implementation to customization, we help you optimize Odoo for streamlined operations and improved productivity.
+                            </p>
+                        </div>
+                        <div class="soor-services-rows">
+                            <div class="soor-service-row">
+                                <article class="soor-service-card soor-service-card--figma">
+                                    <span class="soor-service-card__mesh" aria-hidden="true"/>
+                                    <div class="soor-service-card__body">
+                                        <div class="soor-service-icon" aria-hidden="true">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.5V22M8 22h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M16 5.5a4 4 0 11-8 0c0 2 1.5 3.5 3 4.5h2c1.5-1 3-2.5 3-4.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                                        </div>
+                                        <h3>Succeed</h3>
+                                        <p>Crafting customized solutions that align with your unique business requirements and drive growth.</p>
+                                    </div>
+                                </article>
+                                <article class="soor-service-card soor-service-card--figma">
+                                    <span class="soor-service-card__mesh" aria-hidden="true"/>
+                                    <div class="soor-service-card__body">
+                                        <div class="soor-service-icon" aria-hidden="true">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 4v5c0 4.2-2.4 7.8-7 9.5-4.6-1.7-7-5.3-7-9.5V7l7-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.5 12.5l2 2 3.5-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </div>
+                                        <h3>Implementation</h3>
+                                        <p>Ensuring a successful adoption of the platform within your company by deploying and configuring Odoo to meet the business requirements.</p>
+                                    </div>
+                                </article>
+                                <article class="soor-service-card soor-service-card--figma">
+                                    <span class="soor-service-card__mesh" aria-hidden="true"/>
+                                    <div class="soor-service-card__body">
+                                        <div class="soor-service-icon" aria-hidden="true">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="8" r="2.25" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="8" r="2.25" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="16" r="2.25" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="2.25" stroke="currentColor" stroke-width="1.5"/></svg>
+                                        </div>
+                                        <h3>Integration</h3>
+                                        <p>Seamlessly connecting your existing systems and applications with Odoo to streamline your operations and enhance efficiency.</p>
+                                    </div>
+                                </article>
+                                <article class="soor-service-card soor-service-card--figma">
+                                    <span class="soor-service-card__mesh" aria-hidden="true"/>
+                                    <div class="soor-service-card__body">
+                                        <div class="soor-service-icon" aria-hidden="true">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 8h12v10a2 2 0 01-2 2H8a2 2 0 01-2-2V8z" stroke="currentColor" stroke-width="1.5"/><path d="M6 8V6a2 2 0 012-2h8a2 2 0 012 2v2M10 12h4m-4 4h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                        </div>
+                                        <h3>Migration</h3>
+                                        <p>Transferring your data and functionalities from legacy systems to the Odoo platform while ensuring a smooth and efficient transition.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="soor-service-row">
+                                <article class="soor-service-card soor-service-card--figma">
+                                    <span class="soor-service-card__mesh" aria-hidden="true"/>
+                                    <div class="soor-service-card__body">
+                                        <div class="soor-service-icon" aria-hidden="true">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/><path d="M7.5 15c1.2 1.6 2.7 2.5 4.5 2.5s3.3-.9 4.5-2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                        </div>
+                                        <h3>Consultation</h3>
+                                        <p>Get insights to make informed decisions and maximize Odoo&apos;s potential for your business.</p>
+                                    </div>
+                                </article>
+                                <article class="soor-service-card soor-service-card--figma">
+                                    <span class="soor-service-card__mesh" aria-hidden="true"/>
+                                    <div class="soor-service-card__body">
+                                        <div class="soor-service-icon" aria-hidden="true">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 14.5a3 3 0 00-3-3H14a4 4 0 00-8 0v3a4 4 0 008 0h1.5a3 3 0 003-3v-1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M7 12v-1.5a5 5 0 0110 0V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                        </div>
+                                        <h3>Support</h3>
+                                        <p>Our team provides ongoing support to help you maintain your Odoo solutions, ensuring long-term success.</p>
+                                    </div>
+                                </article>
+                                <article class="soor-service-card soor-service-card--figma">
+                                    <span class="soor-service-card__mesh" aria-hidden="true"/>
+                                    <div class="soor-service-card__body">
+                                        <div class="soor-service-icon" aria-hidden="true">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 19.5A2.5 2.5 0 016.5 17H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 7h8M8 11h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                        </div>
+                                        <h3>Training</h3>
+                                        <p>Equipping your team with the knowledge and skills to effectively utilize Odoo&apos;s features and functionalities.</p>
+                                    </div>
+                                </article>
+                                <article class="soor-service-card soor-service-card--figma">
+                                    <span class="soor-service-card__mesh" aria-hidden="true"/>
+                                    <div class="soor-service-card__body">
+                                        <div class="soor-service-icon" aria-hidden="true">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="2.5" stroke="currentColor" stroke-width="1.5"/><path d="M6 6l2.5 2.5M18 18l-2.5-2.5M18 6l-2.5 2.5M6 18l2.5-2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                        </div>
+                                        <h3>Customization</h3>
+                                        <p>Tailoring the platform to specific needs using custom module development, user interface customization, and workflow adjustments.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="soor-unique">
+                    <div class="soor-unique-inner">
+                        <div class="soor-unique-intro">
+                            <h2>How Are We Unique <br/>in Our Services?</h2>
+                            <p>
+                                SOOR Technologies stands out for our commitment to personalized, high-quality solutions tailored to your business needs. We emphasize clear communication and a hands-on approach to align every project with your goals. Our expertise in Odoo ensures effective and sustainable solutions.
+                            </p>
+                        </div>
+                        <div class="soor-unique-grid">
+                            <article class="soor-unique-card soor-unique-card--split">
+                                <header class="soor-unique-card__head">
+                                    <span class="soor-unique-card__iconwrap" aria-hidden="true">
+                                        <svg class="soor-unique-card__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 10h8M8 14h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M6 4h12a2 2 0 012 2v9a2 2 0 01-2 2h-4.5l-4 3v-3H6a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <h3>Communication</h3>
+                                </header>
+                                <div class="soor-unique-card__body">
+                                    <p>Clear, transparent, and timely communication is at the heart of our process. We ensure that you're always in the loop.</p>
+                                </div>
+                            </article>
+                            <article class="soor-unique-card soor-unique-card--split">
+                                <header class="soor-unique-card__head">
+                                    <span class="soor-unique-card__iconwrap" aria-hidden="true">
+                                        <svg class="soor-unique-card__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4l1.2 3.5L17 9l-3.8 1.4L12 14l-1.2-3.6L7 9l3.8-1.5L12 4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M5 20h14M8 17v-2M12 17v-3M16 17v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                    </span>
+                                    <h3>Prioritization</h3>
+                                </header>
+                                <div class="soor-unique-card__body">
+                                    <p>Your success is our priority. We are dedicated to helping you achieve your business objectives through expert Odoo implementation.</p>
+                                </div>
+                            </article>
+                            <article class="soor-unique-card soor-unique-card--kpi">
+                                <div class="soor-unique-card__kpi-top">
+                                    <span class="soor-unique-card__kpi-ico" aria-hidden="true">
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9.33" stroke="currentColor" stroke-width="1.4"/><path d="M12 2.34v19.32M3.5 12h17" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><ellipse cx="12" cy="12" rx="3.9" ry="9.33" stroke="currentColor" stroke-width="1.4"/></svg>
+                                    </span>
+                                    <p class="soor-unique-card__kpi-copy">97% client retention clearly highlights our keen commitment to product success.</p>
+                                </div>
+                                <div class="soor-unique-card__stat soor-js-count" data-soor-count="97" data-soor-suffix="%">0%</div>
+                            </article>
+                            <article class="soor-unique-card soor-unique-card--kpi">
+                                <div class="soor-unique-card__kpi-top">
+                                    <span class="soor-unique-card__kpi-ico" aria-hidden="true">
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9.33" stroke="currentColor" stroke-width="1.4"/><path d="M12 2.34v19.32M3.5 12h17" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><ellipse cx="12" cy="12" rx="3.9" ry="9.33" stroke="currentColor" stroke-width="1.4"/></svg>
+                                    </span>
+                                    <p class="soor-unique-card__kpi-copy">80% of our clients see a 20%+ increase in efficiency within three months of Odoo adoption.</p>
+                                </div>
+                                <div class="soor-unique-card__stat soor-unique-card__stat--secondary soor-js-count" data-soor-count="80" data-soor-suffix="%">0%</div>
+                            </article>
+                            <article class="soor-unique-card soor-unique-card--split">
+                                <header class="soor-unique-card__head">
+                                    <span class="soor-unique-card__iconwrap" aria-hidden="true">
+                                        <svg class="soor-unique-card__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l8 4v6c0 4.5-2.8 8.5-8 10-5.2-1.5-8-5.5-8-10V6l8-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 16V8m0 0l3.5 3.5M12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <h3>Responsibility</h3>
+                                </header>
+                                <div class="soor-unique-card__body">
+                                    <p>We take full responsibility for the outcomes of our services, guaranteeing that our solutions meet your business needs and exceed expectations.</p>
+                                </div>
+                            </article>
+                            <article class="soor-unique-card soor-unique-card--split">
+                                <header class="soor-unique-card__head">
+                                    <span class="soor-unique-card__iconwrap" aria-hidden="true">
+                                        <svg class="soor-unique-card__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.35" fill="none" stroke-dasharray="1.75 2.35"/><path d="M8.2 12l2.2 2.3 5.6-5.8" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <h3>Commitment</h3>
+                                </header>
+                                <div class="soor-unique-card__body">
+                                    <p>We provide honest and unbiased advice, recommending only what will genuinely benefit your business in the long run.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="partners" class="soor-partners soor-partners-band">
+                    <div class="container">
+                        <h2>Our Partners</h2>
+                        <p>
+                            We take pride in our collaborations with clients across various industries, helping them achieve their business objectives with Odoo. Our references showcase the trust and satisfaction of our clients:
+                        </p>
+                        <t t-call="soor_website_homepage.soor_partner_logos_marquee"/>
+                    </div>
+                </section>
+
+                <t t-call="soor_website_homepage.soor_site_footer"/>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="soor_site_footer" name="SOOR site footer">
+        <footer class="soor-contact-footer">
+            <div class="soor-contact-footer-glow"/>
+            <div class="soor-contact-container soor-contact-footer-inner">
+                <div class="soor-contact-footer-top">
+                    <div class="soor-contact-footer-brand">
+                        <div class="soor-contact-logo soor-contact-footer-logo">SOOR</div>
+                        <p>
+                            Soor Technologies harnesses the power of strategic IT partnerships to foster sustainable business success. We focus on creating long-term collaborations that align with your goals and support ongoing growth.
+                        </p>
+                    </div>
+                    <div class="soor-contact-footer-cols">
+                        <div class="soor-contact-footer-col">
+                            <h4>Links</h4>
+                            <a href="/">Home</a>
+                            <a href="/services">Services</a>
+                            <a href="/hessapay">HessaPay</a>
+                            <a href="/odoo">Odoo Apps</a>
+                            <a href="/soor_website_homepage/static/src/pdf/Digital-Profile.pdf" target="_blank" rel="noopener noreferrer">Digital Profile</a>
+                        </div>
+                        <div class="soor-contact-footer-col">
+                            <h4>Company</h4>
+                            <a href="/#about">About Us</a>
+                            <a href="/contactus">Contact Us</a>
+                            <a href="/odoo">Odoo</a>
+                            <a href="/blogs">Blog</a>
+                            <a href="#">Support</a>
+                        </div>
+                        <div class="soor-contact-footer-col soor-contact-footer-loc">
+                            <h4>Location</h4>
+                            <div class="soor-contact-kuwait-row">
+                                <span class="soor-contact-flag-kw" title="Kuwait"/>
+                                <span>Kuwait HQ:</span>
+                            </div>
+                            <p>Fahad Alsalem St, Momentum Group, Kuwait City, Kuwait</p>
+                            <div class="soor-contact-social">
+                                <a href="#" class="soor-contact-social-btn" aria-label="YouTube"><i class="fa fa-youtube-play"/></a>
+                                <a href="#" class="soor-contact-social-btn" aria-label="Instagram"><i class="fa fa-instagram"/></a>
+                                <a href="#" class="soor-contact-social-btn" aria-label="LinkedIn"><i class="fa fa-linkedin"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="soor-contact-footer-rule"/>
+                <div class="soor-contact-footer-copy">Copyright 2026 © Soor Technologies</div>
+            </div>
+        </footer>
+    </template>
+
+    <template id="soor_partner_logos_marquee" name="SOOR partner logos marquee">
+        <div class="soor-partner-marquee o_not_editable" role="region" aria-label="Partner logos">
+            <div class="soor-partner-marquee__viewport">
+                <div class="soor-partner-marquee__track">
+                    <div class="soor-partner-marquee__set">
+                        <t t-call="soor_website_homepage.soor_partner_logos_markup"/>
+                    </div>
+                    <div class="soor-partner-marquee__set" aria-hidden="true">
+                        <t t-call="soor_website_homepage.soor_partner_logos_markup"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="soor_partner_logos_markup" name="SOOR partner logos">
+        <span class="soor-partner-logo"><img src="/web/image/soor_website_homepage.soor_partner_logo_9165" alt="" loading="lazy" decoding="async"/></span>
+        <span class="soor-partner-logo"><img src="/web/image/soor_website_homepage.soor_partner_logo_9167" alt="" loading="lazy" decoding="async"/></span>
+        <span class="soor-partner-logo"><img src="/web/image/soor_website_homepage.soor_partner_logo_9168" alt="" loading="lazy" decoding="async"/></span>
+        <span class="soor-partner-logo"><img src="/web/image/soor_website_homepage.soor_partner_logo_9169" alt="" loading="lazy" decoding="async"/></span>
+        <span class="soor-partner-logo"><img src="/web/image/soor_website_homepage.soor_partner_logo_9170" alt="" loading="lazy" decoding="async"/></span>
+        <span class="soor-partner-logo"><img src="/web/image/soor_website_homepage.soor_partner_logo_9172" alt="" loading="lazy" decoding="async"/></span>
+        <span class="soor-partner-logo"><img src="/web/image/soor_website_homepage.soor_partner_logo_9174" alt="" loading="lazy" decoding="async"/></span>
+        <span class="soor-partner-logo"><img src="/web/image/soor_website_homepage.soor_partner_logo_9175" alt="" loading="lazy" decoding="async"/></span>
+        <span class="soor-partner-logo"><img src="/web/image/soor_website_homepage.soor_partner_logo_9179" alt="" loading="lazy" decoding="async"/></span>
+        <span class="soor-partner-logo"><img src="/web/image/soor_website_homepage.soor_partner_logo_9182" alt="" loading="lazy" decoding="async"/></span>
+    </template>
+</odoo>
+

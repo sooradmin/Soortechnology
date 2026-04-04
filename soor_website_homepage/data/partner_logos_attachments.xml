@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Binary attachments: stored in filestore; /web/image/<xmlid> does not depend on static URL routing. -->
+    <record id="soor_partner_logo_9165" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">soor_partner_9165.png</field>
+        <field name="type">binary</field>
+        <field name="datas" type="base64" file="soor_website_homepage/static/src/logos/IMG_9165.png"/>
+    </record>
+    <record id="soor_partner_logo_9167" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">soor_partner_9167.jpeg</field>
+        <field name="type">binary</field>
+        <field name="datas" type="base64" file="soor_website_homepage/static/src/logos/IMG_9167.jpeg"/>
+    </record>
+    <record id="soor_partner_logo_9168" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">soor_partner_9168.png</field>
+        <field name="type">binary</field>
+        <field name="datas" type="base64" file="soor_website_homepage/static/src/logos/IMG_9168.png"/>
+    </record>
+    <record id="soor_partner_logo_9169" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">soor_partner_9169.png</field>
+        <field name="type">binary</field>
+        <field name="datas" type="base64" file="soor_website_homepage/static/src/logos/IMG_9169.png"/>
+    </record>
+    <record id="soor_partner_logo_9170" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">soor_partner_9170.jpeg</field>
+        <field name="type">binary</field>
+        <field name="datas" type="base64" file="soor_website_homepage/static/src/logos/IMG_9170.jpeg"/>
+    </record>
+    <record id="soor_partner_logo_9172" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">soor_partner_9172.jpeg</field>
+        <field name="type">binary</field>
+        <field name="datas" type="base64" file="soor_website_homepage/static/src/logos/IMG_9172.jpeg"/>
+    </record>
+    <record id="soor_partner_logo_9174" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">soor_partner_9174.png</field>
+        <field name="type">binary</field>
+        <field name="datas" type="base64" file="soor_website_homepage/static/src/logos/IMG_9174.png"/>
+    </record>
+    <record id="soor_partner_logo_9175" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">soor_partner_9175.jpeg</field>
+        <field name="type">binary</field>
+        <field name="datas" type="base64" file="soor_website_homepage/static/src/logos/IMG_9175.jpeg"/>
+    </record>
+    <record id="soor_partner_logo_9179" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">soor_partner_9179.webp</field>
+        <field name="type">binary</field>
+        <field name="datas" type="base64" file="soor_website_homepage/static/src/logos/IMG_9179.webp"/>
+    </record>
+    <record id="soor_partner_logo_9182" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">soor_partner_9182.jpeg</field>
+        <field name="type">binary</field>
+        <field name="datas" type="base64" file="soor_website_homepage/static/src/logos/IMG_9182.jpeg"/>
+    </record>
+</odoo>

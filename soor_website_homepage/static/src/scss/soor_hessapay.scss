@@ -1,0 +1,227 @@
+// Hessa Pay product page — homepage-style hero gradient + white content stack
+
+.soor-hessapay-page {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #fff;
+    color: #161616;
+    overflow-x: hidden;
+
+    &#wrap {
+        display: block;
+        width: 100%;
+    }
+
+    .soor-hessapay-panel__bridge .soor-hero-bridge-arrow {
+        fill: #161616;
+    }
+}
+
+// Hero — same stack as homepage `.soor-hero` (navy + center glow + grid)
+.soor-hessapay-hero {
+    position: relative;
+    z-index: 1;
+    min-height: 492px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    overflow: hidden;
+    padding: 128px 16px 128px;
+    background-color: #070b12;
+    background-image:
+        radial-gradient(ellipse 78% 58% at 50% 36%, rgba(42, 88, 168, 0.62) 0%, rgba(24, 42, 82, 0.38) 42%, transparent 68%),
+        radial-gradient(ellipse 110% 85% at 50% 118%, rgba(22, 55, 112, 0.35) 0%, transparent 58%),
+        linear-gradient(180deg, #0a1224 0%, #0c1730 45%, #080f1a 100%);
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        background-image:
+            linear-gradient(rgba(130, 178, 255, 0.085) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(130, 178, 255, 0.085) 1px, transparent 1px);
+        background-size: 48px 48px;
+        background-position: center 0;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        padding-top: 24px;
+    }
+
+    &__title {
+        margin: 0;
+        color: #fff;
+        font-size: #{"clamp(28px, 4.5vw, 46px)"};
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1.15;
+        letter-spacing: 1px;
+        font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    &__sub {
+        margin: 0;
+        max-width: 40em;
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 16px;
+        line-height: 27px;
+    }
+}
+
+.soor-hessapay-panel-wrap {
+    position: relative;
+    z-index: 2;
+    margin-top: calc(-1 * #{"clamp(76px, 9vw, 104px)"});
+    padding: 0 0 80px;
+    background: transparent;
+}
+
+.soor-hessapay-panel {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background: #fff;
+    border-radius: #{"clamp(56px, 9.5vw, 64px)"} #{"clamp(56px, 9.5vw, 64px)"} 0 0;
+    padding: #{"clamp(40px, 8vw, 48px)"} 0 #{"clamp(48px, 6vw, 80px)"};
+    box-sizing: border-box;
+    box-shadow: 0 -8px 44px rgba(7, 20, 45, 0.08), 0 80px 0 0 #fff;
+}
+
+.soor-hessapay-panel__bridge {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%, 1px);
+    z-index: 3;
+    line-height: 0;
+
+    svg {
+        display: block;
+        width: #{"clamp(136px, 22vw, 171px)"};
+        height: auto;
+    }
+}
+
+.soor-hessapay-content {
+    width: 100%;
+    max-width: 1078px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: #{"clamp(40px, 5vw, 56px)"};
+}
+
+.soor-hessapay-heroimg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: #{"min(420px, 55vw)"};
+    object-fit: contain;
+    object-position: center;
+    background: #f8f8f8;
+    border-radius: 12px;
+}
+
+.soor-hessapay-lead {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    line-height: 27px;
+    text-align: justify;
+}
+
+.soor-hessapay-lead a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: underline;
+
+    &:hover {
+        color: #161616;
+    }
+}
+
+.soor-hessapay-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h2 {
+        margin: 0;
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+}
+
+.soor-hessapay-block__body {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    line-height: 27px;
+    text-align: justify;
+}
+
+.soor-hessapay-list {
+    margin: 0;
+    padding-left: 1.25em;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    line-height: 27px;
+
+    li {
+        margin-bottom: 6px;
+    }
+}
+
+.soor-hessapay-features {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    line-height: 27px;
+
+    li {
+        margin-bottom: 14px;
+        padding-left: 0;
+    }
+
+    strong {
+        color: rgba(0, 0, 0, 0.75);
+        font-weight: 700;
+    }
+}
+
+.soor-hessapay-block__body a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: underline;
+
+    &:hover {
+        color: #161616;
+    }
+}
+
+@media (max-width: 991px) {
+    .soor-hessapay-hero {
+        min-height: 420px;
+        padding: 100px 16px 96px;
+    }
+
+    .soor-hessapay-lead,
+    .soor-hessapay-block__body {
+        text-align: left;
+    }
+}
