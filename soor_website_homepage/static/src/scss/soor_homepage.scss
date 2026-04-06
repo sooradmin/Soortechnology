@@ -172,10 +172,17 @@ body:has(#wrap.soor-page .soor-mnav__chk:checked) {
         margin: 0;
         padding: 0;
 
-        > li > a {
+        > li:not(.soor-nav-more) > a {
             color: #fff;
             text-decoration: none;
             font-size: 14px;
+            line-height: 1.25;
+            transition: color 0.2s ease;
+
+            &:hover,
+            &:focus-visible {
+                color: #9dd4ff;
+            }
         }
     }
 
@@ -183,15 +190,29 @@ body:has(#wrap.soor-page .soor-mnav__chk:checked) {
         text-align: center;
         padding: 110px 0 40px;
 
-        h1 {
-            font-size: 68px;
-            line-height: 1.05;
-            margin-bottom: 20px;
+        .soor-hero-title {
+            margin: 0 0 20px;
+            font-size: #{"clamp(34px, 6.5vw, 72px)"};
+            line-height: 1.08;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
 
-            span {
-                color: #1e63af;
-                font-weight: 800;
-            }
+        .soor-hero-title__line {
+            display: inline-block;
+        }
+
+        .soor-hero-title__w {
+            color: #fff;
+        }
+
+        .soor-hero-title__b {
+            color: #3d7fd9;
+        }
+
+        .soor-hero-title__sky {
+            color: #9dd4ff;
         }
 
         p {
@@ -308,6 +329,104 @@ body:has(#wrap.soor-page .soor-mnav__chk:checked) {
 .soor-about.soor-home-after-hero {
     padding-top: 0;
     padding-bottom: 110px;
+}
+
+// Homepage intro (white panel): left-aligned headline + body + CTA — matches reference layout
+.soor-home-main-card .soor-home-intro {
+    max-width: 960px;
+    margin: 0;
+    padding: #{"clamp(12px, 2.5vw, 28px)"} 0 #{"clamp(36px, 5vw, 56px)"};
+    text-align: left;
+}
+
+.soor-home-intro__title {
+    margin: 0 0 #{"clamp(28px, 4vw, 40px)"};
+    font-size: #{"clamp(38px, 5vw, 58px)"};
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: #000;
+    font-family:
+        Inter,
+        "Segoe UI",
+        system-ui,
+        -apple-system,
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.soor-home-intro__title-line {
+    display: block;
+}
+
+.soor-home-intro__text {
+    margin: 0 0 #{"clamp(28px, 4vw, 40px)"};
+    max-width: 58em;
+    font-size: #{"clamp(16px, 1.25vw, 17px)"};
+    font-weight: 400;
+    line-height: 1.68;
+    color: #4b4b4b;
+    font-family:
+        Inter,
+        "Segoe UI",
+        system-ui,
+        -apple-system,
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.soor-home-intro__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 28px;
+    border-radius: 999px;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.25;
+    font-family:
+        Inter,
+        "Segoe UI",
+        system-ui,
+        -apple-system,
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+    background: linear-gradient(90deg, #1e63af 9%, #8cc3ff 100%);
+    border: none;
+    box-sizing: border-box;
+    vertical-align: middle;
+    transition: filter 0.2s ease;
+
+    &:hover,
+    &:focus {
+        color: #fff !important;
+        -webkit-text-fill-color: #fff;
+        text-decoration: none;
+        filter: brightness(1.06);
+    }
+}
+
+.soor-home-intro__cta-arrow {
+    display: flex;
+    line-height: 0;
+    flex-shrink: 0;
+    color: currentColor;
+
+    svg {
+        display: block;
+    }
 }
 
 .soor-about .soor-split {
@@ -905,15 +1024,18 @@ body:has(#wrap.soor-page .soor-mnav__chk:checked) {
     min-height: 160px;
     padding: 32px;
     box-sizing: border-box;
-    background-color: #161616;
-    background-image: linear-gradient(
-        134deg,
-        #161616 0%,
-        rgba(22, 22, 22, 0.54) 23%,
-        rgba(22, 22, 22, 0.9) 48%,
-        rgba(22, 22, 22, 0.54) 75%,
-        #161616 100%
-    );
+    background-color: #111216;
+    background-image:
+        radial-gradient(ellipse 130% 110% at 0% 100%, rgba(42, 108, 198, 0.52) 0%, transparent 55%),
+        radial-gradient(ellipse 95% 85% at 8% 96%, rgba(30, 99, 175, 0.42) 0%, transparent 50%),
+        radial-gradient(ellipse 70% 60% at 22% 100%, rgba(100, 170, 255, 0.18) 0%, transparent 45%),
+        linear-gradient(
+            152deg,
+            #13151a 0%,
+            #0e1014 38%,
+            #161616 72%,
+            #12141a 100%
+        );
     border-radius: 16px;
     overflow: hidden;
     color: #f8f8f8;
@@ -921,14 +1043,15 @@ body:has(#wrap.soor-page .soor-mnav__chk:checked) {
     &::before {
         content: "";
         position: absolute;
-        width: 169px;
-        height: 169px;
-        left: -62px;
-        top: 81px;
-        background: #1e63af;
+        width: 240px;
+        height: 240px;
+        left: -72px;
+        bottom: -48px;
+        top: auto;
+        background: radial-gradient(circle at 35% 35%, #4d9fff 0%, #1e63af 45%, #153a6b 100%);
         border-radius: 50%;
-        filter: blur(84px);
-        opacity: 0.45;
+        filter: blur(88px);
+        opacity: 0.62;
         pointer-events: none;
         z-index: 0;
     }
@@ -936,33 +1059,33 @@ body:has(#wrap.soor-page .soor-mnav__chk:checked) {
     &::after {
         content: "";
         position: absolute;
-        inset: -60%;
+        inset: -65%;
         pointer-events: none;
-        opacity: 0.16;
-        z-index: 0;
+        opacity: 0.24;
+        z-index: 1;
         background-image:
             repeating-linear-gradient(
                 -18deg,
                 transparent 0,
                 transparent 34px,
-                rgba(248, 248, 248, 0.14) 34px,
-                rgba(248, 248, 248, 0.14) 35px
+                rgba(200, 225, 255, 0.16) 34px,
+                rgba(200, 225, 255, 0.16) 35px
             ),
             repeating-linear-gradient(
                 72deg,
                 transparent 0,
                 transparent 42px,
-                rgba(248, 248, 248, 0.08) 42px,
-                rgba(248, 248, 248, 0.08) 43px
+                rgba(180, 210, 255, 0.1) 42px,
+                rgba(180, 210, 255, 0.1) 43px
             );
-        transform: rotate(-90deg);
-        transform-origin: center;
+        transform: perspective(520px) rotateX(10deg) rotate(-88deg);
+        transform-origin: 72% 48%;
     }
 
     p {
         position: relative;
         margin: 0;
-        z-index: 1;
+        z-index: 2;
         max-width: 326px;
         color: #f8f8f8;
         font-size: 16px;
@@ -1218,8 +1341,8 @@ body:has(#wrap.soor-page .soor-mnav__chk:checked) {
         min-height: 0;
     }
 
-    .soor-hero .soor-hero-content h1 {
-        font-size: 44px;
+    .soor-hero .soor-hero-content .soor-hero-title {
+        font-size: #{"clamp(30px, 9vw, 52px)"};
     }
 
     .soor-about .soor-split {
@@ -1336,10 +1459,11 @@ body:has(#wrap.soor-page .soor-mnav__chk:checked) {
     cursor: pointer;
     user-select: none;
     outline: none;
+    transition: color 0.2s ease;
 
     &:hover,
     &:focus-visible {
-        opacity: 0.9;
+        color: #9dd4ff;
     }
 
     &:focus-visible {
@@ -1351,7 +1475,7 @@ body:has(#wrap.soor-page .soor-mnav__chk:checked) {
 .soor-nav-more__caret {
     display: flex;
     line-height: 0;
-    color: #fff;
+    color: currentColor;
     transition: transform 0.2s ease;
 
     svg {
@@ -1383,15 +1507,17 @@ body:has(#wrap.soor-page .soor-mnav__chk:checked) {
         text-decoration: none;
         border-bottom: 1px solid #ebebeb;
         -webkit-text-fill-color: #161616;
+        transition: color 0.2s ease, -webkit-text-fill-color 0.2s ease;
 
         &:last-child {
             border-bottom: none;
         }
 
-        &:hover {
-            background: #f5f7fa;
-            color: #161616 !important;
-            -webkit-text-fill-color: #161616;
+        &:hover,
+        &:focus-visible {
+            color: #3d7fd9 !important;
+            -webkit-text-fill-color: #3d7fd9;
+            background: transparent;
         }
     }
 }
@@ -1557,12 +1683,13 @@ body:has(#wrap.soor-page .soor-mnav__chk:checked) {
     padding: 16px 20px;
     border-bottom: 1px solid #e8eaed;
     background: #fff;
+    transition: color 0.2s ease;
 
     &:hover,
     &:focus {
-        color: #0f172a;
+        color: #3d7fd9;
         text-decoration: none;
-        background: #fafafa;
+        background: #fff;
     }
 }
 

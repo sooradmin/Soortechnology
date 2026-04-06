@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Google Translate EN/AR: compact trigger + flyout (website frontend only, not in editor). -->
+    <template id="soor_google_translate_widget" inherit_id="website.layout" name="SOOR Google Translate switcher">
+        <xpath expr="//div[@id='wrapwrap']" position="after">
+            <t t-if="website and request.is_frontend and not editable">
+                <div id="soor-gtranslate-root" class="soor-gtranslate soor-gtranslate--active-en" data-soor-gtranslate-root="1">
+                    <div id="soor-gtranslate-menu" class="soor-gtranslate__dropdown" role="menu" aria-label="Languages" hidden="hidden">
+                        <button type="button" class="soor-gtranslate__opt" data-soor-lang="ar" role="menuitem">
+                            <span class="soor-gtranslate__flag-wrap">
+                                <span class="soor-gtranslate__flag soor-gtranslate__flag--emoji" role="img" aria-label="">🇸🇦</span>
+                            </span>
+                            <span class="soor-gtranslate__label">Arabic</span>
+                            <span class="soor-gtranslate__chev-slot" aria-hidden="true"/>
+                        </button>
+                        <button type="button" class="soor-gtranslate__opt" data-soor-lang="en" role="menuitem">
+                            <span class="soor-gtranslate__flag-wrap">
+                                <span class="soor-gtranslate__flag soor-gtranslate__flag--emoji" role="img" aria-label="">🇬🇧</span>
+                            </span>
+                            <span class="soor-gtranslate__label soor-gtranslate__label--en">EN</span>
+                            <span class="soor-gtranslate__chev soor-gtranslate__chev--down" aria-hidden="true">
+                                <svg class="soor-gtranslate__chev-svg" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L5 5L9 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <button type="button" class="soor-gtranslate__trigger" aria-expanded="false" aria-haspopup="true" aria-controls="soor-gtranslate-menu" id="soor-gtranslate-trigger">
+                        <span class="soor-gtranslate__trigger-flag soor-gtranslate__trigger-flag--gb" aria-hidden="true">🇬🇧</span>
+                        <span class="soor-gtranslate__trigger-flag soor-gtranslate__trigger-flag--sa" aria-hidden="true">🇸🇦</span>
+                        <span class="soor-gtranslate__trigger-text soor-gtranslate__trigger-text--en">EN</span>
+                        <span class="soor-gtranslate__trigger-text soor-gtranslate__trigger-text--ar">Arabic</span>
+                        <span class="soor-gtranslate__trigger-chev" aria-hidden="true">
+                            <svg class="soor-gtranslate__trigger-chev-svg" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 4.5L5 1L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div id="soor_google_translate_element" class="soor-gtranslate__gt-el" aria-hidden="true"/>
+            </t>
+        </xpath>
+    </template>
+</odoo>

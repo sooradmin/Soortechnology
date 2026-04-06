@@ -81,15 +81,13 @@
         color: #fff;
         font-size: 14px;
         text-decoration: none;
-        line-height: 27px;
+        line-height: 1.25;
+        transition: color 0.2s ease;
 
-        &:hover {
-            opacity: 0.85;
+        &:hover,
+        &:focus-visible {
+            color: #9dd4ff;
         }
-    }
-
-    .soor-nav-more__trigger:hover {
-        opacity: 0.85;
     }
 }
 
@@ -477,21 +475,36 @@
 // ——— Footer ———
 .soor-contact-footer {
     position: relative;
-    background: #000;
+    background: linear-gradient(180deg, #0c1528 0%, #060a12 45%, #030509 100%);
     color: #fff;
-    padding: 120px 16px 48px;
+    padding: 100px 16px 40px;
     overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        pointer-events: none;
+        opacity: 0.45;
+        background-image:
+            linear-gradient(rgba(140, 190, 255, 0.09) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(140, 190, 255, 0.09) 1px, transparent 1px);
+        background-size: 48px 48px;
+        background-position: center 0;
+    }
 }
 
 .soor-contact-footer-glow {
     position: absolute;
     inset: 0;
+    z-index: 0;
     pointer-events: none;
-    opacity: 0.9;
+    opacity: 0.85;
     background:
-        radial-gradient(ellipse 450px 450px at 80% 30%, rgba(30, 99, 175, 0.35), transparent 60%),
-        radial-gradient(ellipse 450px 450px at 15% 40%, rgba(43, 55, 183, 0.35), transparent 60%),
-        radial-gradient(ellipse 540px 350px at 50% 10%, rgba(0, 121, 255, 0.12), transparent 70%);
+        radial-gradient(ellipse 520px 420px at 78% 22%, rgba(30, 99, 175, 0.32), transparent 62%),
+        radial-gradient(ellipse 480px 380px at 12% 55%, rgba(43, 90, 160, 0.28), transparent 58%),
+        radial-gradient(ellipse 600px 280px at 50% 100%, rgba(20, 60, 120, 0.2), transparent 55%);
 }
 
 .soor-contact-footer-inner {
@@ -507,51 +520,104 @@
 }
 
 .soor-contact-footer-brand {
-    width: 432px;
+    width: 400px;
     max-width: 100%;
 
-    p {
-        margin: 16px 0 0;
-        color: #b9b9b9;
-        font-size: 14px;
-        line-height: 27px;
+    .soor-contact-footer-tagline {
+        margin: 20px 0 0;
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.65;
+        font-weight: 400;
+        opacity: 0.95;
     }
 }
 
-.soor-contact-footer-logo {
+.soor-contact-footer-logo-link {
+    display: inline-block;
+    line-height: normal;
+    text-decoration: none;
     color: #fff;
+
+    &:hover {
+        opacity: 0.9;
+        color: #fff;
+    }
+
+    &:focus-visible {
+        outline: 2px solid rgba(140, 195, 255, 0.65);
+        outline-offset: 4px;
+        border-radius: 4px;
+    }
+}
+
+// Text wordmark (reliable on dark footer; plain white SVG rects are invisible)
+.soor-contact-footer-wordmark {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.soor-contact-footer-wordmark__soor {
+    display: block;
+    font-size: #{"clamp(32px, 5vw, 42px)"};
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+    color: #fff;
+    font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.soor-contact-footer-wordmark__tech {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.95;
+    font-family: Inter, "Segoe UI", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 1px;
 }
 
 .soor-contact-footer-cols {
-    flex: 1;
+    flex: 1 1 360px;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 96px;
-    justify-content: flex-start;
+    gap: 40px 56px;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 780px;
 }
 
 .soor-contact-footer-col {
     min-width: 140px;
 
     h4 {
-        margin: 0 0 16px;
+        margin: 0 0 18px;
         font-size: 16px;
         font-weight: 700;
-        line-height: 25px;
-        text-transform: capitalize;
+        line-height: 1.25;
+        text-transform: none;
         color: #fff;
+        font-family: Inter, "Segoe UI", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     a {
         display: block;
-        color: #b9b9b9;
+        color: #fff;
         font-size: 14px;
-        line-height: 27px;
+        line-height: 1.65;
         text-decoration: none;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
+        font-weight: 400;
+        opacity: 0.92;
 
         &:hover {
-            color: #fff;
+            opacity: 1;
+            text-decoration: none;
         }
     }
 
@@ -559,7 +625,7 @@
         margin: 0;
         color: #fff;
         font-size: 14px;
-        line-height: 22px;
+        line-height: 1.55;
     }
 }
 
@@ -571,13 +637,32 @@
 .soor-contact-kuwait-row {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
+    gap: 10px;
+    margin-bottom: 10px;
     color: #fff;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
+.soor-contact-kuwait-label {
+    color: #fff;
+}
+
+.soor-contact-flag-kw-svg {
+    flex-shrink: 0;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.soor-contact-footer-address {
+    color: #fff;
+    opacity: 0.95;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+// Legacy class kept for any older markup
 .soor-contact-flag-kw {
     display: inline-block;
     width: 20px;
@@ -610,46 +695,64 @@
 
 .soor-contact-social {
     display: flex;
-    gap: 10px;
-    margin-top: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 22px;
 }
 
-.soor-contact-social-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6px;
-    min-width: 1.25em;
-    min-height: 1.25em;
-    background: transparent;
-    border: none;
-    border-radius: 0;
+// Must beat `.soor-contact-footer-col a { display: block }` or icons sit top-left
+.soor-contact-social .soor-contact-social-btn {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 50%;
     color: #fff;
     text-decoration: none;
-    font-size: 22px;
     line-height: 1;
+    box-sizing: border-box;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 
-    i {
-        line-height: 1;
+    svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        flex-shrink: 0;
     }
 
     &:hover {
-        background: transparent;
-        color: rgba(255, 255, 255, 0.75);
+        background: rgba(255, 255, 255, 0.14);
+        border-color: rgba(255, 255, 255, 0.22);
+        color: #fff;
+    }
+
+    &:focus-visible {
+        outline: 2px solid rgba(140, 195, 255, 0.65);
+        outline-offset: 2px;
     }
 }
 
 .soor-contact-footer-rule {
     height: 1px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 40px 0 24px;
+    background: rgba(255, 255, 255, 0.12);
+    margin: 48px 0 22px;
 }
 
 .soor-contact-footer-copy {
     text-align: center;
-    color: #b9b9b9;
-    font-size: 14px;
+    color: #fff;
+    font-size: 13px;
     line-height: 22px;
+    opacity: 0.88;
+    font-weight: 400;
 }
 
 @media (max-width: 991px) {

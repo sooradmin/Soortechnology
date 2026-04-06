@@ -87,10 +87,12 @@
         color: #fff;
         font-size: 14px;
         text-decoration: none;
-        line-height: 27px;
+        line-height: 1.25;
+        transition: color 0.2s ease;
 
-        &:hover {
-            opacity: 0.85;
+        &:hover,
+        &:focus-visible {
+            color: #9dd4ff;
         }
     }
 }
@@ -761,8 +763,8 @@
 
 #wrap.soor-page .soor-mnav__panel--sheet a.soor-mnav__row:hover,
 #wrap.soor-page .soor-mnav__panel--sheet a.soor-mnav__row:focus {
-    color: #0f172a !important;
-    -webkit-text-fill-color: #0f172a !important;
+    color: #3d7fd9 !important;
+    -webkit-text-fill-color: #3d7fd9 !important;
     text-decoration: none !important;
 }
 
@@ -790,17 +792,22 @@
 
 #wrap.soor-page .soor-mnav__more-sheet__list a.soor-mnav__row:hover,
 #wrap.soor-page .soor-mnav__more-sheet__list a.soor-mnav__row:focus {
-    color: #0f172a !important;
-    -webkit-text-fill-color: #0f172a !important;
+    color: #3d7fd9 !important;
+    -webkit-text-fill-color: #3d7fd9 !important;
     text-decoration: none !important;
 }
 
 #wrap.soor-page .soor-nav-more__panel a,
-#wrap.soor-page .soor-nav-more__panel a:visited,
-#wrap.soor-page .soor-nav-more__panel a:hover,
-#wrap.soor-page .soor-nav-more__panel a:focus {
+#wrap.soor-page .soor-nav-more__panel a:visited {
     color: #161616 !important;
     -webkit-text-fill-color: #161616 !important;
+    text-decoration: none !important;
+}
+
+#wrap.soor-page .soor-nav-more__panel a:hover,
+#wrap.soor-page .soor-nav-more__panel a:focus {
+    color: #3d7fd9 !important;
+    -webkit-text-fill-color: #3d7fd9 !important;
     text-decoration: none !important;
 }
 

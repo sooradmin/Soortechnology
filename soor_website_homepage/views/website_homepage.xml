@@ -30,9 +30,8 @@
                 <nav class="soor-mnav__links soor-mnav__links--sheet" aria-label="Site">
                     <a href="/" class="soor-mnav__row">Home</a>
                     <a href="/about" class="soor-mnav__row">About Us</a>
-                    <a href="/blogs" class="soor-mnav__row">Blogs</a>
+                    <a href="/blogs" class="soor-mnav__row">Blog</a>
                     <a href="/services" class="soor-mnav__row">Services</a>
-                    <a href="/#partners" class="soor-mnav__row">Partners</a>
                     <details class="soor-mnav__more-sheet">
                         <summary class="soor-mnav__more-sheet__summary">
                             <span class="soor-mnav__more-sheet__label">More</span>
@@ -73,8 +72,7 @@
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/services">Services</a></li>
                                 <li><a href="/about">About Us</a></li>
-                                <li><a href="/blogs">Blogs</a></li>
-                                <li><a href="#partners">Partners</a></li>
+                                <li><a href="/blogs">Blog</a></li>
                                 <li class="soor-nav-more">
                                     <span class="soor-nav-more__trigger" tabindex="0">
                                         More
@@ -105,9 +103,22 @@
                         </div>
 
                         <div class="soor-hero-content">
-                            <h1>
-                                Elevate Your <span>Business</span><br/>
-                                with <span>SOOR Technologies</span>
+                            <h1 class="soor-hero-title">
+                                <span class="soor-hero-title__line">
+                                    <span class="soor-hero-title__w">Elevate Your</span>
+                                </span>
+                                <br/>
+                                <span class="soor-hero-title__line">
+                                    <span class="soor-hero-title__b">Business</span><span class="soor-hero-title__w"> with</span>
+                                </span>
+                                <br/>
+                                <span class="soor-hero-title__line">
+                                    <span class="soor-hero-title__b">SOOR</span>
+                                </span>
+                                <br/>
+                                <span class="soor-hero-title__line">
+                                    <span class="soor-hero-title__sky">Technologies</span>
+                                </span>
                             </h1>
                             <p>
                                 Seamlessly integrate and scale your operations with Odoo.
@@ -142,8 +153,7 @@
                                     </svg>
                                 </div>
                                 <p class="soor-stat__body">
-                                    Successfully implemented Odoo for businesses across 15+ countries, helping them scale operations and reduce costs.
-                                </p>
+                                    Driving digital transformation for businesses in Kuwait with high-performance Odoo systems built for local scaling.           </p>
                                 <div class="soor-stat__value soor-js-count" data-soor-count="15" data-soor-suffix="+">0+</div>
                             </article>
                         </div>
@@ -159,54 +169,24 @@
                                     <path class="soor-hero-bridge-arrow" fill="#161616" d="M85 30C85.4 29.6 86 29.6 86.4 30L90 33.6V20C90 19.4 90.4 19 91 19C91.6 19 92 19.4 92 20V33.6L95.6 30C96 29.6 96.6 29.6 97 30C97.4 30.4 97.4 31 97 31.4L91.8 36.6C91.4 37 90.8 37 90.4 36.6L85.2 31.4C84.8 31 84.8 30.4 85 30Z"/>
                                 </svg>
                             </div>
-                            <div class="container soor-split">
-                                <div class="soor-media-card">
-                                    <div class="soor-about-visual">
-                                <img
-                                    src="/soor_website_homepage/static/src/img/soor_about_illustration.svg"
-                                    alt=""
-                                    width="506"
-                                    height="586"
-                                    loading="lazy"
-                                    decoding="async"
-                                    draggable="false"
-                                    class="soor-about-visual__art"
-                                />
-                                <a href="/contactus" class="soor-about-visual__contact-badge" aria-label="Contact us">
-                                    <span class="soor-about-visual__contact-badge-spin" aria-hidden="true">
-                                        <svg class="soor-about-visual__contact-arc" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <defs>
-                                                <path id="soor_about_cta_arc" d="M 100,100 m -78,0 a 78,78 0 1 1 156,0 a 78,78 0 1 1 -156,0"/>
-                                            </defs>
-                                            <text fill="white" font-size="10.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" letter-spacing="0.06em">
-                                                <textPath href="#soor_about_cta_arc" xlink:href="#soor_about_cta_arc" startOffset="0%">CONTACT US  ✦  CONTACT US  ✦  </textPath>
-                                            </text>
-                                        </svg>
-                                        <span class="soor-about-visual__contact-hub">
-                                            <svg class="soor-about-visual__globe-icon" width="136" height="136" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="24" cy="24" r="15.5" stroke="#ffffff" stroke-width="1.65" fill="none"/>
-                                                <ellipse cx="24" cy="24" rx="6.25" ry="15.5" stroke="#ffffff" stroke-width="1.45" fill="none"/>
-                                                <path d="M8.5 24h31" stroke="#ffffff" stroke-width="1.35" stroke-linecap="round"/>
-                                                <path d="M10 16.5c4.5-3.4 9.5-3.8 26.5-1" stroke="#ffffff" stroke-width="1.15" fill="none" stroke-linecap="round"/>
-                                                <path d="M10 31.5c4.5 3.4 9.5 3.8 26.5 1" stroke="#ffffff" stroke-width="1.15" fill="none" stroke-linecap="round"/>
-                                                <rect x="18.25" y="18.25" width="11.5" height="11.5" rx="2.2" stroke="#ffffff" stroke-width="1.65" fill="none"/>
-                                                <path d="M24 28.2V21.5 M20.6 24.1L24 21.5L27.4 24.1" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <div class="container">
+                                <div class="soor-home-intro">
+                                    <h2 class="soor-home-intro__title">
+                                        <span class="soor-home-intro__title-line">Driving</span>
+                                        <span class="soor-home-intro__title-line">Innovation, Inspiring Results</span>
+                                    </h2>
+                                    <p class="soor-home-intro__text">
+                                        At SOOR Technologies, we&apos;re dedicated to helping businesses thrive by harnessing the power of technology. Our innovative solutions are designed to transform operations, streamline processes, and elevate customer experiences. We believe in pushing boundaries, challenging the status quo, and enabling businesses to unlock new growth opportunities. Our commitment is to deliver results that matter — from enhanced operational efficiency to improved business outcomes.
+                                    </p>
+                                    <a href="/contactus" class="soor-btn soor-home-intro__cta">
+                                        <span>Contact Us</span>
+                                        <span class="soor-home-intro__cta-arrow" aria-hidden="true">
+                                            <svg width="16" height="11" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 6h12M11 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
                                         </span>
-                                    </span>
-                                    <span class="soor-about-visual__sr-only">Contact us</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="soor-about-copy">
-                            <h2>Driving Innovation, Inspiring Results</h2>
-                            <p>
-                                At SOOR Technologies, we are dedicated to helping businesses thrive by
-                                harnessing technology. Our Odoo solutions transform operations,
-                                streamline processes, and elevate customer experiences.
-                            </p>
-                            <a href="/contactus" class="soor-btn">Contact Us</a>
-                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -270,7 +250,7 @@
                                             <circle cx="22" cy="12" r="2.5" fill="currentColor"/>
                                         </svg>
                                     </div>
-                                    <h3>Succeed</h3>
+                                    <h3>Accelerate</h3>
                                     <p>Increase operational efficiency to achieve goals faster and stay ahead of the competition.</p>
                                 </article>
                             </div>
@@ -467,12 +447,17 @@
 
     <template id="soor_site_footer" name="SOOR site footer">
         <footer class="soor-contact-footer">
-            <div class="soor-contact-footer-glow"/>
+            <div class="soor-contact-footer-glow" aria-hidden="true"/>
             <div class="soor-contact-container soor-contact-footer-inner">
                 <div class="soor-contact-footer-top">
                     <div class="soor-contact-footer-brand">
-                        <div class="soor-contact-logo soor-contact-footer-logo">SOOR</div>
-                        <p>
+                        <a href="/" class="soor-contact-footer-logo-link" aria-label="SOOR Technologies">
+                            <span class="soor-contact-footer-wordmark">
+                                <span class="soor-contact-footer-wordmark__soor">SOOR</span>
+                                <span class="soor-contact-footer-wordmark__tech">TECHNOLOGIES</span>
+                            </span>
+                        </a>
+                        <p class="soor-contact-footer-tagline">
                             Soor Technologies harnesses the power of strategic IT partnerships to foster sustainable business success. We focus on creating long-term collaborations that align with your goals and support ongoing growth.
                         </p>
                     </div>
@@ -482,28 +467,48 @@
                             <a href="/">Home</a>
                             <a href="/services">Services</a>
                             <a href="/hessapay">HessaPay</a>
-                            <a href="/odoo">Odoo Apps</a>
                             <a href="/soor_website_homepage/static/src/pdf/Digital-Profile.pdf" target="_blank" rel="noopener noreferrer">Digital Profile</a>
                         </div>
                         <div class="soor-contact-footer-col">
                             <h4>Company</h4>
-                            <a href="/#about">About Us</a>
-                            <a href="/contactus">Contact Us</a>
-                            <a href="/odoo">Odoo</a>
                             <a href="/blogs">Blog</a>
-                            <a href="#">Support</a>
+                            <a href="/about">About Us</a>
+                            <a href="/contactus">Contact Us</a>
                         </div>
                         <div class="soor-contact-footer-col soor-contact-footer-loc">
                             <h4>Location</h4>
                             <div class="soor-contact-kuwait-row">
-                                <span class="soor-contact-flag-kw" title="Kuwait"/>
-                                <span>Kuwait HQ:</span>
+                                <svg class="soor-contact-flag-kw-svg" width="28" height="18" viewBox="0 0 30 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="30" height="20" fill="#007a3d"/>
+                                    <rect y="6.667" width="30" height="6.666" fill="#ffffff"/>
+                                    <rect y="13.333" width="30" height="6.667" fill="#ce1126"/>
+                                    <polygon points="0,0 0,20 10,10" fill="#000000"/>
+                                </svg>
+                                <span class="soor-contact-kuwait-label">Kuwait HQ:</span>
                             </div>
-                            <p>Fahad Alsalem St, Momentum Group, Kuwait City, Kuwait</p>
+                            <p class="soor-contact-footer-address">
+                                Fahad Alsalem St,<br/>
+                                Momentum Group, Kuwait<br/>
+                                City, Kuwait
+                            </p>
                             <div class="soor-contact-social">
-                                <a href="#" class="soor-contact-social-btn" aria-label="YouTube"><i class="fa fa-youtube-play"/></a>
-                                <a href="#" class="soor-contact-social-btn" aria-label="Instagram"><i class="fa fa-instagram"/></a>
-                                <a href="#" class="soor-contact-social-btn" aria-label="LinkedIn"><i class="fa fa-linkedin"/></a>
+                                <a href="https://www.youtube.com/@soortechnologies7880" class="soor-contact-social-btn" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                        <path fill="currentColor" d="M21.6 7.2c-.2-1-1-1.8-2-2C17.5 4.8 12 4.8 12 4.8s-5.5 0-7.6.4c-1 .2-1.8 1-2 2C2 9.3 2 12 2 12s0 2.7.4 4.8c.2 1 1 1.8 2 2 2.1.4 7.6.4 7.6.4s5.5 0 7.6-.4c1-.2 1.8-1 2-2 .4-2.1.4-4.8.4-4.8s0-2.7-.4-4.8zM10 15.5v-7l6 3.5-6 3.5z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.instagram.com/soor_technologies/" class="soor-contact-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                        <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.75"/>
+                                        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.75"/>
+                                        <circle cx="17.5" cy="6.5" r="1.25" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                                <a href="https://x.com/soortechnologi1" class="soor-contact-social-btn" target="_blank" rel="noopener noreferrer" aria-label="X">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                        <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>

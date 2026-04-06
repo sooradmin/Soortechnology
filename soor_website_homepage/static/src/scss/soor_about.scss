@@ -301,11 +301,48 @@
 .soor-aucard__body {
     position: relative;
     min-height: 160px;
-    background: #161616;
+    background-color: #111216;
+    background-image:
+        radial-gradient(ellipse 130% 110% at 0% 100%, rgba(42, 108, 198, 0.52) 0%, transparent 55%),
+        radial-gradient(ellipse 95% 85% at 8% 96%, rgba(30, 99, 175, 0.42) 0%, transparent 50%),
+        radial-gradient(ellipse 70% 60% at 22% 100%, rgba(100, 170, 255, 0.18) 0%, transparent 45%),
+        linear-gradient(
+            152deg,
+            #13151a 0%,
+            #0e1014 38%,
+            #161616 72%,
+            #12141a 100%
+        );
     border-radius: 16px;
     overflow: hidden;
     padding: 32px;
     box-sizing: border-box;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: -65%;
+        pointer-events: none;
+        opacity: 0.24;
+        z-index: 1;
+        background-image:
+            repeating-linear-gradient(
+                -18deg,
+                transparent 0,
+                transparent 34px,
+                rgba(200, 225, 255, 0.16) 34px,
+                rgba(200, 225, 255, 0.16) 35px
+            ),
+            repeating-linear-gradient(
+                72deg,
+                transparent 0,
+                transparent 42px,
+                rgba(180, 210, 255, 0.1) 42px,
+                rgba(180, 210, 255, 0.1) 43px
+            );
+        transform: perspective(520px) rotateX(10deg) rotate(-88deg);
+        transform-origin: 72% 48%;
+    }
 
     p {
         position: relative;
@@ -319,16 +356,18 @@
 
 .soor-aucard__glow {
     position: absolute;
-    width: 169px;
-    height: 169px;
-    left: -62px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #1E63AF;
+    width: 240px;
+    height: 240px;
+    left: -72px;
+    bottom: -48px;
+    top: auto;
+    transform: none;
+    background: radial-gradient(circle at 35% 35%, #4d9fff 0%, #1e63af 45%, #153a6b 100%);
     border-radius: 50%;
-    filter: blur(84px);
+    filter: blur(88px);
+    opacity: 0.62;
     pointer-events: none;
-    z-index: 1;
+    z-index: 0;
 }
 
 // ——— KPI Card ———
