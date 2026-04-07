@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "SOOR Website",
+    "name": "SOOR Website Homepage",
     "version": "16.0.1.0.0",
-    "summary": "Custom website design for SOOR website",
+    "summary": "Custom homepage design for SOOR website",
     "category": "Website",
-    "author": "Qasim Ali",
-    "website":"kashiawan0042@gmail.com(+923144171940)",
+    "author": "Custom",
     "license": "LGPL-3",
     "depends": ["website", "website_crm"],
     "data": [

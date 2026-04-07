@@ -1,48 +1,120 @@
 /**
- * Google Website Translator: compact bottom-left trigger + flyout (AR/EN).
- * Cookie googtrans + reload. Dropdown closes on outside click / Escape.
+ * Google Website Translator: compact trigger + flyout (AR/EN).
+ * Resets all goog* translation cookies/storage; optional Odoo /ar/ URL strip for English.
  */
 (function () {
     "use strict";
 
-    const COOKIE = "googtrans";
-    const SOURCE_LANG = "en";
+    var COOKIE = "googtrans";
+    var SOURCE_LANG = "en";
 
     function getCookie(name) {
-        const m = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([.$?*|{}()[\]\\/+^])/g, "\\$1") + "=([^;]*)"));
+        var m = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([.$?*|{}()[\]\\/+^])/g, "\\$1") + "=([^;]*)"));
         return m ? decodeURIComponent(m[1]) : "";
     }
 
     function getActiveTargetLang() {
-        const v = getCookie(COOKIE);
-        if (!v || v === "/en/en") {
+        var v = getCookie(COOKIE);
+        if (!v || v === "/en/en" || v === "/auto/en") {
             return SOURCE_LANG;
         }
-        const parts = v.split("/").filter(Boolean);
-        const target = parts[parts.length - 1];
+        var parts = v.split("/").filter(Boolean);
+        if (parts.length < 2) {
+            return SOURCE_LANG;
+        }
+        var target = parts[parts.length - 1];
         return target === "ar" ? "ar" : SOURCE_LANG;
     }
 
-    function clearGoogTransCookies() {
-        const host = window.location.hostname;
-        const expires = "expires=Thu, 01 Jan 1970 00:00:01 GMT";
-        const pairs = [
-            COOKIE + "=;" + expires + ";path=/",
-            COOKIE + "=;" + expires + ";path=/;domain=" + host,
-            COOKIE + "=;" + expires + ";path=/;domain=." + host,
-        ];
-        pairs.forEach(function (c) {
-            document.cookie = c;
-        });
+    /** Remove googtrans and any cookie whose name starts with goog (Translate sets several). */
+    function clearGoogleTranslateCookies() {
+        var host = window.location.hostname;
+        var expire = "expires=Thu, 01 Jan 1970 00:00:01 GMT";
+        var paths = ["/"];
+        var domains = ["", host, "." + host];
+
+        function kill(name, value) {
+            paths.forEach(function (path) {
+                domains.forEach(function (dom) {
+                    var c = name + "=" + (value || "") + ";" + expire + ";path=" + path;
+                    if (dom) {
+                        c += ";domain=" + dom;
+                    }
+                    document.cookie = c;
+                });
+            });
+        }
+
+        kill(COOKIE, "");
+        try {
+            document.cookie.split(";").forEach(function (chunk) {
+                var eq = chunk.indexOf("=");
+                var name = (eq >= 0 ? chunk.slice(0, eq) : chunk).replace(/^\s+/, "");
+                if (name.indexOf("goog") === 0) {
+                    kill(name, "");
+                }
+            });
+        } catch (e) {
+            /* ignore */
+        }
+    }
+
+    function clearTranslateStorage() {
+        try {
+            var i;
+            var k;
+            for (i = sessionStorage.length - 1; i >= 0; i--) {
+                k = sessionStorage.key(i);
+                if (k && (k.indexOf("goog") >= 0 || k.indexOf("translate") >= 0)) {
+                    sessionStorage.removeItem(k);
+                }
+            }
+            for (i = localStorage.length - 1; i >= 0; i--) {
+                k = localStorage.key(i);
+                if (k && (k.indexOf("goog") >= 0 || k.indexOf("translate") >= 0)) {
+                    localStorage.removeItem(k);
+                }
+            }
+        } catch (e) {
+            /* ignore */
+        }
+    }
+
+    /**
+     * If Odoo serves Arabic under /ar/... or /ar_SY/..., return URL without the lang prefix so English loads.
+     */
+    function urlForEnglishSamePage() {
+        var path = window.location.pathname;
+        var search = window.location.search || "";
+        if (!/^\/ar(?:_[A-Za-z0-9]+)?(?=\/|$)/.test(path)) {
+            return null;
+        }
+        var rest = path.replace(/^\/ar(?:_[A-Za-z0-9]+)?/, "");
+        if (rest === "") {
+            rest = "/";
+        }
+        return window.location.origin + rest + search;
+    }
+
+    function goToEnglish() {
+        clearGoogleTranslateCookies();
+        clearTranslateStorage();
+        var stripped = urlForEnglishSamePage();
+        if (stripped) {
+            window.location.replace(stripped);
+            return;
+        }
+        var href = window.location.pathname + window.location.search;
+        window.location.replace(href);
     }
 
     function setTargetLang(lang) {
         if (lang === "ar") {
-            document.cookie = COOKIE + "=/en/ar;path=/;max-age=31536000";
-        } else {
-            clearGoogTransCookies();
+            document.cookie = COOKIE + "=/en/ar;path=/;max-age=31536000;SameSite=Lax";
+            window.location.reload();
+            return;
         }
-        window.location.reload();
+        goToEnglish();
     }
 
     function setOpen(root, menu, trigger, open) {
@@ -56,7 +128,7 @@
     }
 
     function syncActiveState(root) {
-        const active = getActiveTargetLang();
+        var active = getActiveTargetLang();
         root.classList.remove("soor-gtranslate--active-en", "soor-gtranslate--active-ar");
         root.classList.add(active === "ar" ? "soor-gtranslate--active-ar" : "soor-gtranslate--active-en");
 
