@@ -1,6 +1,7 @@
 /**
- * Google Website Translator: compact trigger + flyout (AR/EN).
- * Resets all goog* translation cookies/storage; optional Odoo /ar/ URL strip for English.
+ * Google Website Translator (AR/EN).
+ * Loads translate.google.com ONLY when googtrans asks for Arabic — avoids auto re-translation
+ * on English pages (common on HTTPS staging when the widget re-inits).
  */
 (function () {
     "use strict";
@@ -8,50 +9,69 @@
     var COOKIE = "googtrans";
     var SOURCE_LANG = "en";
 
+    function isHttps() {
+        return window.location.protocol === "https:";
+    }
+
+    function cookieSecureSuffix() {
+        return isHttps() ? ";Secure" : "";
+    }
+
     function getCookie(name) {
         var m = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([.$?*|{}()[\]\\/+^])/g, "\\$1") + "=([^;]*)"));
         return m ? decodeURIComponent(m[1]) : "";
     }
 
-    function getActiveTargetLang() {
+    /** True when cookie says “show this page translated to Arabic”. */
+    function wantsArabicFromCookie() {
         var v = getCookie(COOKIE);
         if (!v || v === "/en/en" || v === "/auto/en") {
-            return SOURCE_LANG;
+            return false;
         }
         var parts = v.split("/").filter(Boolean);
         if (parts.length < 2) {
-            return SOURCE_LANG;
+            return false;
         }
-        var target = parts[parts.length - 1];
-        return target === "ar" ? "ar" : SOURCE_LANG;
+        return parts[parts.length - 1] === "ar";
     }
 
-    /** Remove googtrans and any cookie whose name starts with goog (Translate sets several). */
-    function clearGoogleTranslateCookies() {
-        var host = window.location.hostname;
+    function getActiveTargetLang() {
+        return wantsArabicFromCookie() ? "ar" : SOURCE_LANG;
+    }
+
+    /** Expire a cookie; must mirror flags used when it was set (esp. Secure on HTTPS). */
+    function killCookie(name, value) {
         var expire = "expires=Thu, 01 Jan 1970 00:00:01 GMT";
+        var maxAge0 = "max-age=0";
+        var host = window.location.hostname;
         var paths = ["/"];
         var domains = ["", host, "." + host];
+        var secure = cookieSecureSuffix();
 
-        function kill(name, value) {
-            paths.forEach(function (path) {
-                domains.forEach(function (dom) {
-                    var c = name + "=" + (value || "") + ";" + expire + ";path=" + path;
-                    if (dom) {
-                        c += ";domain=" + dom;
-                    }
-                    document.cookie = c;
-                });
-            });
+        function one(c) {
+            document.cookie = c + secure;
         }
 
-        kill(COOKIE, "");
+        paths.forEach(function (path) {
+            domains.forEach(function (dom) {
+                var base = name + "=" + (value || "") + ";path=" + path + ";" + expire + ";" + maxAge0;
+                if (dom) {
+                    one(base + ";domain=" + dom);
+                } else {
+                    one(base);
+                }
+            });
+        });
+    }
+
+    function clearGoogleTranslateCookies() {
+        killCookie(COOKIE, "");
         try {
             document.cookie.split(";").forEach(function (chunk) {
                 var eq = chunk.indexOf("=");
                 var name = (eq >= 0 ? chunk.slice(0, eq) : chunk).replace(/^\s+/, "");
                 if (name.indexOf("goog") === 0) {
-                    kill(name, "");
+                    killCookie(name, "");
                 }
             });
         } catch (e) {
@@ -80,9 +100,6 @@
         }
     }
 
-    /**
-     * If Odoo serves Arabic under /ar/... or /ar_SY/..., return URL without the lang prefix so English loads.
-     */
     function urlForEnglishSamePage() {
         var path = window.location.pathname;
         var search = window.location.search || "";
@@ -100,17 +117,16 @@
         clearGoogleTranslateCookies();
         clearTranslateStorage();
         var stripped = urlForEnglishSamePage();
-        if (stripped) {
-            window.location.replace(stripped);
-            return;
-        }
-        var href = window.location.pathname + window.location.search;
-        window.location.replace(href);
+        var target = stripped || window.location.pathname + window.location.search;
+        window.location.replace(target);
     }
 
     function setTargetLang(lang) {
         if (lang === "ar") {
-            document.cookie = COOKIE + "=/en/ar;path=/;max-age=31536000;SameSite=Lax";
+            document.cookie =
+                COOKIE +
+                "=/en/ar;path=/;max-age=31536000;SameSite=Lax" +
+                cookieSecureSuffix();
             window.location.reload();
             return;
         }
@@ -139,6 +155,9 @@
     }
 
     window.googleTranslateElementInit = function googleTranslateElementInit() {
+        if (!wantsArabicFromCookie()) {
+            return;
+        }
         var g = window.google;
         if (window._soorGtInited || !g || !g.translate) {
             return;
@@ -156,6 +175,9 @@
     };
 
     function loadScript() {
+        if (!wantsArabicFromCookie()) {
+            return;
+        }
         if (document.querySelector('script[src*="translate.google.com"]')) {
             return;
         }
