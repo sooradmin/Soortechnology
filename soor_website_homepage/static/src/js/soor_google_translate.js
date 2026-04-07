@@ -39,7 +39,12 @@
         return wantsArabicFromCookie() ? "ar" : SOURCE_LANG;
     }
 
-    /** Expire a cookie; must mirror flags used when it was set (esp. Secure on HTTPS). */
+    /** SameSite as used when setting googtrans for Arabic — deletion must match or some browsers keep the old cookie. */
+    function cookieSameSiteSuffix() {
+        return ";SameSite=Lax";
+    }
+
+    /** Expire a cookie; must mirror flags used when it was set (SameSite+Lax, Secure on HTTPS). */
     function killCookie(name, value) {
         var expire = "expires=Thu, 01 Jan 1970 00:00:01 GMT";
         var maxAge0 = "max-age=0";
@@ -47,9 +52,10 @@
         var paths = ["/"];
         var domains = ["", host, "." + host];
         var secure = cookieSecureSuffix();
+        var sameSite = cookieSameSiteSuffix();
 
         function one(c) {
-            document.cookie = c + secure;
+            document.cookie = c + sameSite + secure;
         }
 
         paths.forEach(function (path) {
@@ -113,19 +119,32 @@
         return window.location.origin + rest + search;
     }
 
+    /**
+     * Force "original English" for Google Translate: overwrite googtrans with /en/en (not only delete).
+     * Deleting alone often fails on HTTPS when attributes do not match; a stale /en/ar then reloads Arabic.
+     */
     function goToEnglish() {
-        clearGoogleTranslateCookies();
         clearTranslateStorage();
+        clearGoogleTranslateCookies();
+        document.cookie =
+            COOKIE +
+            "=/en/en;path=/;max-age=31536000" +
+            cookieSameSiteSuffix() +
+            cookieSecureSuffix();
         var stripped = urlForEnglishSamePage();
-        var target = stripped || window.location.pathname + window.location.search;
-        window.location.replace(target);
+        var pathAndSearch = stripped ? stripped.replace(/^https?:\/\/[^/]+/, "") : window.location.pathname + window.location.search;
+        var target = window.location.origin + pathAndSearch;
+        window.setTimeout(function () {
+            window.location.replace(target);
+        }, 0);
     }
 
     function setTargetLang(lang) {
         if (lang === "ar") {
             document.cookie =
                 COOKIE +
-                "=/en/ar;path=/;max-age=31536000;SameSite=Lax" +
+                "=/en/ar;path=/;max-age=31536000" +
+                cookieSameSiteSuffix() +
                 cookieSecureSuffix();
             window.location.reload();
             return;
