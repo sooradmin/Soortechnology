@@ -1,13 +1,15 @@
 /**
  * Google Website Translator (AR/EN).
- * Loads translate.google.com ONLY when googtrans asks for Arabic — avoids auto re-translation
- * on English pages (common on HTTPS staging when the widget re-inits).
+ * Loads translate.google.com only when the user chose Arabic in this browser (localStorage/sessionStorage)
+ * AND googtrans=/en/ar. Stale googtrans cookies alone must not auto-translate on every visit.
  */
 (function () {
     "use strict";
 
     var COOKIE = "googtrans";
     var SOURCE_LANG = "en";
+    /** Set only when the user clicks Arabic; without this we ignore googtrans=/en/ar on load. */
+    var LS_USER_OPTED_AR = "soor_gt_user_opted_ar";
 
     function isHttps() {
         return window.location.protocol === "https:";
@@ -35,8 +37,121 @@
         return parts[parts.length - 1] === "ar";
     }
 
-    function getActiveTargetLang() {
-        return wantsArabicFromCookie() ? "ar" : SOURCE_LANG;
+    function userOptedGoogleArabic() {
+        try {
+            if (window.localStorage.getItem(LS_USER_OPTED_AR) === "1") {
+                return true;
+            }
+        } catch (e) {
+            /* ignore */
+        }
+        try {
+            return window.sessionStorage.getItem(LS_USER_OPTED_AR) === "1";
+        } catch (e2) {
+            return false;
+        }
+    }
+
+    function setUserOptedGoogleArabic(yes) {
+        try {
+            if (yes) {
+                window.localStorage.setItem(LS_USER_OPTED_AR, "1");
+            } else {
+                window.localStorage.removeItem(LS_USER_OPTED_AR);
+            }
+        } catch (e) {
+            /* ignore */
+        }
+        try {
+            if (yes) {
+                window.sessionStorage.setItem(LS_USER_OPTED_AR, "1");
+            } else {
+                window.sessionStorage.removeItem(LS_USER_OPTED_AR);
+            }
+        } catch (e2) {
+            /* ignore */
+        }
+    }
+
+    /** Load Google script / apply machine translation only after explicit Arabic choice in this browser. */
+    function shouldLoadGoogleArabicTranslate() {
+        return wantsArabicFromCookie() && userOptedGoogleArabic();
+    }
+
+    /**
+     * Old googtrans=/en/ar (1y max-age) survives for months; without opt-in it must not trigger Arabic on open.
+     */
+    function stripStaleArabicCookieWithoutOptIn() {
+        if (!wantsArabicFromCookie()) {
+            return;
+        }
+        if (userOptedGoogleArabic()) {
+            return;
+        }
+        clearGoogleTranslateCookies();
+        document.cookie =
+            COOKIE +
+            "=/en/en;path=/;max-age=31536000" +
+            cookieSameSiteSuffix() +
+            cookieSecureSuffix();
+    }
+
+    function getLangPrefixesFromRoot(root) {
+        var el = root || document.getElementById("soor-gtranslate-root");
+        if (!el) return [];
+        var raw = el.getAttribute("data-soor-lang-url-codes") || "";
+        return raw.split(",").map(function (s) { return s.trim(); }).filter(Boolean);
+    }
+
+    function stripOdooLangPrefix(pathname, prefixes) {
+        if (!prefixes || !prefixes.length) return pathname;
+        if (pathname === "/") return pathname;
+        var parts = pathname.split("/").filter(Boolean);
+        if (!parts.length) return pathname;
+        if (prefixes.indexOf(parts[0]) === -1) return pathname;
+        parts.shift();
+        return parts.length ? "/" + parts.join("/") : "/";
+    }
+
+    /** Google marks translated pages on html (and sometimes body). */
+    function isGoogleTranslatedPage() {
+        try {
+            var html = document.documentElement;
+            var body = document.body;
+            if (html.classList.contains("translated-rtl") || html.classList.contains("translated-ltr")) {
+                return true;
+            }
+            if (body && (body.classList.contains("translated-rtl") || body.classList.contains("translated-ltr"))) {
+                return true;
+            }
+        } catch (e) {
+            /* ignore */
+        }
+        return false;
+    }
+
+    function isOdooNonDefaultLangPath(pathname, root) {
+        var prefixes = getLangPrefixesFromRoot(root);
+        return stripOdooLangPrefix(pathname, prefixes) !== pathname;
+    }
+
+    /** True if the UI should offer “switch to English” (cookie, Google DOM, or Odoo /ar/… URL). */
+    function needsEnglishSwitch(root) {
+        if (wantsArabicFromCookie()) return true;
+        if (isGoogleTranslatedPage()) return true;
+        return isOdooNonDefaultLangPath(window.location.pathname, root);
+    }
+
+    function getActiveTargetLang(root) {
+        if (wantsArabicFromCookie() && userOptedGoogleArabic()) return "ar";
+        var el = root || document.getElementById("soor-gtranslate-root");
+        if (!el) return SOURCE_LANG;
+        var defaultCode = el.getAttribute("data-soor-default-lang-url-code") || "";
+        var urlLang = el.getAttribute("data-soor-url-lang") || "";
+        if (urlLang && defaultCode && urlLang !== defaultCode && urlLang === "ar") {
+            return "ar";
+        }
+        return SOURCE_LANG;
     }
 
     /** SameSite as used when setting googtrans for Arabic — deletion must match or some browsers keep the old cookie. */
@@ -106,9 +221,14 @@
         }
     }
 
-    function urlForEnglishSamePage() {
+    function urlForEnglishSamePage(root) {
         var path = window.location.pathname;
         var search = window.location.search || "";
+        var prefixes = getLangPrefixesFromRoot(root);
+        var strippedOdoo = stripOdooLangPrefix(path, prefixes);
+        if (strippedOdoo !== path) {
+            return window.location.origin + strippedOdoo + search;
+        }
         if (!/^\/ar(?:_[A-Za-z0-9]+)?(?=\/|$)/.test(path)) {
             return null;
         }
@@ -124,6 +244,7 @@
      * Deleting alone often fails on HTTPS when attributes do not match; a stale /en/ar then reloads Arabic.
      */
     function goToEnglish() {
+        setUserOptedGoogleArabic(false);
         clearTranslateStorage();
         clearGoogleTranslateCookies();
         document.cookie =
@@ -131,7 +252,8 @@
             "=/en/en;path=/;max-age=31536000" +
             cookieSameSiteSuffix() +
             cookieSecureSuffix();
-        var stripped = urlForEnglishSamePage();
+        var root = document.getElementById("soor-gtranslate-root");
+        var stripped = urlForEnglishSamePage(root);
         var pathAndSearch = stripped ? stripped.replace(/^https?:\/\/[^/]+/, "") : window.location.pathname + window.location.search;
         var target = window.location.origin + pathAndSearch;
         window.setTimeout(function () {
@@ -141,6 +263,7 @@
 
     function setTargetLang(lang) {
         if (lang === "ar") {
+            setUserOptedGoogleArabic(true);
             document.cookie =
                 COOKIE +
                 "=/en/ar;path=/;max-age=31536000" +
@@ -163,7 +286,7 @@
     }
 
     function syncActiveState(root) {
-        var active = getActiveTargetLang();
+        var active = getActiveTargetLang(root);
         root.classList.remove("soor-gtranslate--active-en", "soor-gtranslate--active-ar");
         root.classList.add(active === "ar" ? "soor-gtranslate--active-ar" : "soor-gtranslate--active-en");
 
@@ -174,7 +297,7 @@
     }
 
     window.googleTranslateElementInit = function googleTranslateElementInit() {
-        if (!wantsArabicFromCookie()) {
+        if (!shouldLoadGoogleArabicTranslate()) {
             return;
         }
         var g = window.google;
@@ -194,7 +317,7 @@
     };
 
     function loadScript() {
-        if (!wantsArabicFromCookie()) {
+        if (!shouldLoadGoogleArabicTranslate()) {
             return;
         }
         if (document.querySelector('script[src*="translate.google.com"]')) {
@@ -214,6 +337,7 @@
             return;
         }
 
+        stripStaleArabicCookieWithoutOptIn();
         syncActiveState(root);
         loadScript();
 
@@ -229,10 +353,22 @@
                 ev.stopPropagation();
                 var lang = btn.getAttribute("data-soor-lang");
                 setOpen(root, menu, trigger, false);
-                if (!lang || lang === getActiveTargetLang()) {
+                if (!lang) {
                     return;
                 }
-                setTargetLang(lang);
+                if (lang === "en") {
+                    if (!needsEnglishSwitch(root)) {
+                        return;
+                    }
+                    goToEnglish();
+                    return;
+                }
+                if (lang === "ar") {
+                    if (shouldLoadGoogleArabicTranslate() && isGoogleTranslatedPage()) {
+                        return;
+                    }
+                    setTargetLang("ar");
+                }
             });
         });
 

@@ -4,7 +4,10 @@
     <template id="soor_google_translate_widget" inherit_id="website.layout" name="SOOR Google Translate switcher">
         <xpath expr="//div[@id='wrapwrap']" position="after">
             <t t-if="website and request.is_frontend and not editable">
-                <div id="soor-gtranslate-root" class="soor-gtranslate soor-gtranslate--active-en" data-soor-gtranslate-root="1">
+                <div id="soor-gtranslate-root" class="soor-gtranslate soor-gtranslate--active-en" data-soor-gtranslate-root="1"
+                    t-att-data-soor-lang-url-codes="website and website.language_ids and ','.join(website.language_ids.mapped('url_code')) or ''"
+                    t-att-data-soor-default-lang-url-code="website and website.default_lang_id and website.default_lang_id.url_code or ''"
+                    t-att-data-soor-url-lang="website and request.lang and request.lang.url_code or ''">
                     <div id="soor-gtranslate-menu" class="soor-gtranslate__dropdown" role="menu" aria-label="Languages" hidden="hidden">
                         <button type="button" class="soor-gtranslate__opt" data-soor-lang="en" role="menuitem">
                             <span class="soor-gtranslate__flag-wrap">
