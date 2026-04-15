@@ -88,7 +88,7 @@
                                         <a t-att-href="post.get('url') or '#'" class="soor-blogs-card__link">
                                             <div class="soor-blogs-card__media">
                                                 <img
-                                                    t-att-src="post['image']"
+                                                    t-att-src="'/soor_website_homepage/static/src/img/blog.png'"
                                                     alt=""
                                                     width="354"
                                                     height="212"
@@ -180,7 +180,7 @@
                                 </header>
                                 <div class="soor-blog-post-cover">
                                     <img
-                                        t-att-src="post['cover_image']"
+                                        t-att-src="'/soor_website_homepage/static/src/img/blog-page.png'"
                                         alt=""
                                         width="1078"
                                         height="542"
