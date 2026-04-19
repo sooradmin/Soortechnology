@@ -747,6 +747,31 @@ body:has(#wrap.soor-page .soor-mnav__chk:checked) {
     }
 }
 
+// Vision row (Succeed / Transform / Accelerate): RTL — text from the right; arrow badge swaps to top-left and flips
+html.translated-rtl .soor-vision-card,
+body.translated-rtl .soor-vision-card,
+html[dir="rtl"] .soor-vision-card {
+    direction: rtl;
+    text-align: start;
+
+    h3,
+    p {
+        text-align: start;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .soor-vision-card__corner {
+        right: auto;
+        left: 16px;
+        border-radius: 2px 2px 2px 16px;
+    }
+
+    .soor-vision-card__arrow {
+        transform: rotate(47deg) scaleX(-1);
+    }
+}
+
 .soor-services {
     background: #fff;
     padding: 120px #{"clamp(16px, 7.9vw, 114px)"};
@@ -907,6 +932,25 @@ body:has(#wrap.soor-page .soor-mnav__chk:checked) {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 400;
         line-height: 27px;
+    }
+}
+
+// "What Do We Do with Odoo?" service cards: RTL text + layout when Arabic (Google adds translated-rtl; Odoo may set dir=rtl)
+html.translated-rtl .soor-service-card--figma,
+body.translated-rtl .soor-service-card--figma,
+html[dir="rtl"] .soor-service-card--figma {
+    direction: rtl;
+    text-align: start;
+
+    .soor-service-card__body {
+        align-items: flex-start;
+    }
+
+    h3,
+    p {
+        text-align: start;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 

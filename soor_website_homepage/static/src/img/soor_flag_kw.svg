@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" width="60" height="40" aria-hidden="true">
+  <!-- Kuwait: green / white / red horizontal bands + black hoist trapezoid -->
+  <rect width="60" height="13.333333" fill="#007A3D"/>
+  <rect y="13.333333" width="60" height="13.333334" fill="#fff"/>
+  <rect y="26.666667" width="60" height="13.333333" fill="#CE1126"/>
+  <polygon points="0,0 11,0 17,40 0,40" fill="#000"/>
+</svg>
