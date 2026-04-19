@@ -18,7 +18,7 @@
                         </button>
                         <button type="button" class="soor-gtranslate__opt" data-soor-lang="ar" role="menuitem">
                             <span class="soor-gtranslate__flag-wrap">
-                                <img src="/soor_website_homepage/static/src/img/soor_flag_sa.svg" alt="" class="soor-gtranslate__flag-img" width="22" height="15" loading="lazy"/>
+                                <img src="/soor_website_homepage/static/src/img/soor_flag_kw.svg" alt="" class="soor-gtranslate__flag-img" width="22" height="15" loading="lazy"/>
                             </span>
                             <span class="soor-gtranslate__label soor-gtranslate__label--ar-code">AR</span>
                             <span class="soor-gtranslate__chev soor-gtranslate__chev--down" aria-hidden="true">
@@ -31,7 +31,7 @@
                     <button type="button" class="soor-gtranslate__trigger" aria-expanded="false" aria-haspopup="true" aria-controls="soor-gtranslate-menu" id="soor-gtranslate-trigger">
                         <span class="soor-gtranslate__trigger-tile">
                             <img src="/soor_website_homepage/static/src/img/soor_flag_gb.svg" alt="" class="soor-gtranslate__trigger-img soor-gtranslate__trigger-img--gb" width="22" height="15" loading="eager"/>
-                            <img src="/soor_website_homepage/static/src/img/soor_flag_sa.svg" alt="" class="soor-gtranslate__trigger-img soor-gtranslate__trigger-img--sa" width="22" height="15" loading="eager"/>
+                            <img src="/soor_website_homepage/static/src/img/soor_flag_kw.svg" alt="" class="soor-gtranslate__trigger-img soor-gtranslate__trigger-img--kw" width="22" height="15" loading="eager"/>
                         </span>
                         <span class="soor-gtranslate__trigger-code soor-gtranslate__trigger-code--en">EN</span>
                         <span class="soor-gtranslate__trigger-code soor-gtranslate__trigger-code--ar">AR</span>
