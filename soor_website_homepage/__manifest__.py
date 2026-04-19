@@ -5,7 +5,7 @@
     "summary": "Custom homepage design for SOOR website",
     "category": "Website",
     "author": "QasimALi",
-    "webiste":"kashiawan0042@gmail.com(+92314171940)"
+    "webiste":"kashiawan0042@gmail.com(+92314171940)" 
     "license": "LGPL-3",
     "depends": ["website", "website_crm"],
     "data": [
