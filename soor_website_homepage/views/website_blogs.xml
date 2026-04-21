@@ -115,20 +115,6 @@
                                     </article>
                                 </t>
                             </div>
-
-                            <nav class="soor-blogs-pagination" aria-label="Blog pagination">
-                                <a href="#" class="soor-blogs-pagebtn soor-blogs-pagebtn--prev" aria-label="Previous page">
-                                    <span class="soor-blogs-pagebtn__chev" aria-hidden="true"/>
-                                </a>
-                                <a href="#" class="soor-blogs-pagebtn soor-blogs-pagebtn--num is-active">1</a>
-                                <span class="soor-blogs-pagination__sep" aria-hidden="true"></span>
-                                <a href="#" class="soor-blogs-pagebtn soor-blogs-pagebtn--num">2</a>
-                                <a href="#" class="soor-blogs-pagebtn soor-blogs-pagebtn--num">3</a>
-                                <a href="#" class="soor-blogs-pagebtn soor-blogs-pagebtn--num">4</a>
-                                <a href="#" class="soor-blogs-pagebtn soor-blogs-pagebtn--next" aria-label="Next page">
-                                    <span class="soor-blogs-pagebtn__chev" aria-hidden="true"/>
-                                </a>
-                            </nav>
                         </div>
                     </div>
                 </section>

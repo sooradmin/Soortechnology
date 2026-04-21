@@ -644,15 +644,29 @@
     font-weight: 600;
 }
 
+// Arabic / RTL: flag on the reading-start side (right), label to the left
+html.translated-rtl .soor-contact-kuwait-row,
+body.translated-rtl .soor-contact-kuwait-row,
+html[dir="rtl"] .soor-contact-kuwait-row {
+    direction: rtl;
+}
+
 .soor-contact-kuwait-label {
     color: #fff;
 }
 
-.soor-contact-flag-kw-svg {
+// Kuwait flag: same asset as language switcher — rounded tile + dark rim (matches footer reference)
+.soor-contact-flag-kw-img {
     flex-shrink: 0;
     display: block;
-    border-radius: 2px;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18);
+    width: 30px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.14),
+        0 2px 5px rgba(0, 0, 0, 0.35);
 }
 
 .soor-contact-footer-address {

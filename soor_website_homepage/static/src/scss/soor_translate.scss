@@ -208,8 +208,22 @@ body > .skiptranslate {
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    margin-left: 2px;
+    margin-inline-start: 2px;
     color: #6b7280;
+}
+
+// Arabic option + collapsed trigger (when AR active): RTL — flag on reading-start side
+html.translated-rtl .soor-gtranslate__opt[data-soor-lang="ar"],
+body.translated-rtl .soor-gtranslate__opt[data-soor-lang="ar"],
+html[dir="rtl"] .soor-gtranslate__opt[data-soor-lang="ar"] {
+    direction: rtl;
+    text-align: start;
+}
+
+html.translated-rtl .soor-gtranslate--active-ar .soor-gtranslate__trigger,
+body.translated-rtl .soor-gtranslate--active-ar .soor-gtranslate__trigger,
+html[dir="rtl"] .soor-gtranslate--active-ar .soor-gtranslate__trigger {
+    direction: rtl;
 }
 
 .soor-gtranslate__trigger-chev-svg {

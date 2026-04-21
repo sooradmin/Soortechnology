@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Google Translate: SVG flags (desktop-safe) + trigger matches mobile layout. -->
+    <!-- Google Translate: GB SVG + Kuwait raster (flag.png); trigger matches mobile layout. -->
     <template id="soor_google_translate_widget" inherit_id="website.layout" name="SOOR Google Translate switcher">
         <xpath expr="//div[@id='wrapwrap']" position="after">
             <t t-if="website and request.is_frontend and not editable">
@@ -18,7 +18,7 @@
                         </button>
                         <button type="button" class="soor-gtranslate__opt" data-soor-lang="ar" role="menuitem">
                             <span class="soor-gtranslate__flag-wrap">
-                                <img src="/soor_website_homepage/static/src/img/soor_flag_kw.svg" alt="" class="soor-gtranslate__flag-img" width="22" height="15" loading="lazy"/>
+                                <img src="/soor_website_homepage/static/src/img/flag.png" alt="" class="soor-gtranslate__flag-img" width="22" height="15" loading="lazy"/>
                             </span>
                             <span class="soor-gtranslate__label soor-gtranslate__label--ar-code">AR</span>
                             <span class="soor-gtranslate__chev soor-gtranslate__chev--down" aria-hidden="true">
@@ -31,7 +31,7 @@
                     <button type="button" class="soor-gtranslate__trigger" aria-expanded="false" aria-haspopup="true" aria-controls="soor-gtranslate-menu" id="soor-gtranslate-trigger">
                         <span class="soor-gtranslate__trigger-tile">
                             <img src="/soor_website_homepage/static/src/img/soor_flag_gb.svg" alt="" class="soor-gtranslate__trigger-img soor-gtranslate__trigger-img--gb" width="22" height="15" loading="eager"/>
-                            <img src="/soor_website_homepage/static/src/img/soor_flag_kw.svg" alt="" class="soor-gtranslate__trigger-img soor-gtranslate__trigger-img--kw" width="22" height="15" loading="eager"/>
+                            <img src="/soor_website_homepage/static/src/img/flag.png" alt="" class="soor-gtranslate__trigger-img soor-gtranslate__trigger-img--kw" width="22" height="15" loading="eager"/>
                         </span>
                         <span class="soor-gtranslate__trigger-code soor-gtranslate__trigger-code--en">EN</span>
                         <span class="soor-gtranslate__trigger-code soor-gtranslate__trigger-code--ar">AR</span>
