@@ -20,7 +20,10 @@
                             <span class="soor-gtranslate__flag-wrap">
                                 <img src="/soor_website_homepage/static/src/img/soor_flag_kw.svg" alt="" class="soor-gtranslate__flag-img" width="22" height="15" loading="lazy"/>
                             </span>
-                            <span class="soor-gtranslate__label soor-gtranslate__label--ar-code">AR</span>
+                            <span class="soor-gtranslate__label soor-gtranslate__label--ar-code notranslate">
+                                <span class="soor-ar-text-en">AR</span>
+                                <span class="soor-ar-text-ar">عربي</span>
+                            </span>
                             <span class="soor-gtranslate__chev soor-gtranslate__chev--down" aria-hidden="true">
                                 <svg class="soor-gtranslate__chev-svg" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 1.5L5 5L9 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -34,7 +37,10 @@
                             <img src="/soor_website_homepage/static/src/img/soor_flag_kw.svg" alt="" class="soor-gtranslate__trigger-img soor-gtranslate__trigger-img--kw" width="22" height="15" loading="eager"/>
                         </span>
                         <span class="soor-gtranslate__trigger-code soor-gtranslate__trigger-code--en">EN</span>
-                        <span class="soor-gtranslate__trigger-code soor-gtranslate__trigger-code--ar">AR</span>
+                        <span class="soor-gtranslate__trigger-code soor-gtranslate__trigger-code--ar notranslate">
+                            <span class="soor-ar-text-en">AR</span>
+                            <span class="soor-ar-text-ar">عربي</span>
+                        </span>
                         <span class="soor-gtranslate__trigger-chev" aria-hidden="true">
                             <svg class="soor-gtranslate__trigger-chev-svg" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 4.5L5 1L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

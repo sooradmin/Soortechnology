@@ -243,3 +243,10 @@ body > .skiptranslate {
         height: 30px;
     }
 }
+
+.soor-gtranslate--active-en .soor-ar-text-ar {
+    display: none;
+}
+.soor-gtranslate--active-ar .soor-ar-text-en {
+    display: none;
+}
