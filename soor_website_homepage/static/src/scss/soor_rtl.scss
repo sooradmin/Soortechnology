@@ -1,85 +1,110 @@
 // ================================================================
-// SOOR Website — RTL (Arabic) Layout Overrides
+// SOOR Website — Comprehensive RTL (Arabic) Layout Overrides
+// Covers: Homepage, About, Services, Contact, Blogs, HessaPay, Odoo
 //
-// Activated via two selectors (both are covered):
-//   html[dir="rtl"]      ← set by soor_google_translate.js early,
-//                          before Google Translate loads (no FOUC)
-//   html.translated-rtl  ← added by Google Translate after translation
+// Selectors used:
+//   html[dir="rtl"]      — set by soor_google_translate.js immediately
+//                          on page load (no flash of LTR layout)
+//   html.translated-rtl  — added by Google Translate after translation
 //
-// Strategy:
-//   • Setting dir="rtl" on <html> already handles:
-//       – text flow (RTL in block elements)
-//       – flex-direction: row reversal
-//       – logical properties (margin-inline-*, padding-inline-*)
-//       – text-align: start / end
-//   • This file only overrides things that used EXPLICIT physical
-//     values (text-align: left, direction: ltr, left:, border-left, etc.)
-//     and therefore are NOT auto-flipped by dir="rtl".
+// Rule: Only override EXPLICIT physical properties (text-align: left,
+// direction: ltr, left:, padding-left, border-left, etc.).
+// Properties using logical values or that auto-flip with dir="rtl"
+// (flex-direction: row reverses, text-align: start/end, margin-inline)
+// do NOT need overrides here.
 // ================================================================
 
-// ----------------------------------------------------------------
-// 0. Base: letter-spacing reset (Arabic typography has no tracking)
-// ----------------------------------------------------------------
-html[dir="rtl"],
-html.translated-rtl {
-    h1, h2, h3, h4, h5, h6 {
-        letter-spacing: 0 !important;
-    }
+// Helper: combine both RTL selectors to avoid repetition
+// (We write them out explicitly since SCSS @mixin with & won't work at top level)
+
+// ================================================================
+// 0. GLOBAL — letter-spacing reset (Arabic typography needs no tracking)
+// ================================================================
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6,
+html.translated-rtl h1,
+html.translated-rtl h2,
+html.translated-rtl h3,
+html.translated-rtl h4,
+html.translated-rtl h5,
+html.translated-rtl h6 {
+    letter-spacing: 0 !important;
 }
 
-// ----------------------------------------------------------------
-// 1. HOMEPAGE — hero stat cards  (.soor-stat)
-//    Source: soor_homepage.scss → align-items: flex-start + text-align: left
-// ----------------------------------------------------------------
+// ================================================================
+// 1. HOMEPAGE — Hero stat cards
+//    Source: soor_homepage.scss → text-align: left (line 238)
+// ================================================================
 html[dir="rtl"] .soor-stat,
 html.translated-rtl .soor-stat {
     text-align: right;
-    // align-items: flex-start is correct in RTL — "start" = right side
 }
 
-// ----------------------------------------------------------------
-// 2. HOMEPAGE — white-panel intro block
+// ================================================================
+// 2. HOMEPAGE — White-panel intro
 //    Source: soor_homepage.scss → text-align: left (line 339)
-// ----------------------------------------------------------------
+// ================================================================
 html[dir="rtl"] .soor-home-main-card .soor-home-intro,
 html.translated-rtl .soor-home-main-card .soor-home-intro {
     text-align: right;
 }
 
-// ----------------------------------------------------------------
-// 3. HOMEPAGE — CTA button arrow icons (→ should become ←)
-// ----------------------------------------------------------------
+// ================================================================
+// 3. HOMEPAGE — CTA arrow icons: flip → to ←
+// ================================================================
 html[dir="rtl"] .soor-nav-contact-cta__arrow svg,
 html.translated-rtl .soor-nav-contact-cta__arrow svg,
 html[dir="rtl"] .soor-home-intro__cta-arrow svg,
-html.translated-rtl .soor-home-intro__cta-arrow svg {
+html.translated-rtl .soor-home-intro__cta-arrow svg,
+html[dir="rtl"] .soor-contact-submit-arrow svg,
+html.translated-rtl .soor-contact-submit-arrow svg,
+html[dir="rtl"] .soor-services-cta svg,
+html.translated-rtl .soor-services-cta svg {
     transform: scaleX(-1);
 }
 
-// ----------------------------------------------------------------
-// 4. HOMEPAGE — about section split grid
-//    Source: soor_homepage.scss → direction: ltr (line 433) — must override
-//    With direction: rtl, grid-column:1 = rightmost slot (image on right)
-//    and grid-column:2 = leftmost slot (copy on left). Correct for AR.
-// ----------------------------------------------------------------
+// ================================================================
+// 4. HOMEPAGE — About split grid
+//    Source: soor_homepage.scss → direction: ltr (line 433)
+//    With direction:rtl, grid-col 1 = right (image), col 2 = left (text)
+// ================================================================
 html[dir="rtl"] .soor-about .soor-split,
 html.translated-rtl .soor-about .soor-split {
     direction: rtl;
 }
 
-// Contact-disc badge: swaps from left overhang to right overhang
+// Contact-disc badge: swap left overhang → right overhang
 html[dir="rtl"] .soor-about-visual__contact-badge,
 html.translated-rtl .soor-about-visual__contact-badge {
     left: auto;
     right: calc(-50.52 / 506 * 100%);
 }
 
-// ----------------------------------------------------------------
-// 5. HOMEPAGE — vision / services / unique intro text (media-query overrides)
-//    Source: soor_homepage.scss lines 1417, 1438, 1458 → text-align: left
-//    Note: align-items: flex-start stays — in RTL column flex,
-//          "flex-start" already aligns children to the right side.
-// ----------------------------------------------------------------
+// ================================================================
+// 5. HOMEPAGE — Unique cards: heading padding-left → padding-right
+//    Source: soor_homepage.scss → padding-left: 9px (line 1040)
+// ================================================================
+html[dir="rtl"] .soor-unique-card__head h3,
+html.translated-rtl .soor-unique-card__head h3 {
+    padding-left: 0;
+    padding-right: 9px;
+}
+
+// Decorative glow blob: swap left → right
+html[dir="rtl"] .soor-unique-card__body::before,
+html.translated-rtl .soor-unique-card__body::before {
+    left: auto;
+    right: -72px;
+}
+
+// ================================================================
+// 6. HOMEPAGE — Vision / Services / Unique section intros (mobile)
+//    Source: soor_homepage.scss → text-align: left (lines 1417,1438,1458)
+// ================================================================
 html[dir="rtl"] .soor-vision-intro,
 html.translated-rtl .soor-vision-intro,
 html[dir="rtl"] .soor-services-intro,
@@ -89,27 +114,26 @@ html.translated-rtl .soor-unique-intro {
     text-align: right;
 }
 
-// ----------------------------------------------------------------
-// 6. HOMEPAGE — mobile topbar wrapper
+// ================================================================
+// 7. HOMEPAGE — Mobile topbar: margin-left:auto → margin-right:auto
 //    Source: soor_homepage.scss → margin-left: auto (line 1586)
-// ----------------------------------------------------------------
+// ================================================================
 html[dir="rtl"] .soor-topbar__mobile,
 html.translated-rtl .soor-topbar__mobile {
     margin-left: 0;
     margin-right: auto;
 }
 
-// ----------------------------------------------------------------
-// 7. TRANSLATE WIDGET — dropdown option text alignment
+// ================================================================
+// 8. TRANSLATE WIDGET — button text align + keep widget bottom-left
 //    Source: soor_translate.scss → text-align: left (line 69)
-//    Keep widget anchored to bottom-left even in RTL (it is a fixed UI chrome)
-// ----------------------------------------------------------------
+// ================================================================
 html[dir="rtl"] .soor-gtranslate__opt,
 html.translated-rtl .soor-gtranslate__opt {
     text-align: right;
 }
 
-// Ensure the widget itself stays bottom-left in RTL (it's intentional chrome)
+// Keep widget anchored at bottom-left (intentional UI chrome, not content)
 html[dir="rtl"] .soor-gtranslate,
 html.translated-rtl .soor-gtranslate {
     left: #{"max(16px, env(safe-area-inset-left))"};
@@ -117,22 +141,78 @@ html.translated-rtl .soor-gtranslate {
     align-items: flex-start;
 }
 
-// ----------------------------------------------------------------
-// 8. BLOGS — mobile nav margin
-//    Source: soor_blogs.scss → margin-left: auto (line 101)
-// ----------------------------------------------------------------
+// ================================================================
+// 9. ABOUT PAGE — chip label padding
+//    Source: soor_about.scss → padding-left: 9px (line 294)
+// ================================================================
+html[dir="rtl"] .soor-aucard__chip-label,
+html.translated-rtl .soor-aucard__chip-label {
+    padding-left: 0;
+    padding-right: 9px;
+}
+
+// Decorative glow blob: swap left → right
+html[dir="rtl"] .soor-aucard__glow,
+html.translated-rtl .soor-aucard__glow {
+    left: auto;
+    right: -72px;
+}
+
+// ================================================================
+// 10. SERVICES PAGE — Excel list chevron icon (>> points right, flip to <<)
+//     Source: soor_services.scss → background SVG double-chevron (line 362)
+// ================================================================
+html[dir="rtl"] .soor-services-excel-list__ico,
+html.translated-rtl .soor-services-excel-list__ico {
+    transform: scaleX(-1);
+}
+
+// ================================================================
+// 11. CONTACT PAGE — mobile topbar margin
+//     Source: soor_contact.scss → margin-left: auto (line 779)
+// ================================================================
+html[dir="rtl"] .soor-contact-nav-inner .soor-topbar__mobile,
+html.translated-rtl .soor-contact-nav-inner .soor-topbar__mobile {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+// ================================================================
+// 12. CONTACT PAGE — form submit button alignment
+//     Source: soor_contact.scss → align-self: flex-end (line 447)
+//     In RTL column-flex, flex-end = LEFT. We want button on RIGHT.
+//     flex-start in RTL column-flex = RIGHT side.
+// ================================================================
+html[dir="rtl"] .soor-contact-submit,
+html.translated-rtl .soor-contact-submit {
+    align-self: flex-start;
+}
+
+// ================================================================
+// 13. CONTACT PAGE — footer wordmark tech text padding
+//     Source: soor_contact.scss → padding-left: 1px (line 582)
+// ================================================================
+html[dir="rtl"] .soor-contact-footer-wordmark__tech,
+html.translated-rtl .soor-contact-footer-wordmark__tech {
+    padding-left: 0;
+    padding-right: 1px;
+}
+
+// ================================================================
+// 14. BLOGS — mobile nav margin
+//     Source: soor_blogs.scss → margin-left: auto (line 101)
+// ================================================================
 html[dir="rtl"] .soor-blogs-mnav-wrap,
 html.translated-rtl .soor-blogs-mnav-wrap {
     margin-left: 0;
     margin-right: auto;
 }
 
-// ----------------------------------------------------------------
-// 9. BLOGS — single post adjacent-post navigation (prev / next cells)
-//    In RTL: "prev" should be on the right and be right-aligned;
-//            "next" should be on the left and be left-aligned.
-//    Source: soor_blogs.scss lines 604-725
-// ----------------------------------------------------------------
+// ================================================================
+// 15. BLOGS — Single post adjacent navigation (prev/next cells)
+//     Source: soor_blogs.scss lines 604-725
+//     In RTL: "prev" on right (right-aligned), "next" on left (left-aligned)
+// ================================================================
 html[dir="rtl"] .soor-blog-post-adj,
 html.translated-rtl .soor-blog-post-adj {
     direction: rtl;
@@ -152,13 +232,13 @@ html.translated-rtl .soor-blog-post-adj__cell--next {
     border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-// "prev" row was row-reverse in LTR — reset to row in RTL (dir handles it)
+// "prev" row was flex-direction:row-reverse in LTR → reset in RTL
 html[dir="rtl"] .soor-blog-post-adj__cell--prev .soor-blog-post-adj__row,
 html.translated-rtl .soor-blog-post-adj__cell--prev .soor-blog-post-adj__row {
     flex-direction: row;
 }
 
-// Mobile stacked override: both cells left-aligned (source line 718-720)
+// Mobile stacked: both cells right-aligned in RTL
 @media (max-width: 991px) {
     html[dir="rtl"] .soor-blog-post-adj__cell--prev,
     html.translated-rtl .soor-blog-post-adj__cell--prev,
@@ -175,7 +255,7 @@ html.translated-rtl .soor-blog-post-adj__cell--prev .soor-blog-post-adj__row {
     }
 }
 
-// Pagination arrows — flip prev/next chevrons
+// Pagination arrows — flip prev/next chevron directions
 html[dir="rtl"] .soor-blogs-pagebtn--prev .soor-blogs-pagebtn__chev,
 html.translated-rtl .soor-blogs-pagebtn--prev .soor-blogs-pagebtn__chev {
     transform: rotate(180deg);
@@ -190,10 +270,10 @@ html.translated-rtl .soor-blogs-pagebtn--next .soor-blogs-pagebtn__chev {
     margin-right: -3px;
 }
 
-// ----------------------------------------------------------------
-// 10. ODOO PAGE — mobile text-align: left → right
-//     Source: soor_odoo.scss line 208 (inside @media max-width: 991px)
-// ----------------------------------------------------------------
+// ================================================================
+// 16. ODOO PAGE — mobile text-align: left → right
+//     Source: soor_odoo.scss line 208 (inside @media max-width:991px)
+// ================================================================
 @media (max-width: 991px) {
     html[dir="rtl"] .soor-odoo-lead,
     html.translated-rtl .soor-odoo-lead,
@@ -203,11 +283,10 @@ html.translated-rtl .soor-blogs-pagebtn--next .soor-blogs-pagebtn__chev {
     }
 }
 
-// ----------------------------------------------------------------
-// 11. HESSA PAY PAGE — mobile text-align: left → right
-//                    — list padding swap
-//     Source: soor_hessapay.scss lines 225, 179
-// ----------------------------------------------------------------
+// ================================================================
+// 17. HESSA PAY PAGE — mobile text-align: left → right + list padding
+//     Source: soor_hessapay.scss lines 179, 225
+// ================================================================
 @media (max-width: 991px) {
     html[dir="rtl"] .soor-hessapay-lead,
     html.translated-rtl .soor-hessapay-lead,
@@ -223,13 +302,19 @@ html.translated-rtl .soor-hessapay-list {
     padding-right: 1.25em;
 }
 
-// ----------------------------------------------------------------
-// 12. FOOTER / CONTACT — ensure form labels follow RTL
-// ----------------------------------------------------------------
-html[dir="rtl"] .soor-contact-form label,
-html.translated-rtl .soor-contact-form label,
-html[dir="rtl"] .soor-contact-field label,
-html.translated-rtl .soor-contact-field label {
+// ================================================================
+// 18. CONTACT FORM — field labels (all pages using contact form)
+// ================================================================
+html[dir="rtl"] .soor-contact-label,
+html.translated-rtl .soor-contact-label {
     display: block;
     text-align: right;
+}
+
+html[dir="rtl"] .soor-contact-input,
+html[dir="rtl"] .soor-contact-textarea,
+html.translated-rtl .soor-contact-input,
+html.translated-rtl .soor-contact-textarea {
+    text-align: right;
+    direction: rtl;
 }
