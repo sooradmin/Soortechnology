@@ -318,3 +318,227 @@ html.translated-rtl .soor-contact-textarea {
     text-align: right;
     direction: rtl;
 }
+
+// ================================================================
+// 19. BLOGS LISTING PAGE — card text alignment
+//     Blog cards don't have explicit text-align so we set explicitly
+//     to guarantee RTL regardless of parent cascade
+// ================================================================
+html[dir="rtl"] .soor-blogs-card__body,
+html.translated-rtl .soor-blogs-card__body {
+    direction: rtl;
+}
+
+html[dir="rtl"] .soor-blogs-card__title,
+html[dir="rtl"] .soor-blogs-card__excerpt,
+html.translated-rtl .soor-blogs-card__title,
+html.translated-rtl .soor-blogs-card__excerpt {
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-blogs-card__meta-text,
+html.translated-rtl .soor-blogs-card__meta-text {
+    text-align: right;
+}
+
+// ================================================================
+// 20. BLOG DETAIL PAGE — prose and section titles
+//     .soor-blog-post-prose has text-align:justify (desktop) and
+//     no explicit direction. Force both direction + alignment.
+// ================================================================
+html[dir="rtl"] .soor-blog-post-prose,
+html.translated-rtl .soor-blog-post-prose {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-blog-post-section__title,
+html[dir="rtl"] .soor-blog-post-kicker,
+html.translated-rtl .soor-blog-post-section__title,
+html.translated-rtl .soor-blog-post-kicker {
+    text-align: right;
+}
+
+// Blog post article wrapper
+html[dir="rtl"] .soor-blog-post-section,
+html.translated-rtl .soor-blog-post-section {
+    direction: rtl;
+}
+
+// ================================================================
+// 21. ODOO PAGE — ALL viewports (desktop + mobile)
+//     Desktop has text-align:justify which needs direction:rtl
+//     Mobile already overridden above; this covers both
+// ================================================================
+html[dir="rtl"] .soor-odoo-content,
+html.translated-rtl .soor-odoo-content {
+    direction: rtl;
+}
+
+html[dir="rtl"] .soor-odoo-lead,
+html[dir="rtl"] .soor-odoo-block__body,
+html.translated-rtl .soor-odoo-lead,
+html.translated-rtl .soor-odoo-block__body {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-odoo-block h2,
+html.translated-rtl .soor-odoo-block h2 {
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-odoo-features,
+html.translated-rtl .soor-odoo-features {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-odoo-features li,
+html.translated-rtl .soor-odoo-features li {
+    text-align: right;
+}
+
+// ================================================================
+// 22. HESSA PAY PAGE — ALL viewports (desktop + mobile)
+//     Same issue as Odoo: text-align:justify needs direction:rtl
+// ================================================================
+html[dir="rtl"] .soor-hessapay-content,
+html.translated-rtl .soor-hessapay-content {
+    direction: rtl;
+}
+
+html[dir="rtl"] .soor-hessapay-lead,
+html[dir="rtl"] .soor-hessapay-block__body,
+html.translated-rtl .soor-hessapay-lead,
+html.translated-rtl .soor-hessapay-block__body {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-hessapay-block h2,
+html.translated-rtl .soor-hessapay-block h2 {
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-hessapay-features,
+html.translated-rtl .soor-hessapay-features {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-hessapay-features li,
+html[dir="rtl"] .soor-hessapay-list li,
+html.translated-rtl .soor-hessapay-features li,
+html.translated-rtl .soor-hessapay-list li {
+    text-align: right;
+}
+
+// ================================================================
+// 23. ABOUT PAGE — copy sections explicit direction
+//     align-items:flex-start is correct in RTL column-flex (start=right)
+//     but h2/p need explicit direction to guarantee cascading
+// ================================================================
+html[dir="rtl"] .soor-about-panel__copy,
+html[dir="rtl"] .soor-about-empower__copy,
+html.translated-rtl .soor-about-panel__copy,
+html.translated-rtl .soor-about-empower__copy {
+    direction: rtl;
+}
+
+html[dir="rtl"] .soor-about-panel__copy h2,
+html[dir="rtl"] .soor-about-panel__copy p,
+html[dir="rtl"] .soor-about-empower__copy h2,
+html[dir="rtl"] .soor-about-empower__copy p,
+html.translated-rtl .soor-about-panel__copy h2,
+html.translated-rtl .soor-about-panel__copy p,
+html.translated-rtl .soor-about-empower__copy h2,
+html.translated-rtl .soor-about-empower__copy p {
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-about-unique__intro,
+html.translated-rtl .soor-about-unique__intro {
+    direction: rtl;
+}
+
+html[dir="rtl"] .soor-about-unique__intro h2,
+html[dir="rtl"] .soor-about-unique__intro p,
+html.translated-rtl .soor-about-unique__intro h2,
+html.translated-rtl .soor-about-unique__intro p {
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-aucard__body,
+html.translated-rtl .soor-aucard__body {
+    direction: rtl;
+}
+
+html[dir="rtl"] .soor-aucard__body p,
+html.translated-rtl .soor-aucard__body p {
+    text-align: right;
+}
+
+// ================================================================
+// 24. SERVICES PAGE — copy + card text explicit direction
+// ================================================================
+html[dir="rtl"] .soor-services-help__copy,
+html.translated-rtl .soor-services-help__copy {
+    direction: rtl;
+}
+
+html[dir="rtl"] .soor-services-help__copy h2,
+html[dir="rtl"] .soor-services-help__copy p,
+html.translated-rtl .soor-services-help__copy h2,
+html.translated-rtl .soor-services-help__copy p {
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-services-offer-card h3,
+html.translated-rtl .soor-services-offer-card h3 {
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-services-excel-split__title,
+html[dir="rtl"] .soor-services-excel-split__intro,
+html.translated-rtl .soor-services-excel-split__title,
+html.translated-rtl .soor-services-excel-split__intro {
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-services-excel-list li span:last-child,
+html.translated-rtl .soor-services-excel-list li span:last-child {
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-services-excel-band__intro-title,
+html[dir="rtl"] .soor-services-excel-band__intro p,
+html.translated-rtl .soor-services-excel-band__intro-title,
+html.translated-rtl .soor-services-excel-band__intro p {
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-services-excel-card__label,
+html.translated-rtl .soor-services-excel-card__label {
+    text-align: right;
+}
+
+// ================================================================
+// 25. FOOTER (all pages) — columns and address text
+// ================================================================
+html[dir="rtl"] .soor-contact-footer-col h4,
+html[dir="rtl"] .soor-contact-footer-col a,
+html[dir="rtl"] .soor-contact-footer-col p,
+html[dir="rtl"] .soor-contact-footer-address,
+html.translated-rtl .soor-contact-footer-col h4,
+html.translated-rtl .soor-contact-footer-col a,
+html.translated-rtl .soor-contact-footer-col p,
+html.translated-rtl .soor-contact-footer-address {
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-contact-footer-tagline,
+html.translated-rtl .soor-contact-footer-tagline {
+    text-align: right;
+}
+
