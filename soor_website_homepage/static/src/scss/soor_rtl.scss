@@ -161,6 +161,51 @@ html.translated-rtl .soor-aukpi__top {
 }
 
 // ================================================================
+// 5d. HOMEPAGE & ABOUT — Unique grids and KPI cards
+//     Force explicit RTL on the grids so the columns physically swap,
+//     and on KPI cards so flex-start aligns icons to the right.
+// ================================================================
+html[dir="rtl"] .soor-unique-grid,
+html[dir="rtl"] .soor-about-unique__grid,
+html.translated-rtl .soor-unique-grid,
+html.translated-rtl .soor-about-unique__grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .soor-unique-card--kpi,
+html[dir="rtl"] .soor-aukpi,
+html.translated-rtl .soor-unique-card--kpi,
+html.translated-rtl .soor-aukpi {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-unique-card__body,
+html[dir="rtl"] .soor-unique-card__kpi-top,
+html[dir="rtl"] .soor-aukpi__top,
+html.translated-rtl .soor-unique-card__body,
+html.translated-rtl .soor-unique-card__kpi-top,
+html.translated-rtl .soor-aukpi__top {
+    direction: rtl;
+    text-align: right;
+}
+
+// ================================================================
+// 5e. PARTNERS MARQUEE — Flip animation direction
+//     In RTL, flex flows right-to-left, so overflow is on the left.
+//     We must translate positive X (right) instead of negative X.
+// ================================================================
+@keyframes soor-partner-marquee-scroll-rtl {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(50%, 0, 0); }
+}
+
+html[dir="rtl"] .soor-partner-marquee__track,
+html.translated-rtl .soor-partner-marquee__track {
+    animation-name: soor-partner-marquee-scroll-rtl;
+}
+
+// ================================================================
 // 6. HOMEPAGE — Vision / Services / Unique section intros (mobile)
 //    Source: soor_homepage.scss → text-align: left (lines 1417,1438,1458)
 // ================================================================
