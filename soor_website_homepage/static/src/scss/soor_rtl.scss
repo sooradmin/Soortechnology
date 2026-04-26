@@ -18,8 +18,17 @@
 // (We write them out explicitly since SCSS @mixin with & won't work at top level)
 
 // ================================================================
-// 0. GLOBAL — letter-spacing reset (Arabic typography needs no tracking)
+// 0. GLOBAL — Force Cascade & Typography Reset
+//    Odoo's base containers (.oe_structure, #wrap) often block
+//    dir="rtl" from cascading down. Force it on our main wrapper.
 // ================================================================
+html[dir="rtl"] .soor-page,
+html.translated-rtl .soor-page {
+    direction: rtl;
+    text-align: right;
+}
+
+// Reset letter-spacing (Arabic typography needs no tracking)
 html[dir="rtl"] h1,
 html[dir="rtl"] h2,
 html[dir="rtl"] h3,
@@ -119,6 +128,36 @@ html.translated-rtl .soor-unique-card__head {
 html[dir="rtl"] .soor-aucard__chip,
 html.translated-rtl .soor-aucard__chip {
     direction: rtl;
+}
+
+// ================================================================
+// 5d. HOMEPAGE & ABOUT — Unique grids and KPI cards
+//     Force explicit RTL on the grids so the columns physically swap,
+//     and on KPI cards so flex-start aligns icons to the right.
+// ================================================================
+html[dir="rtl"] .soor-unique-grid,
+html[dir="rtl"] .soor-about-unique__grid,
+html.translated-rtl .soor-unique-grid,
+html.translated-rtl .soor-about-unique__grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .soor-unique-card--kpi,
+html[dir="rtl"] .soor-aukpi,
+html.translated-rtl .soor-unique-card--kpi,
+html.translated-rtl .soor-aukpi {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .soor-unique-card__body,
+html[dir="rtl"] .soor-unique-card__kpi-top,
+html[dir="rtl"] .soor-aukpi__top,
+html.translated-rtl .soor-unique-card__body,
+html.translated-rtl .soor-unique-card__kpi-top,
+html.translated-rtl .soor-aukpi__top {
+    direction: rtl;
+    text-align: right;
 }
 
 // ================================================================
