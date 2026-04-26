@@ -112,7 +112,7 @@ html.translated-rtl .soor-gtranslate__opt {
 // Ensure the widget itself stays bottom-left in RTL (it's intentional chrome)
 html[dir="rtl"] .soor-gtranslate,
 html.translated-rtl .soor-gtranslate {
-    left: max(16px, env(safe-area-inset-left));
+    left: #{"max(16px, env(safe-area-inset-left))"};
     right: auto;
     align-items: flex-start;
 }
