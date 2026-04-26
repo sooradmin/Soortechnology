@@ -73,6 +73,27 @@
         }
     }
 
+    /**
+     * Apply dir="rtl" or dir="ltr" to the <html> element.
+     * Called immediately on script load (no FOUC) and again inside syncActiveState().
+     */
+    function applyDirection(lang) {
+        try {
+            var html = document.documentElement;
+            if (lang === "ar") {
+                html.setAttribute("dir", "rtl");
+            } else {
+                // Only reset if we actually set rtl before — avoids touching pages
+                // that never loaded Arabic.
+                if (html.getAttribute("dir") === "rtl") {
+                    html.setAttribute("dir", "ltr");
+                }
+            }
+        } catch (e) {
+            /* ignore */
+        }
+    }
+
     /** Load Google script / apply machine translation only after explicit Arabic choice in this browser. */
     function shouldLoadGoogleArabicTranslate() {
         return wantsArabicFromCookie() && userOptedGoogleArabic();
@@ -290,6 +311,9 @@
         root.classList.remove("soor-gtranslate--active-en", "soor-gtranslate--active-ar");
         root.classList.add(active === "ar" ? "soor-gtranslate--active-ar" : "soor-gtranslate--active-en");
 
+        // Keep html[dir] in sync with active language
+        applyDirection(active);
+
         root.querySelectorAll("[data-soor-lang]").forEach(function (el) {
             var l = el.getAttribute("data-soor-lang");
             el.classList.toggle("soor-gtranslate__opt--active", l === active);
@@ -386,6 +410,19 @@
             ev.stopPropagation();
         });
     }
+
+    // ── Early direction: run immediately so the page renders with the
+    // correct dir attribute — no flash of LTR layout when user is on Arabic.
+    // Uses function hoisting (all helpers above are function declarations).
+    (function earlyApplyDirection() {
+        try {
+            if (wantsArabicFromCookie() && userOptedGoogleArabic()) {
+                applyDirection("ar");
+            }
+        } catch (e) {
+            /* ignore */
+        }
+    }());
 
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", init);

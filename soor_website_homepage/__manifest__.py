@@ -32,6 +32,7 @@
             "soor_website_homepage/static/src/scss/soor_hessapay.scss",
             "soor_website_homepage/static/src/scss/soor_odoo.scss",
             "soor_website_homepage/static/src/scss/soor_blogs.scss",
+            "soor_website_homepage/static/src/scss/soor_rtl.scss",
         ],
     },
     "installable": True,
