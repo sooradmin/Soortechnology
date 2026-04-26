@@ -102,6 +102,26 @@ html.translated-rtl .soor-unique-card__body::before {
 }
 
 // ================================================================
+// 5b. HOMEPAGE — Unique card chip head: flip flex row (icon → right)
+//     .soor-unique-card__head is flex-direction:row — needs explicit
+//     direction:rtl to reverse [icon][title] → [title][icon]
+// ================================================================
+html[dir="rtl"] .soor-unique-card__head,
+html.translated-rtl .soor-unique-card__head {
+    direction: rtl;
+}
+
+// ================================================================
+// 5c. ABOUT PAGE — Aucard chip: flip flex row (icon → right)
+//     .soor-aucard__chip is flex-direction:row — same issue
+//     Reverses [chip-ico][chip-label] → [chip-label][chip-ico]
+// ================================================================
+html[dir="rtl"] .soor-aucard__chip,
+html.translated-rtl .soor-aucard__chip {
+    direction: rtl;
+}
+
+// ================================================================
 // 6. HOMEPAGE — Vision / Services / Unique section intros (mobile)
 //    Source: soor_homepage.scss → text-align: left (lines 1417,1438,1458)
 // ================================================================
