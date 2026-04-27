@@ -557,6 +557,24 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
+
+    &__ar {
+        display: none;
+    }
+
+    html[dir="rtl"] & {
+        align-items: flex-start;
+
+        .soor-contact-footer-wordmark__en {
+            display: none;
+        }
+
+        .soor-contact-footer-wordmark__ar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
 }
 
 .soor-contact-footer-wordmark__soor {

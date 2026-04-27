@@ -452,9 +452,15 @@
                 <div class="soor-contact-footer-top">
                     <div class="soor-contact-footer-brand">
                         <a href="/" class="soor-contact-footer-logo-link" aria-label="SOOR Technologies">
-                            <span class="soor-contact-footer-wordmark">
-                                <span class="soor-contact-footer-wordmark__soor">SOOR</span>
-                                <span class="soor-contact-footer-wordmark__tech">TECHNOLOGIES</span>
+                            <span class="soor-contact-footer-wordmark notranslate">
+                                <span class="soor-contact-footer-wordmark__en">
+                                    <span class="soor-contact-footer-wordmark__soor">SOOR</span>
+                                    <span class="soor-contact-footer-wordmark__tech">TECHNOLOGIES</span>
+                                </span>
+                                <span class="soor-contact-footer-wordmark__ar">
+                                    <span class="soor-contact-footer-wordmark__soor">السور</span>
+                                    <span class="soor-contact-footer-wordmark__tech">تكنولوجيز</span>
+                                </span>
                             </span>
                         </a>
                         <p class="soor-contact-footer-tagline">
