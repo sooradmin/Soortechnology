@@ -61,4 +61,16 @@
         <field name="type">binary</field>
         <field name="datas" type="base64" file="soor_website_homepage/static/src/logos/IMG_9182.jpeg"/>
     </record>
+    <record id="soor_partner_logo_9185" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">soor_partner_9185.jpg</field>
+        <field name="type">binary</field>
+        <field name="datas" type="base64" file="soor_website_homepage/static/src/logos/IMG_9185.jpg"/>
+    </record>
+    <record id="soor_partner_logo_9190" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">soor_partner_9190.jpg</field>
+        <field name="type">binary</field>
+        <field name="datas" type="base64" file="soor_website_homepage/static/src/logos/IMG_9190.jpg"/>
+    </record>
 </odoo>
