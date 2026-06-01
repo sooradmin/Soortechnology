@@ -1,54 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Google Translate: GB SVG + Kuwait raster (flag.png); trigger matches mobile layout. -->
-    <template id="soor_google_translate_widget" inherit_id="website.layout" name="SOOR Google Translate switcher">
-        <xpath expr="//div[@id='wrapwrap']" position="after">
-            <t t-if="website and request.is_frontend and not editable">
-                <div id="soor-gtranslate-root" class="soor-gtranslate soor-gtranslate--active-en" data-soor-gtranslate-root="1"
-                    t-att-data-soor-lang-url-codes="website and website.language_ids and ','.join(website.language_ids.mapped('url_code')) or ''"
-                    t-att-data-soor-default-lang-url-code="website and website.default_lang_id and website.default_lang_id.url_code or ''"
-                    t-att-data-soor-url-lang="website and request.lang and request.lang.url_code or ''">
-                    <div id="soor-gtranslate-menu" class="soor-gtranslate__dropdown" role="menu" aria-label="Languages" hidden="hidden">
-                        <button type="button" class="soor-gtranslate__opt" data-soor-lang="en" role="menuitem">
-                            <span class="soor-gtranslate__flag-wrap">
-                                <img src="/soor_website_homepage/static/src/img/soor_flag_gb.svg" alt="" class="soor-gtranslate__flag-img" width="22" height="15" loading="lazy"/>
-                            </span>
-                            <span class="soor-gtranslate__label soor-gtranslate__label--english">English</span>
-                            <span class="soor-gtranslate__chev-slot" aria-hidden="true"/>
-                        </button>
-                        <button type="button" class="soor-gtranslate__opt" data-soor-lang="ar" role="menuitem">
-                            <span class="soor-gtranslate__flag-wrap">
-                                <img src="/soor_website_homepage/static/src/img/flag.png" alt="" class="soor-gtranslate__flag-img" width="22" height="15" loading="lazy"/>
-                            </span>
-                            <span class="soor-gtranslate__label soor-gtranslate__label--ar-code notranslate">
-                                <span class="soor-ar-text-en">AR</span>
-                                <span class="soor-ar-text-ar">عربي</span>
-                            </span>
-                            <span class="soor-gtranslate__chev soor-gtranslate__chev--down" aria-hidden="true">
-                                <svg class="soor-gtranslate__chev-svg" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1.5L5 5L9 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                        </button>
-                    </div>
-                    <button type="button" class="soor-gtranslate__trigger" aria-expanded="false" aria-haspopup="true" aria-controls="soor-gtranslate-menu" id="soor-gtranslate-trigger">
-                        <span class="soor-gtranslate__trigger-tile">
-                            <img src="/soor_website_homepage/static/src/img/soor_flag_gb.svg" alt="" class="soor-gtranslate__trigger-img soor-gtranslate__trigger-img--gb" width="22" height="15" loading="eager"/>
-                            <img src="/soor_website_homepage/static/src/img/flag.png" alt="" class="soor-gtranslate__trigger-img soor-gtranslate__trigger-img--kw" width="22" height="15" loading="eager"/>
-                        </span>
-                        <span class="soor-gtranslate__trigger-code soor-gtranslate__trigger-code--en">EN</span>
-                        <span class="soor-gtranslate__trigger-code soor-gtranslate__trigger-code--ar notranslate">
-                            <span class="soor-ar-text-en">AR</span>
-                            <span class="soor-ar-text-ar">عربي</span>
-                        </span>
-                        <span class="soor-gtranslate__trigger-chev" aria-hidden="true">
-                            <svg class="soor-gtranslate__trigger-chev-svg" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 4.5L5 1L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
+    <template id="soor_language_switcher" inherit_id="website.layout" name="SOOR Language Switcher">
+        <xpath expr="//div[@id='wrapwrap']" position="before">
+            <t t-if="request.website and len(request.website.language_ids) > 1">
+                <t t-set="languages" t-value="request.website.language_ids.sorted(key=lambda r: r.name)"/>
+                <div class="o_language_switcher dropup d-print-none">
+                    <button class="btn dropdown-toggle o-lang-btn" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" t-att-title="request.lang.name or 'Language'">
+                        <img t-att-src="'/web/image/res.lang/%d/flag_image' % request.lang.id"
+                             class="o-lang-btn__flag" t-att-alt="request.lang.name" width="22" height="15"/>
+                        <span class="o-lang-btn__code" t-esc="(request.lang.iso_code or request.lang.code[:2]).upper()"/>
                     </button>
+                    <div class="dropdown-menu">
+                        <t t-foreach="languages" t-as="lg">
+                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg.code)"
+                               t-attf-class="dropdown-item #{'active' if request.lang == lg else ''}">
+                                <span t-esc="lg.name"/>
+                            </a>
+                        </t>
+                    </div>
                 </div>
-                <div id="soor_google_translate_element" class="soor-gtranslate__gt-el" aria-hidden="true"/>
             </t>
         </xpath>
     </template>

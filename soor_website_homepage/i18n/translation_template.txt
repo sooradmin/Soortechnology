@@ -1,0 +1,877 @@
+# SOOR Website Homepage — Translation Template
+# Send this file to your translator.
+# Instructions:
+#   - Fill in the Arabic translation for each English string below.
+#   - Write the translation between the double quotes after msgstr.
+#   - Do NOT change anything in the msgid lines.
+#   - Keep HTML tags (e.g. <span>, <strong>, <br/>) exactly as they appear.
+#   - Keep CSS class names inside tags unchanged.
+#
+# Format:
+#   msgid  = English source text  (do NOT edit)
+#   msgstr = Arabic translation   (fill this in)
+#
+
+msgid "+965 22008825"
+msgstr ""
+
+msgid ""
+"80% of our clients see a 20%+ increase in efficiency within three months of "
+"Odoo adoption."
+msgstr ""
+
+msgid ""
+"95% of our clients report a significant and major improvements in "
+"operational efficiency after optimizing with our Odoo solutions."
+msgstr ""
+
+msgid ""
+"97% client retention clearly highlights our keen commitment to product "
+"success."
+msgstr ""
+
+msgid ""
+"<i class=\"fa fa-check-circle soor-contact-form-success__check\" aria-hidden=\"true\"/>\n"
+"                                        <span>Your message has been sent <strong>successfully</strong></span>"
+msgstr ""
+
+msgid "<span class=\"soor-aucard__chip-label\">Commitment</span>"
+msgstr ""
+
+msgid "<span class=\"soor-aucard__chip-label\">Communication</span>"
+msgstr ""
+
+msgid "<span class=\"soor-aucard__chip-label\">Prioritization</span>"
+msgstr ""
+
+msgid "<span class=\"soor-aucard__chip-label\">Responsibility</span>"
+msgstr ""
+
+msgid "<span class=\"soor-blog-post-adj__label\">Next</span>"
+msgstr ""
+
+msgid "<span class=\"soor-blog-post-adj__label\">Previous</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-blogs-partners-title__a\">Our </span><span class=\"soor-"
+"blogs-partners-title__b\">Partners</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-contact-footer-wordmark notranslate\">\n"
+"                                <span class=\"soor-contact-footer-wordmark__en\">\n"
+"                                    <span class=\"soor-contact-footer-wordmark__soor\">SOOR</span>\n"
+"                                    <span class=\"soor-contact-footer-wordmark__tech\">TECHNOLOGIES</span>\n"
+"                                </span>\n"
+"                                <span class=\"soor-contact-footer-wordmark__ar\">\n"
+"                                    <span class=\"soor-contact-footer-wordmark__soor\">السور</span>\n"
+"                                    <span class=\"soor-contact-footer-wordmark__tech\">تكنولوجيز</span>\n"
+"                                </span>\n"
+"                            </span>"
+msgstr ""
+
+msgid "<span class=\"soor-contact-kuwait-label\">Kuwait HQ:</span>"
+msgstr ""
+
+msgid "<span class=\"soor-contact-label\">Email Address</span>"
+msgstr ""
+
+msgid "<span class=\"soor-contact-label\">First Name</span>"
+msgstr ""
+
+msgid "<span class=\"soor-contact-label\">Last name</span>"
+msgstr ""
+
+msgid "<span class=\"soor-contact-label\">Message</span>"
+msgstr ""
+
+msgid "<span class=\"soor-contact-label\">Phone numbers</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-hero-title__line\">\n"
+"                                    <span class=\"soor-hero-title__w\">Elevate Your</span>\n"
+"                                </span>\n"
+"                                <br/>\n"
+"                                <span class=\"soor-hero-title__line\">\n"
+"                                    <span class=\"soor-hero-title__b\">Business</span><span class=\"soor-hero-title__w\"> with</span>\n"
+"                                </span>\n"
+"                                <br/>\n"
+"                                <span class=\"soor-hero-title__line\">\n"
+"                                    <span class=\"soor-hero-title__b\">SOOR</span>\n"
+"                                </span>\n"
+"                                <br/>\n"
+"                                <span class=\"soor-hero-title__line\">\n"
+"                                    <span class=\"soor-hero-title__sky\">Technologies</span>\n"
+"                                </span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-home-intro__title-line\">Driving</span>\n"
+"                                        <span class=\"soor-home-intro__title-line\">Innovation, Inspiring Results</span>"
+msgstr ""
+
+msgid "<span class=\"soor-mnav__more-sheet__label\">More</span>"
+msgstr ""
+
+msgid "<span class=\"soor-nav-contact-cta__label\">Contact Us</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-cta__sheen\"/>\n"
+"                                    <span class=\"soor-services-cta__accent\"/>\n"
+"                                    <span class=\"soor-services-cta__label\">Contact Us</span>\n"
+"                                    <span class=\"soor-services-cta__dot\"/>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">Active Development and Updates<br/>Global Presence</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">All-in-One Solution</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">Community and Ecosystem</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">Cost-Efficiency</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">Mobile Accessibility</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">Modular Structure</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">Open Source Nature</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">Scalability and Flexibility</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">User-Friendly Interface</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Cloud Hosting Service</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Consultation and Business Analysis</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Customization and Development</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Integration with Third-Party Systems</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Migration and Upgrades</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Odoo Implementation</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Training and Support</span>"
+msgstr ""
+
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Web Technologies powered by Cloud Big Data</span>"
+msgstr ""
+
+msgid "<span>Contact Us</span>"
+msgstr ""
+
+msgid ""
+"<span>Contact</span>\n"
+"                                        <span class=\"soor-contact-icon-wrap\">\n"
+"                                            <i class=\"fa fa-phone soor-contact-fa\"/>\n"
+"                                        </span>"
+msgstr ""
+
+msgid ""
+"<span>Email Address</span>\n"
+"                                        <span class=\"soor-contact-icon-wrap\">\n"
+"                                            <i class=\"fa fa-envelope soor-contact-fa\"/>\n"
+"                                        </span>"
+msgstr ""
+
+msgid ""
+"<span>Location</span>\n"
+"                                        <span class=\"soor-contact-icon-wrap\">\n"
+"                                            <i class=\"fa fa-map-marker soor-contact-fa\"/>\n"
+"                                        </span>"
+msgstr ""
+
+msgid "<span>Submit now</span>"
+msgstr ""
+
+msgid "<strong>Accounting &amp; Finance:</strong> Real-time financial management."
+msgstr ""
+
+msgid ""
+"<strong>All-in-One Platform:</strong> Replace multiple disconnected systems "
+"with one integrated solution."
+msgstr ""
+
+msgid ""
+"<strong>Circles (Groups)</strong> — Create circles for outings, trips, "
+"sports, events, or ongoing budgets."
+msgstr ""
+
+msgid ""
+"<strong>Cost-Effective:</strong> Save time, reduce costs, and improve "
+"productivity."
+msgstr ""
+
+msgid ""
+"<strong>Designed for GCC Culture</strong> — Built around how people in "
+"Kuwait and the GCC actually share expenses."
+msgstr ""
+
+msgid ""
+"<strong>Human Resources:</strong> Payroll, recruitment, attendance, and "
+"more."
+msgstr ""
+
+msgid ""
+"<strong>Instant Settlements</strong> — Pay or receive your share in seconds "
+"(KWD &amp; GCC currencies)."
+msgstr ""
+
+msgid "<strong>Inventory &amp; Warehouse:</strong> Smart stock management."
+msgstr ""
+
+msgid ""
+"<strong>Jam'iya Tracking (Rotating Savings)</strong> — Fully localized "
+"financial management for GCC users."
+msgstr ""
+
+msgid ""
+"<strong>Loans &amp; Qard Hasan Tracking</strong> — Simple and private way to"
+" track personal loans between friends."
+msgstr ""
+
+msgid ""
+"<strong>Manufacturing &amp; Projects:</strong> Control production and manage"
+" project timelines."
+msgstr ""
+
+msgid ""
+"<strong>Modular &amp; Flexible:</strong> Start small with one app and add "
+"more as your business grows."
+msgstr ""
+
+msgid ""
+"<strong>Multi-Platform Notifications</strong> — WhatsApp, email, and in-app "
+"alerts to keep everyone updated."
+msgstr ""
+
+msgid ""
+"<strong>Receipt Scanning with AI</strong> — Instantly scan, detect, and "
+"categorize expenses."
+msgstr ""
+
+msgid ""
+"<strong>Sales &amp; CRM:</strong> Manage leads, quotes, and customer "
+"relationships."
+msgstr ""
+
+msgid ""
+"<strong>Smart Expense Splitting</strong> — Automatically split bills between"
+" friends and track who owes what."
+msgstr ""
+
+msgid ""
+"<strong>User-Friendly:</strong> Intuitive interface that makes it easy for "
+"teams to adapt quickly."
+msgstr ""
+
+msgid ""
+"<strong>eCommerce &amp; POS:</strong> Sell online or in-store with seamless "
+"integration."
+msgstr ""
+
+msgid "AI-powered features &amp; automation"
+msgstr ""
+
+msgid "About Us"
+msgstr ""
+
+msgid "Accelerate"
+msgstr ""
+
+msgid ""
+"Achieve measurable results and deliver tangible outcomes that align with "
+"your business goals."
+msgstr ""
+
+msgid "Arabic-first experience"
+msgstr ""
+
+msgid ""
+"At SOOR Technologies, we're dedicated to helping businesses thrive by "
+"harnessing the power of technology. Our innovative solutions are designed to"
+" transform operations, streamline processes, and elevate customer "
+"experiences. We believe in pushing boundaries, challenging the status quo, "
+"and enabling businesses to unlock new growth opportunities. Our commitment "
+"is to deliver results that matter — from enhanced operational efficiency to "
+"improved business outcomes."
+msgstr ""
+
+msgid ""
+"At Soor Technologies, our goal is to drive success for our clients through a"
+" combination of technology expertise and strong partnerships. We are "
+"passionate about leveraging the power of technology to help businesses "
+"thrive and achieve their goals. With a dedicated team of skilled "
+"professionals, we stay at the forefront of innovation to deliver cutting-"
+"edge solutions that propel our client's businesses forward."
+msgstr ""
+
+msgid ""
+"At Soor Technologies, we specialize in <strong>Odoo ERP implementation in "
+"Kuwait</strong>. We understand local market needs, integrate with different "
+"local <strong>payment gateways</strong>, logistics providers and adapt Odoo "
+"to Arabic and English environments. Contact us today to schedule a free "
+"consultation and discover how Odoo can transform your business!"
+msgstr ""
+
+msgid "BLOG"
+msgstr ""
+
+msgid "Backend architecture &amp; data security"
+msgstr ""
+
+msgid "Blog"
+msgstr ""
+
+msgid ""
+"Bring you the simplest way to track shared expenses and settle balances "
+"instantly. Proudly selected by"
+msgstr ""
+
+msgid "Business Intelligence"
+msgstr ""
+
+msgid ""
+"Clear, transparent, and timely communication is at the heart of our process."
+" We ensure that you're always in the loop."
+msgstr ""
+
+msgid "Close menu"
+msgstr ""
+
+msgid "Cloud Technologies"
+msgstr ""
+
+msgid "Commitment"
+msgstr ""
+
+msgid "Communication"
+msgstr ""
+
+msgid "Company"
+msgstr ""
+
+msgid "Compliance alignment with GCC financial and regulatory standards"
+msgstr ""
+
+msgid "Consultation"
+msgstr ""
+
+msgid "Contact Us"
+msgstr ""
+
+msgid "Copyright 2026 © Soor Technologies"
+msgstr ""
+
+msgid ""
+"Crafting customized solutions that align with your unique business "
+"requirements and drive growth."
+msgstr ""
+
+msgid "Customization"
+msgstr ""
+
+msgid "Digital Profile"
+msgstr ""
+
+msgid ""
+"Drive change within your organization and implement processes that foster "
+"growth and adaptability."
+msgstr ""
+
+msgid ""
+"Driven by innovation, powered by expertise, and focused on your success."
+msgstr ""
+
+msgid "Driving Success Through Technology Expertise and Client Partnership"
+msgstr ""
+
+msgid ""
+"Driving digital transformation for businesses in Kuwait with high-"
+"performance Odoo systems built for local scaling."
+msgstr ""
+
+msgid "E-Commerce Management System"
+msgstr ""
+
+msgid "E-learning Management System"
+msgstr ""
+
+msgid "Empowering Your Journey to Success Together!"
+msgstr ""
+
+msgid "End-to-end product development"
+msgstr ""
+
+msgid ""
+"Ensuring a successful adoption of the platform within your company by "
+"deploying and configuring Odoo to meet the business requirements."
+msgstr ""
+
+msgid "Enterprise Resource Planning"
+msgstr ""
+
+msgid ""
+"Equipping your team with the knowledge and skills to effectively utilize "
+"Odoo's features and functionalities."
+msgstr ""
+
+msgid "Factory Management System"
+msgstr ""
+
+msgid "Fahad Alsalem St, Momentum Group, Kuwait City"
+msgstr ""
+
+msgid ""
+"Fahad Alsalem St,<br/>\n"
+"                                Momentum Group, Kuwait<br/>\n"
+"                                City, Kuwait"
+msgstr ""
+
+msgid "Features like Jam'iya and Qard Hasan"
+msgstr ""
+
+msgid "GCC regulations and payment methods"
+msgstr ""
+
+msgid "Get a Free Demo Today"
+msgstr ""
+
+msgid ""
+"Get insights to make informed decisions and maximize Odoo's potential for "
+"your business."
+msgstr ""
+
+msgid "Gulf cultural norms around group spending"
+msgstr ""
+
+msgid "HTTP Routing"
+msgstr ""
+
+msgid "Hessa Pay"
+msgstr ""
+
+msgid "HessaPay"
+msgstr ""
+
+msgid ""
+"HessaPay fills a major gap in the region. While global apps exist, none "
+"truly address:"
+msgstr ""
+
+msgid ""
+"HessaPay is built FOR the region, BY the region — with innovation driven by "
+"Soor Technologies."
+msgstr ""
+
+msgid ""
+"HessaPay is currently in private development with a growing waitlist of "
+"early users."
+msgstr ""
+
+msgid ""
+"HessaPay is currently one of our most innovative and fast-growing fintech "
+"initiatives."
+msgstr ""
+
+msgid ""
+"HessaPay is the GCC's first social finance app designed to make splitting expenses effortless. Built in Kuwait and developed by Soor Technologies, the app helps friends, families, and groups track shared expenses, settle balances instantly, and manage activities — all in one smart, modern, and secure platform.\n"
+"                                    Whether it's dinners, padel matches, trips, jam'iya contributions, or everyday group expenses, HessaPay keeps everything organized, transparent, and stress-free."
+msgstr ""
+
+msgid ""
+"HessaPay represents the future of financial collaboration in the GCC — smart, simple, and culturally relevant.\n"
+"                                    Stay tuned for the official launch through Soor Technologies.\n"
+"                                    Learn more or join the waitlist:"
+msgstr ""
+
+msgid "HessaPay — Our Newest Fintech Innovation"
+msgstr ""
+
+msgid "Home"
+msgstr ""
+
+msgid "How Are We Unique <br/>in Our Services?"
+msgstr ""
+
+msgid "How can <br/>we help you?"
+msgstr ""
+
+msgid "Implementation"
+msgstr ""
+
+msgid ""
+"Increase operational efficiency to achieve goals faster and stay ahead of "
+"the competition."
+msgstr ""
+
+msgid "Info@soortechnologies.com"
+msgstr ""
+
+msgid "Insights, trends, and ideas shaping the future of technology."
+msgstr ""
+
+msgid "Instagram"
+msgstr ""
+
+msgid "Integration"
+msgstr ""
+
+msgid "Join the Journey"
+msgstr ""
+
+msgid "Key Features of HessaPay"
+msgstr ""
+
+msgid "Let us know how we can assist you"
+msgstr ""
+
+msgid "Let's talk about how technology can move your business forward."
+msgstr ""
+
+msgid "Links"
+msgstr ""
+
+msgid "Local currency support (KWD, SAR, etc.)"
+msgstr ""
+
+msgid "Location"
+msgstr ""
+
+msgid "Migration"
+msgstr ""
+
+msgid "Mobile app engineering"
+msgstr ""
+
+msgid "More"
+msgstr ""
+
+msgid "Motawer 2025"
+msgstr ""
+
+msgid "Odoo"
+msgstr ""
+
+msgid "Odoo ERP – Powering businesses with flexibility and innovation."
+msgstr ""
+
+msgid "Odoo ERP: One Platform for All Your Business Needs"
+msgstr ""
+
+msgid "Odoo Modules"
+msgstr ""
+
+msgid "Odoo in Kuwait"
+msgstr ""
+
+msgid ""
+"Odoo is a powerful open-source Enterprise Resource Planning (ERP) system "
+"that helps businesses of all sizes manage their operations in one integrated"
+" platform. From accounting and inventory management to sales, CRM, HR, and "
+"eCommerce, Odoo provides a complete suite of business applications designed "
+"to streamline processes and increase efficiency."
+msgstr ""
+
+msgid ""
+"Odoo is more than just an ERP system – it's a complete suite of business "
+"applications designed to simplify your operations, streamline processes, and"
+" boost productivity. From accounting and sales to HR, inventory, and "
+"eCommerce, Odoo integrates everything in one powerful platform tailored for "
+"your success."
+msgstr ""
+
+msgid "One of Soor Technologies posts on LinkedIn"
+msgstr ""
+
+msgid "Open menu"
+msgstr ""
+
+msgid "Our Partners"
+msgstr ""
+
+msgid "Our Role"
+msgstr ""
+
+msgid ""
+"Our team provides ongoing support to help you maintain your Odoo solutions, "
+"ensuring long-term success."
+msgstr ""
+
+msgid ""
+"Our vision is to deliver impactful solutions that bring measurable success, "
+"drive meaningful transformation, and accelerate growth. We focus on "
+"implementing tailored Odoo strategies that unlock efficiency and "
+"scalability, setting your business up for long-term success."
+msgstr ""
+
+msgid "Overview"
+msgstr ""
+
+msgid "Partner logos"
+msgstr ""
+
+msgid "Payments integration (Kuwait &amp; GCC)"
+msgstr ""
+
+msgid "Previous and next article"
+msgstr ""
+
+msgid "Primary"
+msgstr ""
+
+msgid "Prioritization"
+msgstr ""
+
+msgid "Project Management"
+msgstr ""
+
+msgid "Project Status"
+msgstr ""
+
+msgid "Property Management System"
+msgstr ""
+
+msgid "Responsibility"
+msgstr ""
+
+msgid "SERVICES"
+msgstr ""
+
+msgid "SOOR Technologies"
+msgstr ""
+
+msgid ""
+"SOOR Technologies stands out for our commitment to personalized, high-"
+"quality solutions tailored to your business needs. We emphasize clear "
+"communication and a hands-on approach to align every project with your "
+"goals. Our expertise in Odoo ensures effective and sustainable solutions."
+msgstr ""
+
+msgid "SOOR: Default language URLs only"
+msgstr ""
+
+msgid ""
+"Seamlessly connecting your existing systems and applications with Odoo to "
+"streamline your operations and enhance efficiency."
+msgstr ""
+
+msgid ""
+"Seamlessly integrate and scale your operations with Odoo.\n"
+"                                Our expert guidance and innovative solutions help you drive\n"
+"                                efficiency, growth, and long-term success."
+msgstr ""
+
+msgid "Security Solutions"
+msgstr ""
+
+msgid "Send a Message"
+msgstr ""
+
+msgid "Services"
+msgstr ""
+
+msgid "Site"
+msgstr ""
+
+msgid "Site menu"
+msgstr ""
+
+msgid ""
+"Smart solutions built on technology, strategy, and long-term partnerships."
+msgstr ""
+
+msgid ""
+"Soor Technologies harnesses the power of strategic IT partnerships to foster"
+" sustainable business success. We focus on creating long-term collaborations"
+" that align with your goals and support ongoing growth."
+msgstr ""
+
+msgid ""
+"Soor Technologies is the official technology partner and system architect behind HessaPay.\n"
+"                                    Our team is leading:"
+msgstr ""
+
+msgid "Succeed"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid ""
+"Tailoring the platform to specific needs using custom module development, "
+"user interface customization, and workflow adjustments."
+msgstr ""
+
+msgid "Thank You!"
+msgstr ""
+
+msgid "Training"
+msgstr ""
+
+msgid ""
+"Transferring your data and functionalities from legacy systems to the Odoo "
+"platform while ensuring a smooth and efficient transition."
+msgstr ""
+
+msgid "Transform"
+msgstr ""
+
+msgid "UX/UI design &amp; prototype testing"
+msgstr ""
+
+msgid ""
+"We are driven by the belief that technology is a catalyst for progress, and "
+"we are dedicated to making a meaningful impact on our clients' businesses. "
+"Together, we can achieve remarkable results and shape a future where "
+"technology enables limitless possibilities."
+msgstr ""
+
+msgid ""
+"We leverage Odoo's features to create tailored solutions that enhance "
+"efficiency. From implementation to customization, we help you optimize Odoo "
+"for streamlined operations and improved productivity."
+msgstr ""
+
+msgid ""
+"We provide honest and unbiased advice, recommending only what will genuinely"
+" benefit your business in the long run."
+msgstr ""
+
+msgid ""
+"We specialize in providing exceptional services and expertise specifically "
+"tailored to the Odoo platform. Here are some areas where we excel in working"
+" with Odoo:"
+msgstr ""
+
+msgid ""
+"We take full responsibility for the outcomes of our services, guaranteeing "
+"that our solutions meet your business needs and exceed expectations."
+msgstr ""
+
+msgid ""
+"We take pride in our collaborations with clients across various industries, "
+"helping them achieve their business objectives with Odoo."
+msgstr ""
+
+msgid ""
+"We take pride in our collaborations with clients across various industries, "
+"helping them achieve their business objectives with Odoo. Our references "
+"showcase the trust and satisfaction of our clients:"
+msgstr ""
+
+msgid "We will get back to you shortly."
+msgstr ""
+
+msgid "Website"
+msgstr ""
+
+msgid "What Do We Do <br/>with Odoo?"
+msgstr ""
+
+msgid "What is <br/>Our Vision?"
+msgstr ""
+
+msgid "What is Odoo ERP?"
+msgstr ""
+
+msgid "What we excel in?"
+msgstr ""
+
+msgid ""
+"When enabled, the website frontend ignores extra installed languages for URL"
+" matching (no redirect to /ar/… from the browser language). Use this when "
+"Arabic is handled only via Google Translate, not Odoo translations."
+msgstr ""
+
+msgid "Why HessaPay?"
+msgstr ""
+
+msgid "Why Odoo?"
+msgstr ""
+
+msgid ""
+"With a relentless focus on staying ahead of the curve in the rapidly "
+"evolving IT landscape, we continuously embrace new technologies, "
+"methodologies, and best practices. By doing so, we empower our clients to "
+"adapt, innovate, and remain competitive in today's digital age."
+msgstr ""
+
+msgid "Woocommerce Development"
+msgstr ""
+
+msgid "YouTube"
+msgstr ""
+
+msgid ""
+"Your success is our priority. We are dedicated to helping you achieve your "
+"business objectives through expert Odoo implementation."
+msgstr ""
+
+msgid "https://hessapay.com/"
+msgstr ""
+
+msgid "✔ Accelerated development under the Motawer 2025 program"
+msgstr ""
+
+msgid "✔ Concept &amp; product design completed"
+msgstr ""
+
+msgid "✔ Prototype and UX testing in progress"
+msgstr ""
+
+msgid "🚀 Public launch expected soon"
+msgstr ""

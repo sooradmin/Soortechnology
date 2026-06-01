@@ -1,0 +1,1609 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* soor_website_homepage
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: soor_website_homepage 16.0.1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 08:12+0000\n"
+"PO-Revision-Date: 2026-05-25 08:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: Arabic <your-team@example.com>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid "+965 22008825"
+msgstr "+965 22008825"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"80% of our clients see a 20%+ increase in efficiency within three months of "
+"Odoo adoption."
+msgstr ""
+"يشهد 80٪ من عملائنا زيادة تزيد عن 20٪ في الكفاءة خلال ثلاثة أشهر من اعتماد "
+"أودو."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"95% of our clients report a significant and major improvements in "
+"operational efficiency after optimizing with our Odoo solutions."
+msgstr ""
+"يُبلغ 95٪ من عملائنا عن تحسينات كبيرة وجوهرية في الكفاءة التشغيلية بعد "
+"التحسين باستخدام حلول أودو الخاصة بنا."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"97% client retention clearly highlights our keen commitment to product "
+"success."
+msgstr "يعكس الاحتفاظ بنسبة 97٪ من العملاء التزامنا القوي بنجاح المنتج بوضوح."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid ""
+"<i class=\"fa fa-check-circle soor-contact-form-success__check\" aria-hidden=\"true\"/>\n"
+"                                        <span>Your message has been sent <strong>successfully</strong></span>"
+msgstr ""
+"<i class=\"fa fa-check-circle soor-contact-form-success__check\" aria-hidden=\"true\"/>\n"
+"                                        <span>تم إرسال رسالتك <strong>بنجاح</strong></span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+msgid "<span class=\"soor-aucard__chip-label\">Commitment</span>"
+msgstr "<span class=\"soor-aucard__chip-label\">الالتزام</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+msgid "<span class=\"soor-aucard__chip-label\">Communication</span>"
+msgstr "<span class=\"soor-aucard__chip-label\">التواصل</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+msgid "<span class=\"soor-aucard__chip-label\">Prioritization</span>"
+msgstr "<span class=\"soor-aucard__chip-label\">تحديد الأولويات</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+msgid "<span class=\"soor-aucard__chip-label\">Responsibility</span>"
+msgstr "<span class=\"soor-aucard__chip-label\">المسؤولية</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blog_post_page
+msgid "<span class=\"soor-blog-post-adj__label\">Next</span>"
+msgstr "<span class=\"soor-blog-post-adj__label\">التالي</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blog_post_page
+msgid "<span class=\"soor-blog-post-adj__label\">Previous</span>"
+msgstr "<span class=\"soor-blog-post-adj__label\">السابق</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blog_post_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_page
+msgid ""
+"<span class=\"soor-blogs-partners-title__a\">Our </span><span class=\"soor-"
+"blogs-partners-title__b\">Partners</span>"
+msgstr ""
+"<span class=\"soor-blogs-partners-title__a\">شركاؤنا </span><span "
+"class=\"soor-blogs-partners-title__b\"></span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid ""
+"<span class=\"soor-contact-footer-wordmark notranslate\">\n"
+"                                <span class=\"soor-contact-footer-wordmark__en\">\n"
+"                                    <span class=\"soor-contact-footer-wordmark__soor\">SOOR</span>\n"
+"                                    <span class=\"soor-contact-footer-wordmark__tech\">TECHNOLOGIES</span>\n"
+"                                </span>\n"
+"                                <span class=\"soor-contact-footer-wordmark__ar\">\n"
+"                                    <span class=\"soor-contact-footer-wordmark__soor\">السور</span>\n"
+"                                    <span class=\"soor-contact-footer-wordmark__tech\">تكنولوجيز</span>\n"
+"                                </span>\n"
+"                            </span>"
+msgstr ""
+"<span class=\"soor-contact-footer-wordmark notranslate\">\n"
+"                                <span class=\"soor-contact-footer-wordmark__en\">\n"
+"                                    <span class=\"soor-contact-footer-wordmark__soor\">SOOR</span>\n"
+"                                    <span class=\"soor-contact-footer-wordmark__tech\">TECHNOLOGIES</span>\n"
+"                                </span>\n"
+"                                <span class=\"soor-contact-footer-wordmark__ar\">\n"
+"                                    <span class=\"soor-contact-footer-wordmark__soor\">السور</span>\n"
+"                                    <span class=\"soor-contact-footer-wordmark__tech\">تكنولوجيز</span>\n"
+"                                </span>\n"
+"                            </span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "<span class=\"soor-contact-kuwait-label\">Kuwait HQ:</span>"
+msgstr "<span class=\"soor-contact-kuwait-label\">المقر الرئيسي في الكويت:</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid "<span class=\"soor-contact-label\">Email Address</span>"
+msgstr "<span class=\"soor-contact-label\">عنوان البريد الإلكتروني</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid "<span class=\"soor-contact-label\">First Name</span>"
+msgstr "<span class=\"soor-contact-label\">الاسم الأول</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid "<span class=\"soor-contact-label\">Last name</span>"
+msgstr "<span class=\"soor-contact-label\">اسم العائلة</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid "<span class=\"soor-contact-label\">Message</span>"
+msgstr "<span class=\"soor-contact-label\">الرسالة</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid "<span class=\"soor-contact-label\">Phone numbers</span>"
+msgstr "<span class=\"soor-contact-label\">أرقام الهاتف</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"<span class=\"soor-hero-title__line\">\n"
+"                                    <span class=\"soor-hero-title__w\">Elevate Your</span>\n"
+"                                </span>\n"
+"                                <br/>\n"
+"                                <span class=\"soor-hero-title__line\">\n"
+"                                    <span class=\"soor-hero-title__b\">Business</span><span class=\"soor-hero-title__w\"> with</span>\n"
+"                                </span>\n"
+"                                <br/>\n"
+"                                <span class=\"soor-hero-title__line\">\n"
+"                                    <span class=\"soor-hero-title__b\">SOOR</span>\n"
+"                                </span>\n"
+"                                <br/>\n"
+"                                <span class=\"soor-hero-title__line\">\n"
+"                                    <span class=\"soor-hero-title__sky\">Technologies</span>\n"
+"                                </span>"
+msgstr ""
+"<span class=\"soor-hero-title__line\">\n"
+"                                    <span class=\"soor-hero-title__w\">ارتقِ</span>\n"
+"                                </span>\n"
+"                                <br/>\n"
+"                                <span class=\"soor-hero-title__line\">\n"
+"                                    <span class=\"soor-hero-title__b\">بعملك</span><span class=\"soor-hero-title__w\"> مع</span>\n"
+"                                </span>\n"
+"                                <br/>\n"
+"                                <span class=\"soor-hero-title__line\">\n"
+"                                    <span class=\"soor-hero-title__b\">السور</span>\n"
+"                                </span>\n"
+"                                <br/>\n"
+"                                <span class=\"soor-hero-title__line\">\n"
+"                                    <span class=\"soor-hero-title__sky\">تكنولوجيز</span>\n"
+"                                </span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"<span class=\"soor-home-intro__title-line\">Driving</span>\n"
+"                                        <span class=\"soor-home-intro__title-line\">Innovation, Inspiring Results</span>"
+msgstr ""
+"<span class=\"soor-home-intro__title-line\">قيادة</span>\n"
+"                                        <span class=\"soor-home-intro__title-line\">الابتكار، نتائج ملهمة</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_mnav_overlay
+msgid "<span class=\"soor-mnav__more-sheet__label\">More</span>"
+msgstr "<span class=\"soor-mnav__more-sheet__label\">المزيد</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_nav_hero
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_mnav_toolbar
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "<span class=\"soor-nav-contact-cta__label\">Contact Us</span>"
+msgstr "<span class=\"soor-nav-contact-cta__label\">اتصل بنا</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-cta__sheen\"/>\n"
+"                                    <span class=\"soor-services-cta__accent\"/>\n"
+"                                    <span class=\"soor-services-cta__label\">Contact Us</span>\n"
+"                                    <span class=\"soor-services-cta__dot\"/>"
+msgstr ""
+"<span class=\"soor-services-cta__sheen\"/>\n"
+"                                    <span class=\"soor-services-cta__accent\"/>\n"
+"                                    <span class=\"soor-services-cta__label\">اتصل بنا</span>\n"
+"                                    <span class=\"soor-services-cta__dot\"/>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">Active Development and Updates<br/>Global Presence</span>"
+msgstr ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">التطوير المستمر والتحديثات<br/>حضور عالمي</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">All-in-One Solution</span>"
+msgstr ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">حل شامل</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">Community and Ecosystem</span>"
+msgstr ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">المجتمع والنظام البيئي</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">Cost-Efficiency</span>"
+msgstr ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">كفاءة من حيث التكلفة</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">Mobile Accessibility</span>"
+msgstr ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">التوافق مع الأجهزة المحمولة</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">Modular Structure</span>"
+msgstr ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">هيكلية مرنة</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">Open Source Nature</span>"
+msgstr ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">طبيعة مفتوحة المصدر</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">Scalability and Flexibility</span>"
+msgstr ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">قابلية التوسع والمرونة</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">User-Friendly Interface</span>"
+msgstr ""
+"<span class=\"soor-services-excel-card__mesh\" aria-hidden=\"true\"/>\n"
+"                                    <span class=\"soor-services-excel-card__label\">واجهة سهلة الاستخدام</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Cloud Hosting Service</span>"
+msgstr ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>خدمة استضافة سحابية</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Consultation and Business Analysis</span>"
+msgstr ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>استشارات وتحليل الأعمال</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Customization and Development</span>"
+msgstr ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>التخصيص والتطوير</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Integration with Third-Party Systems</span>"
+msgstr ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>التكامل مع أنظمة الطرف الثالث</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Migration and Upgrades</span>"
+msgstr ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>الترحيل والتحديثات</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Odoo Implementation</span>"
+msgstr ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>تنفيذ أودو</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Training and Support</span>"
+msgstr ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>التدريب والدعم</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>Web Technologies powered by Cloud Big Data</span>"
+msgstr ""
+"<span class=\"soor-services-excel-list__ico\" aria-"
+"hidden=\"true\"/><span>تقنيات الويب المدعومة بالبيانات السحابية "
+"الضخمة</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "<span>Contact Us</span>"
+msgstr "<span>اتصل بنا</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid ""
+"<span>Contact</span>\n"
+"                                        <span class=\"soor-contact-icon-wrap\">\n"
+"                                            <i class=\"fa fa-phone soor-contact-fa\"/>\n"
+"                                        </span>"
+msgstr ""
+"<span>اتصل</span>\n"
+"                                        <span class=\"soor-contact-icon-wrap\">\n"
+"                                            <i class=\"fa fa-phone soor-contact-fa\"/>\n"
+"                                        </span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid ""
+"<span>Email Address</span>\n"
+"                                        <span class=\"soor-contact-icon-wrap\">\n"
+"                                            <i class=\"fa fa-envelope soor-contact-fa\"/>\n"
+"                                        </span>"
+msgstr ""
+"<span>عنوان البريد الإلكتروني</span>\n"
+"                                        <span class=\"soor-contact-icon-wrap\">\n"
+"                                            <i class=\"fa fa-envelope soor-contact-fa\"/>\n"
+"                                        </span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid ""
+"<span>Location</span>\n"
+"                                        <span class=\"soor-contact-icon-wrap\">\n"
+"                                            <i class=\"fa fa-map-marker soor-contact-fa\"/>\n"
+"                                        </span>"
+msgstr ""
+"<span>الموقع</span>\n"
+"                                        <span class=\"soor-contact-icon-wrap\">\n"
+"                                            <i class=\"fa fa-map-marker soor-contact-fa\"/>\n"
+"                                        </span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid "<span>Submit now</span>"
+msgstr "<span>إرسال الآن</span>"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid ""
+"<strong>Accounting &amp; Finance:</strong> Real-time financial management."
+msgstr "<strong>المحاسبة والتمويل:</strong> إدارة مالية في الوقت الفعلي."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid ""
+"<strong>All-in-One Platform:</strong> Replace multiple disconnected systems "
+"with one integrated solution."
+msgstr ""
+"<strong>منصة شاملة:</strong> استبدل الأنظمة المتعددة المنفصلة بحل متكامل "
+"واحد."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"<strong>Circles (Groups)</strong> — Create circles for outings, trips, "
+"sports, events, or ongoing budgets."
+msgstr ""
+"<strong>الدوائر (المجموعات)</strong> — أنشئ دوائر للنزهات والرحلات والرياضة "
+"والفعاليات أو الميزانيات المستمرة."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid ""
+"<strong>Cost-Effective:</strong> Save time, reduce costs, and improve "
+"productivity."
+msgstr ""
+"<strong>موفر للتكاليف:</strong> وفر الوقت، خفّض التكاليف، وحسّن الإنتاجية."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"<strong>Designed for GCC Culture</strong> — Built around how people in "
+"Kuwait and the GCC actually share expenses."
+msgstr ""
+"<strong>مصمم لثقافة دول الخليج</strong> — مبني حول كيفية تقاسم الناس "
+"للمصروفات في الكويت ودول الخليج فعلياً."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid ""
+"<strong>Human Resources:</strong> Payroll, recruitment, attendance, and "
+"more."
+msgstr "<strong>الموارد البشرية:</strong> الرواتب، التوظيف، الحضور، والمزيد."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"<strong>Instant Settlements</strong> — Pay or receive your share in seconds "
+"(KWD &amp; GCC currencies)."
+msgstr ""
+"<strong>تسويات فورية</strong> — ادفع أو استلم حصتك في ثوانٍ (دينار كويتي "
+"وعملات الخليج)."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid "<strong>Inventory &amp; Warehouse:</strong> Smart stock management."
+msgstr "<strong>المخزون والمستودع:</strong> إدارة ذكية للمخزون."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"<strong>Jam’iya Tracking (Rotating Savings)</strong> — Fully localized "
+"financial management for GCC users."
+msgstr ""
+"<strong>تتبع الجمعية (الادخار الدوري)</strong> — إدارة مالية محلية بالكامل "
+"لمستخدمي الخليج."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"<strong>Loans &amp; Qard Hasan Tracking</strong> — Simple and private way to"
+" track personal loans between friends."
+msgstr ""
+"<strong>تتبع القروض والقرض الحسن</strong> — طريقة بسيطة وخاصة لمتابعة القروض"
+" الشخصية بين الأصدقاء."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid ""
+"<strong>Manufacturing &amp; Projects:</strong> Control production and manage"
+" project timelines."
+msgstr ""
+"<strong>التصنيع والمشاريع:</strong> تحكم في الإنتاج وأدر جداول المشاريع."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid ""
+"<strong>Modular &amp; Flexible:</strong> Start small with one app and add "
+"more as your business grows."
+msgstr ""
+"<strong>مرن وقابل للتوسع:</strong> ابدأ بتطبيق واحد وأضف المزيد مع نمو عملك."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"<strong>Multi-Platform Notifications</strong> — WhatsApp, email, and in-app "
+"alerts to keep everyone updated."
+msgstr ""
+"<strong>إشعارات متعددة المنصات</strong> — واتساب، بريد إلكتروني، وتنبيهات "
+"داخل التطبيق لإبقاء الجميع على اطلاع."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"<strong>Receipt Scanning with AI</strong> — Instantly scan, detect, and "
+"categorize expenses."
+msgstr ""
+"<strong>مسح الإيصالات بالذكاء الاصطناعي</strong> — امسح، اكتشف، وصنّف "
+"المصروفات فوراً."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid ""
+"<strong>Sales &amp; CRM:</strong> Manage leads, quotes, and customer "
+"relationships."
+msgstr ""
+"<strong>المبيعات وإدارة علاقات العملاء:</strong> إدارة العملاء المحتملين، "
+"العروض، والعلاقات."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"<strong>Smart Expense Splitting</strong> — Automatically split bills between"
+" friends and track who owes what."
+msgstr ""
+"<strong>تقسيم النفقات الذكي</strong> — قسم الفواتير بين الأصدقاء وتتبع من "
+"عليه ماذا."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid ""
+"<strong>User-Friendly:</strong> Intuitive interface that makes it easy for "
+"teams to adapt quickly."
+msgstr ""
+"<strong>سهل الاستخدام:</strong> واجهة بديهية تجعل التكيّف سريعاً للفرق."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid ""
+"<strong>eCommerce &amp; POS:</strong> Sell online or in-store with seamless "
+"integration."
+msgstr ""
+"<strong>التجارة الإلكترونية ونقاط البيع:</strong> بيع عبر الإنترنت أو المتجر"
+" بتكامل سلس."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "AI-powered features &amp; automation"
+msgstr "ميزات مدعومة بالذكاء الاصطناعي والأتمتة"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_nav_hero
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_mnav_overlay
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "About Us"
+msgstr "من نحن"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Accelerate"
+msgstr "تسريع"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Achieve measurable results and deliver tangible outcomes that align with "
+"your business goals."
+msgstr "حقق نتائج قابلة للقياس ونتائج ملموسة تتماشى مع أهداف عملك."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Arabic-first experience"
+msgstr "تجربة موجهة للعربية أولاً"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"At SOOR Technologies, we're dedicated to helping businesses thrive by "
+"harnessing the power of technology. Our innovative solutions are designed to"
+" transform operations, streamline processes, and elevate customer "
+"experiences. We believe in pushing boundaries, challenging the status quo, "
+"and enabling businesses to unlock new growth opportunities. Our commitment "
+"is to deliver results that matter — from enhanced operational efficiency to "
+"improved business outcomes."
+msgstr ""
+"في السور تكنولوجيز، نكرّس جهودنا لمساعدة الشركات على النمو من خلال استغلال"
+" قوة التكنولوجيا. تم تصميم حلولنا المبتكرة لتحويل العمليات، تبسيط الإجراءات،"
+" وتحسين تجارب العملاء. نؤمن بكسر الحواجز، تحدّي الوضع الراهن، وتمكين الشركات"
+" من فتح فرص نمو جديدة. التزامنا هو تحقيق نتائج ذات قيمة — من كفاءة تشغيلية "
+"أعلى إلى نتائج أعمال محسّنة."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+msgid ""
+"At Soor Technologies, our goal is to drive success for our clients through a"
+" combination of technology expertise and strong partnerships. We are "
+"passionate about leveraging the power of technology to help businesses "
+"thrive and achieve their goals. With a dedicated team of skilled "
+"professionals, we stay at the forefront of innovation to deliver cutting-"
+"edge solutions that propel our client's businesses forward."
+msgstr ""
+"في السور تكنولوجيز، هدفنا هو دفع النجاح لعملائنا من خلال مزيج من الخبرة "
+"التقنية والشراكات القوية. نحن شغوفون باستخدام قوة التكنولوجيا لمساعدة "
+"الشركات على الازدهار وتحقيق أهدافها. مع فريق متخصص مكرّس، نظل في طليعة "
+"الابتكار لتقديم حلول متطورة تدفع أعمال عملائنا إلى الأمام."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid ""
+"At Soor Technologies, we specialize in <strong>Odoo ERP implementation in "
+"Kuwait</strong>. We understand local market needs, integrate with different "
+"local <strong>payment gateways</strong>, logistics providers and adapt Odoo "
+"to Arabic and English environments. Contact us today to schedule a free "
+"consultation and discover how Odoo can transform your business!"
+msgstr ""
+"في السور تكنولوجيز، نتخصص في <strong>تنفيذ أودو ERP في الكويت</strong>. "
+"نفهم احتياجات السوق المحلية، نتكامل مع بوابات الدفع المحلية المختلفة، ومزودي"
+" الخدمات اللوجستية، ونكيّف أودو للعمل باللغتين العربية والإنجليزية. اتصل بنا"
+" اليوم لتحديد استشارة مجانية واكتشف كيف يمكن لأودو تحويل عملك!"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_nav_hero
+msgid "BLOG"
+msgstr "مدونة"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Backend architecture &amp; data security"
+msgstr "البنية الخلفية وأمن البيانات"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_nav_hero
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_mnav_overlay
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "Blog"
+msgstr "مدونة"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"Bring you the simplest way to track shared expenses and settle balances "
+"instantly. Proudly selected by"
+msgstr ""
+"نقدّم لك أبسط طريقة لتتبع النفقات المشتركة وتسوية الأرصدة فوراً. تم اختيارنا"
+" بفخر من قبل"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "Business Intelligence"
+msgstr "ذكاء الأعمال"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Clear, transparent, and timely communication is at the heart of our process."
+" We ensure that you're always in the loop."
+msgstr ""
+"التواصل الواضح والشفاف وفي الوقت المناسب هو جوهر عمليتنا. نضمن أن تكون "
+"دائماً على اطلاع."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_mnav_overlay
+msgid "Close menu"
+msgstr "إغلاق القائمة"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "Cloud Technologies"
+msgstr "تقنيات السحابة"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Commitment"
+msgstr "الالتزام"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Communication"
+msgstr "التواصل"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "Company"
+msgstr "الشركة"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Compliance alignment with GCC financial and regulatory standards"
+msgstr "الامتثال لمعايير المالية والتنظيم في دول الخليج"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Consultation"
+msgstr "الاستشارات"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "Copyright 2026 © Soor Technologies"
+msgstr "حقوق النشر 2026 © السور تكنولوجيز"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Crafting customized solutions that align with your unique business "
+"requirements and drive growth."
+msgstr "نصنع حلولاً مخصصة تتماشى مع متطلبات عملك الفريدة وتدفع النمو."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Customization"
+msgstr "التخصيص"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_nav_hero
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_mnav_overlay
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "Digital Profile"
+msgstr "الملف الرقمي"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Drive change within your organization and implement processes that foster "
+"growth and adaptability."
+msgstr "قدّم التغيير داخل مؤسستك ونفّذ عمليات تحفّز النمو والقدرة على التكيف."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+msgid ""
+"Driven by innovation, powered by expertise, and focused on your success."
+msgstr "مدفوعون بالابتكار، مدعومون بالخبرة، ومركزون على نجاحك."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+msgid "Driving Success Through Technology Expertise and Client Partnership"
+msgstr "تحقيق النجاح من خلال الخبرة التقنية والشراكة مع العملاء"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Driving digital transformation for businesses in Kuwait with high-"
+"performance Odoo systems built for local scaling."
+msgstr ""
+"نقود التحول الرقمي للأعمال في الكويت عبر أنظمة أودو عالية الأداء مصممة "
+"للتوسع المحلي."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "E-Commerce Management System"
+msgstr "نظام إدارة التجارة الإلكترونية"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "E-learning Management System"
+msgstr "نظام إدارة التعلم الإلكتروني"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+msgid "Empowering Your Journey to Success Together!"
+msgstr "نقوّي رحلتك نحو النجاح معاً!"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "End-to-end product development"
+msgstr "تطوير المنتج من البداية إلى النهاية"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Ensuring a successful adoption of the platform within your company by "
+"deploying and configuring Odoo to meet the business requirements."
+msgstr ""
+"ضمان اعتماد ناجح للمنصة داخل شركتك من خلال نشر وتكوين أودو لتلبية متطلبات "
+"العمل."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "Enterprise Resource Planning"
+msgstr "تخطيط موارد المؤسسة"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Equipping your team with the knowledge and skills to effectively utilize "
+"Odoo's features and functionalities."
+msgstr "تزويد فريقك بالمعرفة والمهارات لاستخدام ميزات ووظائف أودو بفعالية."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "Factory Management System"
+msgstr "نظام إدارة المصانع"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid "Fahad Alsalem St, Momentum Group, Kuwait City"
+msgstr "شارع فهد السالم، مجموعة مودرنتم، مدينة الكويت"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid ""
+"Fahad Alsalem St,<br/>\n"
+"                                Momentum Group, Kuwait<br/>\n"
+"                                City, Kuwait"
+msgstr ""
+"شارع فهد السالم،<br/>\n"
+"                                مجموعة مودرنتم، الكويت<br/>\n"
+"                                مدينة الكويت"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Features like Jam’iya and Qard Hasan"
+msgstr "ميزات مثل الجمعية والقرض الحسن"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "GCC regulations and payment methods"
+msgstr "لوائح دول الخليج وطرق الدفع"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Get a Free Demo Today"
+msgstr "احصل على عرض توضيحي مجاني اليوم"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Get insights to make informed decisions and maximize Odoo's potential for "
+"your business."
+msgstr "احصل على رؤى لاتخاذ قرارات مستنيرة وتعظيم إمكانات أودو لعملك."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Gulf cultural norms around group spending"
+msgstr "المعايير الثقافية الخليجية حول الإنفاق الجماعي"
+
+#. module: soor_website_homepage
+#: model:ir.model,name:soor_website_homepage.model_ir_http
+msgid "HTTP Routing"
+msgstr "مسار HTTP"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_nav_hero
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_mnav_overlay
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "Hessa Pay"
+msgstr "Hessa Pay"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "HessaPay"
+msgstr "HessaPay"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"HessaPay fills a major gap in the region. While global apps exist, none "
+"truly address:"
+msgstr ""
+" HessaPay يسد فجوة كبيرة في المنطقة. بينما توجد تطبيقات عالمية، لا يعالج أي "
+"منها فعلاً:"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"HessaPay is built FOR the region, BY the region — with innovation driven by "
+"Soor Technologies."
+msgstr ""
+"تم بناء HessaPay من أجل المنطقة وبالمنطقة — مع الابتكار الذي تقوده السور تكنولوجيز."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"HessaPay is currently in private development with a growing waitlist of "
+"early users."
+msgstr ""
+"HessaPay قيد التطوير الخاص حالياً مع قائمة انتظار متنامية من المستخدمين "
+"الأوائل."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"HessaPay is currently one of our most innovative and fast-growing fintech "
+"initiatives."
+msgstr ""
+"HessaPay هو حالياً واحد من أكثر مبادراتنا المالية التقنية ابتكاراً وسرعة في "
+"النمو."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"HessaPay is the GCC’s first social finance app designed to make splitting expenses effortless. Built in Kuwait and developed by Soor Technologies, the app helps friends, families, and groups track shared expenses, settle balances instantly, and manage activities — all in one smart, modern, and secure platform.\n"
+"                                    Whether it’s dinners, padel matches, trips, jam’iya contributions, or everyday group expenses, HessaPay keeps everything organized, transparent, and stress-free."
+msgstr ""
+"HessaPay هو أول تطبيق تمويل اجتماعي في الخليج مصمم لجعل تقسيم المصاريف سهلاً. بُني في الكويت وطُور بواسطة السور تكنولوجيز، يساعد التطبيق الأصدقاء والعائلات والمجموعات على تتبع المصاريف المشتركة، تسوية الأرصدة فوراً، وإدارة الأنشطة — كلها في منصة ذكية، حديثة، وآمنة.\n"
+"                                    سواءً كانت عشاءات، مباريات بادل، رحلات، مساهمات جمعية، أو مصاريف جماعية يومية، يحافظ هيسا باي على كل شيء منظماً، شفافاً، وخالياً من التوتر."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"HessaPay represents the future of financial collaboration in the GCC — smart, simple, and culturally relevant.\n"
+"                                    Stay tuned for the official launch through Soor Technologies.\n"
+"                                    Learn more or join the waitlist:"
+msgstr ""
+"HessaPay يمثل مستقبل التعاون المالي في الخليج — ذكي، بسيط، وملائم ثقافياً.\n"
+"                                    تابعنا للإطلاق الرسمي عبر السور تكنولوجيز.\n"
+"                                    تعرف أكثر أو انضم إلى قائمة الانتظار:"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "HessaPay — Our Newest Fintech Innovation"
+msgstr "HessaPay — أحدث ابتكاراتنا في التكنولوجيا المالية"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_nav_hero
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_mnav_overlay
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "Home"
+msgstr "الصفحة الرئيسية"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "How Are We Unique <br/>in Our Services?"
+msgstr "ما الذي يميزنا <br/>في خدماتنا؟"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "How can <br/>we help you?"
+msgstr "كيف يمكننا <br/>مساعدتك؟"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Implementation"
+msgstr "التنفيذ"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Increase operational efficiency to achieve goals faster and stay ahead of "
+"the competition."
+msgstr ""
+"زد الكفاءة التشغيلية لتحقيق الأهداف بسرعة أكبر والبقاء في صدارة المنافسة."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid "Info@soortechnologies.com"
+msgstr "Info@soortechnologies.com"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_nav_hero
+msgid "Insights, trends, and ideas shaping the future of technology."
+msgstr "رؤى واتجاهات وأفكار تشكل مستقبل التكنولوجيا."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "Instagram"
+msgstr "إنستجرام"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Integration"
+msgstr "التكامل"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Join the Journey"
+msgstr "انضم إلى الرحلة"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Key Features of HessaPay"
+msgstr "الميزات الرئيسية HessaPay"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid "Let us know how we can assist you"
+msgstr "أخبرنا كيف يمكننا مساعدتك"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid "Let’s talk about how technology can move your business forward."
+msgstr "دعنا نتحدث عن كيف يمكن للتكنولوجيا دفع عملك إلى الأمام."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "Links"
+msgstr "روابط"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Local currency support (KWD, SAR, etc.)"
+msgstr "دعم العملات المحلية (د.ك، ر.س، إلخ)"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "Location"
+msgstr "الموقع"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Migration"
+msgstr "الترحيل"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Mobile app engineering"
+msgstr "هندسة تطبيقات الجوال"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_nav_hero
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "More"
+msgstr "المزيد"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Motawer 2025"
+msgstr "متـوّر 2025"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_nav_hero
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_mnav_overlay
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "Odoo"
+msgstr "Odoo"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid "Odoo ERP – Powering businesses with flexibility and innovation."
+msgstr "أودو ERP — يدعم الأعمال بالمرونة والابتكار."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid "Odoo ERP: One Platform for All Your Business Needs"
+msgstr "أودو ERP: منصة واحدة لجميع احتياجات عملك"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid "Odoo Modules"
+msgstr "وحدات أودو"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid "Odoo in Kuwait"
+msgstr "أودو في الكويت"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid ""
+"Odoo is a powerful open-source Enterprise Resource Planning (ERP) system "
+"that helps businesses of all sizes manage their operations in one integrated"
+" platform. From accounting and inventory management to sales, CRM, HR, and "
+"eCommerce, Odoo provides a complete suite of business applications designed "
+"to streamline processes and increase efficiency."
+msgstr ""
+"أودو هو نظام تخطيط موارد المؤسسات (ERP) مفتوح المصدر وقوي يساعد الشركات من "
+"جميع الأحجام على إدارة عملياتها في منصة واحدة متكاملة. من المحاسبة وإدارة "
+"المخزون إلى المبيعات وإدارة علاقات العملاء والموارد البشرية والتجارة "
+"الإلكترونية، يوفر أودو مجموعة كاملة من تطبيقات الأعمال المصممة لتبسيط "
+"العمليات وزيادة الكفاءة."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid ""
+"Odoo is more than just an ERP system – it's a complete suite of business "
+"applications designed to simplify your operations, streamline processes, and"
+" boost productivity. From accounting and sales to HR, inventory, and "
+"eCommerce, Odoo integrates everything in one powerful platform tailored for "
+"your success."
+msgstr ""
+"أودو أكثر من مجرد نظام ERP — إنها مجموعة كاملة من تطبيقات الأعمال المصممة "
+"لتبسيط عملياتك، تبسيط الإجراءات، وزيادة الإنتاجية. من المحاسبة والمبيعات إلى"
+" الموارد البشرية، المخزون، والتجارة الإلكترونية، يدمج أودو كل شيء في منصة "
+"قوية مصممة لنجاحك."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "One of Soor Technologies posts on LinkedIn"
+msgstr "أحد منشورات السور تكنولوجيز على لينكدإن"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_nav_hero
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_mnav_toolbar
+msgid "Open menu"
+msgstr "فتح القائمة"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "Our Partners"
+msgstr "شركاؤنا"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Our Role"
+msgstr "دورنا"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Our team provides ongoing support to help you maintain your Odoo solutions, "
+"ensuring long-term success."
+msgstr ""
+"يقدم فريقنا دعمًا مستمرًا لمساعدتك في الحفاظ على حلول أودو الخاصة بك، مما "
+"يضمن النجاح على المدى الطويل."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Our vision is to deliver impactful solutions that bring measurable success, "
+"drive meaningful transformation, and accelerate growth. We focus on "
+"implementing tailored Odoo strategies that unlock efficiency and "
+"scalability, setting your business up for long-term success."
+msgstr ""
+"رؤيتنا هي تقديم حلول ذات تأثير تحقق نجاحًا قابلاً للقياس، وتدفع التحول "
+"الفعّال، وتسارع النمو. نركز على تنفيذ استراتيجيات أودو مصممة خصيصًا لفتح "
+"الكفاءة وقابلية التوسع، مما يهيئ عملك للنجاح طويل الأمد."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Overview"
+msgstr "نظرة عامة"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_partner_logos_marquee
+msgid "Partner logos"
+msgstr "شعارات الشركاء"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Payments integration (Kuwait &amp; GCC)"
+msgstr "تكامل المدفوعات (الكويت والخليج)"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blog_post_page
+msgid "Previous and next article"
+msgstr "المقال السابق والتالي"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Primary"
+msgstr "أساسي"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Prioritization"
+msgstr "تحديد الأولويات"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "Project Management"
+msgstr "إدارة المشاريع"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Project Status"
+msgstr "حالة المشروع"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "Property Management System"
+msgstr "نظام إدارة الممتلكات"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Responsibility"
+msgstr "المسؤولية"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "SERVICES"
+msgstr "الخدمات"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_nav_hero
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "SOOR Technologies"
+msgstr "السور تكنولوجيز"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"SOOR Technologies stands out for our commitment to personalized, high-"
+"quality solutions tailored to your business needs. We emphasize clear "
+"communication and a hands-on approach to align every project with your "
+"goals. Our expertise in Odoo ensures effective and sustainable solutions."
+msgstr ""
+"تتميز السور تكنولوجيز بالتزامنا بتقديم حلول عالية الجودة ومخصصة لتلبية "
+"احتياجات عملك. نؤكد على التواصل الواضح والأسلوب العملي لمواءمة كل مشروع مع "
+"أهدافك. تضمن خبرتنا في أودو حلولاً فعّالة ومستدامة."
+
+#. module: soor_website_homepage
+#: model:ir.model.fields,field_description:soor_website_homepage.field_website__soor_route_default_lang_only
+msgid "SOOR: Default language URLs only"
+msgstr "SOOR: عناوين URL باللغة الافتراضية فقط"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Seamlessly connecting your existing systems and applications with Odoo to "
+"streamline your operations and enhance efficiency."
+msgstr ""
+"ربط أنظمتك وتطبيقاتك الحالية بأودو بسلاسة لتبسيط عملياتك وتعزيز الكفاءة."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Seamlessly integrate and scale your operations with Odoo.\n"
+"                                Our expert guidance and innovative solutions help you drive\n"
+"                                efficiency, growth, and long-term success."
+msgstr ""
+"ادمج عملياتك وقم بتوسيعها بسلاسة مع أودو.\n"
+"                                تساعدك إرشاداتنا الخبيرة وحلولنا المبتكرة على تعزيز\n"
+"                                الكفاءة والنمو والنجاح على المدى الطويل."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "Security Solutions"
+msgstr "حلول الأمن"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid "Send a Message"
+msgstr "إرسال رسالة"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_nav_hero
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_mnav_overlay
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "Services"
+msgstr "الخدمات"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_mnav_overlay
+msgid "Site"
+msgstr "الموقع"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_mnav_overlay
+msgid "Site menu"
+msgstr "قائمة الموقع"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"Smart solutions built on technology, strategy, and long-term partnerships."
+msgstr "حلول ذكية مبنية على التكنولوجيا والاستراتيجية والشراكات طويلة المدى."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid ""
+"Soor Technologies harnesses the power of strategic IT partnerships to foster"
+" sustainable business success. We focus on creating long-term collaborations"
+" that align with your goals and support ongoing growth."
+msgstr ""
+"تستغل السور تكنولوجيز قوة شراكات تكنولوجيا المعلومات الاستراتيجية لتعزيز "
+"نجاح الأعمال المستدام. نركز على إنشاء تعاونات طويلة الأمد تتماشى مع أهدافك "
+"وتدعم النمو المستمر."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid ""
+"Soor Technologies is the official technology partner and system architect behind HessaPay.\n"
+"                                    Our team is leading:"
+msgstr ""
+"تعد السور تكنولوجيز الشريك التقني الرسمي والمهندس المعماري للنظام وراء HessaPay.\n"
+"                                    يقود فريقنا:"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Succeed"
+msgstr "التفوق"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Support"
+msgstr "الدعم"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Tailoring the platform to specific needs using custom module development, "
+"user interface customization, and workflow adjustments."
+msgstr ""
+"تخصيص المنصة لتلبية الاحتياجات المحددة باستخدام تطوير وحدات مخصصة، تخصيص "
+"واجهة المستخدم، وتعديلات سير العمل."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid "Thank You!"
+msgstr "شكراً لك!"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Training"
+msgstr "التدريب"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Transferring your data and functionalities from legacy systems to the Odoo "
+"platform while ensuring a smooth and efficient transition."
+msgstr ""
+"نقل بياناتك ووظائفك من الأنظمة القديمة إلى منصة أودو مع ضمان انتقال سلس "
+"وفعّال."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "Transform"
+msgstr "التحول"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "UX/UI design &amp; prototype testing"
+msgstr "تصميم UX/UI واختبار النماذج الأولية"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+msgid ""
+"We are driven by the belief that technology is a catalyst for progress, and "
+"we are dedicated to making a meaningful impact on our clients' businesses. "
+"Together, we can achieve remarkable results and shape a future where "
+"technology enables limitless possibilities."
+msgstr ""
+"يدفعنا الاعتقاد بأن التكنولوجيا هي محفز للتقدم، ونحن ملتزمون بإحداث تأثير ذي"
+" معنى على أعمال عملائنا. معاً، يمكننا تحقيق نتائج رائعة وتشكيل مستقبل تمكّن "
+"فيه التكنولوجيا إمكانيات غير محدودة."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"We leverage Odoo's features to create tailored solutions that enhance "
+"efficiency. From implementation to customization, we help you optimize Odoo "
+"for streamlined operations and improved productivity."
+msgstr ""
+"نستفيد من ميزات أودو لإنشاء حلول مخصصة تعزز الكفاءة. من التنفيذ إلى التخصيص،"
+" نساعدك على تحسين أودو لعمليات أكثر انسيابية وإنتاجية محسنة."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"We provide honest and unbiased advice, recommending only what will genuinely"
+" benefit your business in the long run."
+msgstr ""
+"نقدّم نصائح صادقة وغير متحيزة، ونوصي فقط بما سيعود بفائدة حقيقية على عملك "
+"على المدى الطويل."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"We specialize in providing exceptional services and expertise specifically "
+"tailored to the Odoo platform. Here are some areas where we excel in working"
+" with Odoo:"
+msgstr ""
+"نحن متخصصون في تقديم خدمات وخبرات استثنائية مصممة خصيصاً لمنصة أودو. فيما "
+"يلي بعض المجالات التي نتفوق فيها في العمل مع أودو:"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"We take full responsibility for the outcomes of our services, guaranteeing "
+"that our solutions meet your business needs and exceed expectations."
+msgstr ""
+"نحن نتحمل المسؤولية الكاملة عن نتائج خدماتنا، مما يضمن أن تلبي حلولنا "
+"احتياجات عملك وتفوق التوقعات."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid ""
+"We take pride in our collaborations with clients across various industries, "
+"helping them achieve their business objectives with Odoo."
+msgstr ""
+"نحن نفتخر بتعاوننا مع عملاء من قطاعات مختلفة، ومساعدتهم على تحقيق أهداف "
+"أعمالهم باستخدام أودو."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blog_post_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_blogs_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid ""
+"We take pride in our collaborations with clients across various industries, "
+"helping them achieve their business objectives with Odoo. Our references "
+"showcase the trust and satisfaction of our clients:"
+msgstr ""
+"نحن نفتخر بتعاوننا مع عملاء من مختلف القطاعات، ومساعدتهم على تحقيق أهداف "
+"أعمالهم باستخدام أودو. تعرض مراجعنا ثقة عملائنا ورضاهم:"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_contactus_override
+msgid "We will get back to you shortly."
+msgstr "سنتواصل معك قريباً."
+
+#. module: soor_website_homepage
+#: model:ir.model,name:soor_website_homepage.model_website
+msgid "Website"
+msgstr "الموقع الإلكتروني"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "What Do We Do <br/>with Odoo?"
+msgstr "ماذا نفعل <br/>بأودو؟"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid "What is <br/>Our Vision?"
+msgstr "ما هي <br/>رؤيتنا؟"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid "What is Odoo ERP?"
+msgstr "ما هو أودو ERP؟"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "What we excel in?"
+msgstr "فيما نتميز؟"
+
+#. module: soor_website_homepage
+#: model:ir.model.fields,help:soor_website_homepage.field_website__soor_route_default_lang_only
+msgid ""
+"When enabled, the website frontend ignores extra installed languages for URL"
+" matching (no redirect to /ar/… from the browser language). Use this when "
+"Arabic is handled only via Google Translate, not Odoo translations."
+msgstr ""
+"عند التفعيل، يتجاهل واجهة الموقع اللغات الإضافية المثبتة لمطابقة عنوان URL "
+"(لا يوجد إعادة توجيه إلى /ar/… بناءً على لغة المتصفح). استخدم هذا عندما تتم "
+"معالجة العربية فقط عبر ترجمة جوجل، وليس عبر ترجمات أودو."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "Why HessaPay?"
+msgstr "لماذا HessaPay؟"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_odoo_page
+msgid "Why Odoo?"
+msgstr "لماذا أودو؟"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+msgid ""
+"With a relentless focus on staying ahead of the curve in the rapidly "
+"evolving IT landscape, we continuously embrace new technologies, "
+"methodologies, and best practices. By doing so, we empower our clients to "
+"adapt, innovate, and remain competitive in today's digital age."
+msgstr ""
+"مع تركيز لا يلين على البقاء في صدارة المشهد التكنولوجي المتطور بسرعة، نتبنى "
+"باستمرار تقنيات جديدة ومنهجيات وممارسات أفضل. من خلال ذلك، نمكّن عملائنا من "
+"التكيف والابتكار والبقاء تنافسيين في عصر الرقمية اليوم."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_services_page
+msgid "Woocommerce Development"
+msgstr "تطوير ووكومرس"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_site_footer
+msgid "YouTube"
+msgstr "يوتيوب"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_about_page
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_homepage_override
+msgid ""
+"Your success is our priority. We are dedicated to helping you achieve your "
+"business objectives through expert Odoo implementation."
+msgstr ""
+"نجاحك هو أولويتنا. نحن ملتزمون بمساعدتك على تحقيق أهداف عملك من خلال تنفيذ "
+"أودو الاحترافي."
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "https://hessapay.com/"
+msgstr "https://hessapay.com/"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "✔ Accelerated development under the Motawer 2025 program"
+msgstr "✔ تطوير معزّز ضمن برنامج متوّر 2025"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "✔ Concept &amp; product design completed"
+msgstr "✔ تم إكمال تصميم المفهوم والمنتج"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "✔ Prototype and UX testing in progress"
+msgstr "✔ جاري اختبار النموذج الأولي وتجربة المستخدم"
+
+#. module: soor_website_homepage
+#: model_terms:ir.ui.view,arch_db:soor_website_homepage.soor_hessapay_page
+msgid "🚀 Public launch expected soon"
+msgstr "🚀 الإطلاق العام متوقع قريباً"

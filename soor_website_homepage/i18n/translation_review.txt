@@ -1,0 +1,545 @@
+msgid "+965 22008825"
+msgstr "+965 22008825"
+
+msgid "80% of our clients see a 20%+ increase in efficiency within three months of Odoo adoption."
+msgstr "يشهد 80٪ من عملائنا زيادة تزيد عن 20٪ في الكفاءة خلال ثلاثة أشهر من اعتماد أودو."
+
+msgid "95% of our clients report a significant and major improvements in operational efficiency after optimizing with our Odoo solutions."
+msgstr "يُبلغ 95٪ من عملائنا عن تحسينات كبيرة وجوهرية في الكفاءة التشغيلية بعد التحسين باستخدام حلول أودو الخاصة بنا."
+
+msgid "97% client retention clearly highlights our keen commitment to product success."
+msgstr "يعكس الاحتفاظ بنسبة 97٪ من العملاء التزامنا القوي بنجاح المنتج بوضوح."
+
+msgid "<span class=\"soor-aucard__chip-label\">Commitment</span>"
+msgstr "<span class=\"soor-aucard__chip-label\">الالتزام</span>"
+
+msgid "<span class=\"soor-aucard__chip-label\">Communication</span>"
+msgstr "<span class=\"soor-aucard__chip-label\">التواصل</span>"
+
+msgid "<span class=\"soor-aucard__chip-label\">Prioritization</span>"
+msgstr "<span class=\"soor-aucard__chip-label\">تحديد الأولويات</span>"
+
+msgid "<span class=\"soor-aucard__chip-label\">Responsibility</span>"
+msgstr "<span class=\"soor-aucard__chip-label\">المسؤولية</span>"
+
+msgid "<span class=\"soor-blog-post-adj__label\">Next</span>"
+msgstr "<span class=\"soor-blog-post-adj__label\">التالي</span>"
+
+msgid "<span class=\"soor-blog-post-adj__label\">Previous</span>"
+msgstr "<span class=\"soor-blog-post-adj__label\">السابق</span>"
+
+msgid "<span class=\"soor-blogs-partners-title__a\">Our </span><span class=\"soor-blogs-partners-title__b\">Partners</span>"
+msgstr "<span class=\"soor-blogs-partners-title__a\">شركاؤنا </span><span class=\"soor-blogs-partners-title__b\"></span>"
+
+msgid "<span class=\"soor-contact-kuwait-label\">Kuwait HQ:</span>"
+msgstr "<span class=\"soor-contact-kuwait-label\">المقر الرئيسي في الكويت:</span>"
+
+msgid "<span class=\"soor-contact-label\">Email Address</span>"
+msgstr "<span class=\"soor-contact-label\">عنوان البريد الإلكتروني</span>"
+
+msgid "<span class=\"soor-contact-label\">First Name</span>"
+msgstr "<span class=\"soor-contact-label\">الاسم الأول</span>"
+
+msgid "<span class=\"soor-contact-label\">Last name</span>"
+msgstr "<span class=\"soor-contact-label\">اسم العائلة</span>"
+
+msgid "<span class=\"soor-contact-label\">Message</span>"
+msgstr "<span class=\"soor-contact-label\">الرسالة</span>"
+
+msgid "<span class=\"soor-contact-label\">Phone numbers</span>"
+msgstr "<span class=\"soor-contact-label\">أرقام الهاتف</span>"
+
+msgid "<span class=\"soor-mnav__more-sheet__label\">More</span>"
+msgstr "<span class=\"soor-mnav__more-sheet__label\">المزيد</span>"
+
+msgid "<span class=\"soor-nav-contact-cta__label\">Contact Us</span>"
+msgstr "<span class=\"soor-nav-contact-cta__label\">اتصل بنا</span>"
+
+msgid "<span>Contact Us</span>"
+msgstr "<span>اتصل بنا</span>"
+
+msgid "<span>Submit now</span>"
+msgstr "<span>إرسال الآن</span>"
+
+msgid "<strong>Accounting &amp; Finance:</strong> Real-time financial management."
+msgstr "<strong>المحاسبة والتمويل:</strong> إدارة مالية في الوقت الفعلي."
+
+msgid "<strong>All-in-One Platform:</strong> Replace multiple disconnected systems with one integrated solution."
+msgstr "<strong>منصة شاملة:</strong> استبدل الأنظمة المتعددة المنفصلة بحل متكامل واحد."
+
+msgid "<strong>Circles (Groups)</strong> — Create circles for outings, trips, sports, events, or ongoing budgets."
+msgstr "<strong>الدوائر (المجموعات)</strong> — أنشئ دوائر للنزهات والرحلات والرياضة والفعاليات أو الميزانيات المستمرة."
+
+msgid "<strong>Cost-Effective:</strong> Save time, reduce costs, and improve productivity."
+msgstr "<strong>موفر للتكاليف:</strong> وفر الوقت، خفّض التكاليف، وحسّن الإنتاجية."
+
+msgid "<strong>Designed for GCC Culture</strong> — Built around how people in Kuwait and the GCC actually share expenses."
+msgstr "<strong>مصمم لثقافة دول الخليج</strong> — مبني حول كيفية تقاسم الناس للمصروفات في الكويت ودول الخليج فعلياً."
+
+msgid "<strong>Human Resources:</strong> Payroll, recruitment, attendance, and more."
+msgstr "<strong>الموارد البشرية:</strong> الرواتب، التوظيف، الحضور، والمزيد."
+
+msgid "<strong>Instant Settlements</strong> — Pay or receive your share in seconds (KWD &amp; GCC currencies)."
+msgstr "<strong>تسويات فورية</strong> — ادفع أو استلم حصتك في ثوانٍ (دينار كويتي وعملات الخليج)."
+
+msgid "<strong>Inventory &amp; Warehouse:</strong> Smart stock management."
+msgstr "<strong>المخزون والمستودع:</strong> إدارة ذكية للمخزون."
+
+msgid "<strong>Jam'iya Tracking (Rotating Savings)</strong> — Fully localized financial management for GCC users."
+msgstr "<strong>تتبع الجمعية (الادخار الدوري)</strong> — إدارة مالية محلية بالكامل لمستخدمي الخليج."
+
+msgid "<strong>Loans &amp; Qard Hasan Tracking</strong> — Simple and private way to track personal loans between friends."
+msgstr "<strong>تتبع القروض والقرض الحسن</strong> — طريقة بسيطة وخاصة لمتابعة القروض الشخصية بين الأصدقاء."
+
+msgid "<strong>Manufacturing &amp; Projects:</strong> Control production and manage project timelines."
+msgstr "<strong>التصنيع والمشاريع:</strong> تحكم في الإنتاج وأدر جداول المشاريع."
+
+msgid "<strong>Modular &amp; Flexible:</strong> Start small with one app and add more as your business grows."
+msgstr "<strong>مرن وقابل للتوسع:</strong> ابدأ بتطبيق واحد وأضف المزيد مع نمو عملك."
+
+msgid "<strong>Multi-Platform Notifications</strong> — WhatsApp, email, and in-app alerts to keep everyone updated."
+msgstr "<strong>إشعارات متعددة المنصات</strong> — واتساب، بريد إلكتروني، وتنبيهات داخل التطبيق لإبقاء الجميع على اطلاع."
+
+msgid "<strong>Receipt Scanning with AI</strong> — Instantly scan, detect, and categorize expenses."
+msgstr "<strong>مسح الإيصالات بالذكاء الاصطناعي</strong> — امسح، اكتشف، وصنّف المصروفات فوراً."
+
+msgid "<strong>Sales &amp; CRM:</strong> Manage leads, quotes, and customer relationships."
+msgstr "<strong>المبيعات وإدارة علاقات العملاء:</strong> إدارة العملاء المحتملين، العروض، والعلاقات."
+
+msgid "<strong>Smart Expense Splitting</strong> — Automatically split bills between friends and track who owes what."
+msgstr "<strong>تقسيم النفقات الذكي</strong> — قسم الفواتير بين الأصدقاء وتتبع من عليه ماذا."
+
+msgid "<strong>User-Friendly:</strong> Intuitive interface that makes it easy for teams to adapt quickly."
+msgstr "<strong>سهل الاستخدام:</strong> واجهة بديهية تجعل التكيّف سريعاً للفرق."
+
+msgid "<strong>eCommerce &amp; POS:</strong> Sell online or in-store with seamless integration."
+msgstr "<strong>التجارة الإلكترونية ونقاط البيع:</strong> بيع عبر الإنترنت أو المتجر بتكامل سلس."
+
+msgid "AI-powered features &amp; automation"
+msgstr "ميزات مدعومة بالذكاء الاصطناعي والأتمتة"
+
+msgid "About Us"
+msgstr "من نحن"
+
+msgid "Accelerate"
+msgstr "تسريع"
+
+msgid "Achieve measurable results and deliver tangible outcomes that align with your business goals."
+msgstr "حقق نتائج قابلة للقياس ونتائج ملموسة تتماشى مع أهداف عملك."
+
+msgid "Arabic-first experience"
+msgstr "تجربة موجهة للعربية أولاً"
+
+msgid "At SOOR Technologies, we're dedicated to helping businesses thrive by harnessing the power of technology. Our innovative solutions are designed to transform operations, streamline processes, and elevate customer experiences. We believe in pushing boundaries, challenging the status quo, and enabling businesses to unlock new growth opportunities. Our commitment is to deliver results that matter — from enhanced operational efficiency to improved business outcomes."
+msgstr "في SOOR Technologies، نكرّس جهودنا لمساعدة الشركات على النمو من خلال استغلال قوة التكنولوجيا. تم تصميم حلولنا المبتكرة لتحويل العمليات، تبسيط الإجراءات، وتحسين تجارب العملاء. نؤمن بكسر الحواجز، تحدّي الوضع الراهن، وتمكين الشركات من فتح فرص نمو جديدة. التزامنا هو تحقيق نتائج ذات قيمة — من كفاءة تشغيلية أعلى إلى نتائج أعمال محسّنة."
+
+msgid "At Soor Technologies, our goal is to drive success for our clients through a combination of technology expertise and strong partnerships. We are passionate about leveraging the power of technology to help businesses thrive and achieve their goals. With a dedicated team of skilled professionals, we stay at the forefront of innovation to deliver cutting-edge solutions that propel our client's businesses forward."
+msgstr "في Soor Technologies، هدفنا هو دفع النجاح لعملائنا من خلال مزيج من الخبرة التقنية والشراكات القوية. نحن شغوفون باستخدام قوة التكنولوجيا لمساعدة الشركات على الازدهار وتحقيق أهدافها. مع فريق متخصص مكرّس، نظل في طليعة الابتكار لتقديم حلول متطورة تدفع أعمال عملائنا إلى الأمام."
+
+msgid "At Soor Technologies, we specialize in Odoo ERP implementation in Kuwait. We understand local market needs, integrate with different local payment gateways, logistics providers and adapt Odoo to Arabic and English environments. Contact us today to schedule a free consultation and discover how Odoo can transform your business!"
+msgstr "في Soor Technologies، نتخصص في تنفيذ أودو ERP في الكويت. نفهم احتياجات السوق المحلية، نتكامل مع بوابات الدفع المحلية المختلفة، ومزودي الخدمات اللوجستية، ونكيّف أودو للعمل باللغتين العربية والإنجليزية. اتصل بنا اليوم لتحديد استشارة مجانية واكتشف كيف يمكن لأودو تحويل عملك!"
+
+msgid "BLOG"
+msgstr "مدونة"
+
+msgid "Backend architecture &amp; data security"
+msgstr "البنية الخلفية وأمن البيانات"
+
+msgid "Blog"
+msgstr "مدونة"
+
+msgid "Bring you the simplest way to track shared expenses and settle balances instantly. Proudly selected by"
+msgstr "نقدّم لك أبسط طريقة لتتبع النفقات المشتركة وتسوية الأرصدة فوراً. تم اختيارنا بفخر من قبل"
+
+msgid "Business Intelligence"
+msgstr "ذكاء الأعمال"
+
+msgid "Clear, transparent, and timely communication is at the heart of our process. We ensure that you're always in the loop."
+msgstr "التواصل الواضح والشفاف وفي الوقت المناسب هو جوهر عمليتنا. نضمن أن تكون دائماً على اطلاع."
+
+msgid "Close menu"
+msgstr "إغلاق القائمة"
+
+msgid "Cloud Technologies"
+msgstr "تقنيات السحابة"
+
+msgid "Commitment"
+msgstr "الالتزام"
+
+msgid "Communication"
+msgstr "التواصل"
+
+msgid "Company"
+msgstr "الشركة"
+
+msgid "Compliance alignment with GCC financial and regulatory standards"
+msgstr "الامتثال لمعايير المالية والتنظيم في دول الخليج"
+
+msgid "Consultation"
+msgstr "الاستشارات"
+
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+msgid "Copyright 2026 © Soor Technologies"
+msgstr "حقوق النشر 2026 © Soor Technologies"
+
+msgid "Crafting customized solutions that align with your unique business requirements and drive growth."
+msgstr "نصنع حلولاً مخصصة تتماشى مع متطلبات عملك الفريدة وتدفع النمو."
+
+msgid "Customization"
+msgstr "التخصيص"
+
+msgid "Digital Profile"
+msgstr "الملف الرقمي"
+
+msgid "Drive change within your organization and implement processes that foster growth and adaptability."
+msgstr "قدّم التغيير داخل مؤسستك ونفّذ عمليات تحفّز النمو والقدرة على التكيف."
+
+msgid "Driven by innovation, powered by expertise, and focused on your success."
+msgstr "مدفوعون بالابتكار، مدعومون بالخبرة، ومركزون على نجاحك."
+
+msgid "Driving Success Through Technology Expertise and Client Partnership"
+msgstr "تحقيق النجاح من خلال الخبرة التقنية والشراكة مع العملاء"
+
+msgid "Driving digital transformation for businesses in Kuwait with high-performance Odoo systems built for local scaling."
+msgstr "نقود التحول الرقمي للأعمال في الكويت عبر أنظمة أودو عالية الأداء مصممة للتوسع المحلي."
+
+msgid "E-Commerce Management System"
+msgstr "نظام إدارة التجارة الإلكترونية"
+
+msgid "E-learning Management System"
+msgstr "نظام إدارة التعلم الإلكتروني"
+
+msgid "Empowering Your Journey to Success Together!"
+msgstr "نقوّي رحلتك نحو النجاح معاً!"
+
+msgid "End-to-end product development"
+msgstr "تطوير المنتج من البداية إلى النهاية"
+
+msgid "Ensuring a successful adoption of the platform within your company by deploying and configuring Odoo to meet the business requirements."
+msgstr "ضمان اعتماد ناجح للمنصة داخل شركتك من خلال نشر وتكوين أودو لتلبية متطلبات العمل."
+
+msgid "Enterprise Resource Planning"
+msgstr "تخطيط موارد المؤسسة"
+
+msgid "Equipping your team with the knowledge and skills to effectively utilize Odoo's features and functionalities."
+msgstr "تزويد فريقك بالمعرفة والمهارات لاستخدام ميزات ووظائف أودو بفعالية."
+
+msgid "Factory Management System"
+msgstr "نظام إدارة المصانع"
+
+msgid "Fahad Alsalem St, Momentum Group, Kuwait City"
+msgstr "شارع فهد السالم، مجموعة مودرنتم، مدينة الكويت"
+
+msgid "Features like Jam'iya and Qard Hasan"
+msgstr "ميزات مثل الجمعية والقرض الحسن"
+
+msgid "GCC regulations and payment methods"
+msgstr "لوائح دول الخليج وطرق الدفع"
+
+msgid "Get a Free Demo Today"
+msgstr "احصل على عرض توضيحي مجاني اليوم"
+
+msgid "Get insights to make informed decisions and maximize Odoo's potential for your business."
+msgstr "احصل على رؤى لاتخاذ قرارات مستنيرة وتعظيم إمكانات أودو لعملك."
+
+msgid "Gulf cultural norms around group spending"
+msgstr "المعايير الثقافية الخليجية حول الإنفاق الجماعي"
+
+msgid "HTTP Routing"
+msgstr "مسار HTTP"
+
+msgid "Hessa Pay"
+msgstr "هيسا باي"
+
+msgid "HessaPay"
+msgstr "هيسا باي"
+
+msgid "HessaPay fills a major gap in the region. While global apps exist, none truly address:"
+msgstr "هيسا باي يسد فجوة كبيرة في المنطقة. بينما توجد تطبيقات عالمية، لا يعالج أي منها فعلاً:"
+
+msgid "HessaPay is built FOR the region, BY the region — with innovation driven by Soor Technologies."
+msgstr "تم بناء هيسا باي من أجل المنطقة وبالمنطقة — مع الابتكار الذي تقوده Soor Technologies."
+
+msgid "HessaPay is currently in private development with a growing waitlist of early users."
+msgstr "هيسا باي قيد التطوير الخاص حالياً مع قائمة انتظار متنامية من المستخدمين الأوائل."
+
+msgid "HessaPay is currently one of our most innovative and fast-growing fintech initiatives."
+msgstr "هيسا باي هو حالياً واحد من أكثر مبادراتنا المالية التقنية ابتكاراً وسرعة في النمو."
+
+msgid "HessaPay is the GCC's first social finance app designed to make splitting expenses effortless. Built in Kuwait and developed by Soor Technologies, the app helps friends, families, and groups track shared expenses, settle balances instantly, and manage activities — all in one smart, modern, and secure platform. Whether it's dinners, padel matches, trips, jam'iya contributions, or everyday group expenses, HessaPay keeps everything organized, transparent, and stress-free."
+msgstr "هيسا باي هو أول تطبيق تمويل اجتماعي في الخليج مصمم لجعل تقسيم المصاريف سهلاً. بُني في الكويت وطُور بواسطة Soor Technologies، يساعد التطبيق الأصدقاء والعائلات والمجموعات على تتبع المصاريف المشتركة، تسوية الأرصدة فوراً، وإدارة الأنشطة — كلها في منصة ذكية، حديثة، وآمنة. سواءً كانت عشاءات، مباريات بادل، رحلات، مساهمات جمعية، أو مصاريف جماعية يومية، يحافظ هيسا باي على كل شيء منظماً، شفافاً، وخالياً من التوتر."
+
+msgid "HessaPay represents the future of financial collaboration in the GCC — smart, simple, and culturally relevant. Stay tuned for the official launch through Soor Technologies. Learn more or join the waitlist:"
+msgstr "هيسا باي يمثل مستقبل التعاون المالي في الخليج — ذكي، بسيط، وملائم ثقافياً. تابعنا للإطلاق الرسمي عبر Soor Technologies. تعرف أكثر أو انضم إلى قائمة الانتظار:"
+
+msgid "HessaPay — Our Newest Fintech Innovation"
+msgstr "هيسا باي — أحدث ابتكاراتنا في التكنولوجيا المالية"
+
+msgid "Home"
+msgstr "الصفحة الرئيسية"
+
+msgid "How Are We Unique <br/>in Our Services?"
+msgstr "ما الذي يميزنا <br/>في خدماتنا؟"
+
+msgid "How can <br/>we help you?"
+msgstr "كيف يمكننا <br/>مساعدتك؟"
+
+msgid "Implementation"
+msgstr "التنفيذ"
+
+msgid "Increase operational efficiency to achieve goals faster and stay ahead of the competition."
+msgstr "زد الكفاءة التشغيلية لتحقيق الأهداف بسرعة أكبر والبقاء في صدارة المنافسة."
+
+msgid "Info@soortechnologies.com"
+msgstr "Info@soortechnologies.com"
+
+msgid "Insights, trends, and ideas shaping the future of technology."
+msgstr "رؤى واتجاهات وأفكار تشكل مستقبل التكنولوجيا."
+
+msgid "Instagram"
+msgstr "إنستجرام"
+
+msgid "Integration"
+msgstr "التكامل"
+
+msgid "Join the Journey"
+msgstr "انضم إلى الرحلة"
+
+msgid "Key Features of HessaPay"
+msgstr "الميزات الرئيسية لهيسا باي"
+
+msgid "Let us know how we can assist you"
+msgstr "أخبرنا كيف يمكننا مساعدتك"
+
+msgid "Let's talk about how technology can move your business forward."
+msgstr "دعنا نتحدث عن كيف يمكن للتكنولوجيا دفع عملك إلى الأمام."
+
+msgid "Links"
+msgstr "روابط"
+
+msgid "Local currency support (KWD, SAR, etc.)"
+msgstr "دعم العملات المحلية (د.ك، ر.س، إلخ)"
+
+msgid "Location"
+msgstr "الموقع"
+
+msgid "Migration"
+msgstr "الترحيل"
+
+msgid "Mobile app engineering"
+msgstr "هندسة تطبيقات الجوال"
+
+msgid "More"
+msgstr "المزيد"
+
+msgid "Motawer 2025"
+msgstr "متـوّر 2025"
+
+msgid "Odoo"
+msgstr "Odoo"
+
+msgid "Odoo ERP – Powering businesses with flexibility and innovation."
+msgstr "أودو ERP — يدعم الأعمال بالمرونة والابتكار."
+
+msgid "Odoo ERP: One Platform for All Your Business Needs"
+msgstr "أودو ERP: منصة واحدة لجميع احتياجات عملك"
+
+msgid "Odoo Modules"
+msgstr "وحدات أودو"
+
+msgid "Odoo in Kuwait"
+msgstr "أودو في الكويت"
+
+msgid "Odoo is a powerful open-source Enterprise Resource Planning (ERP) system that helps businesses of all sizes manage their operations in one integrated platform. From accounting and inventory management to sales, CRM, HR, and eCommerce, Odoo provides a complete suite of business applications designed to streamline processes and increase efficiency."
+msgstr "أودو هو نظام تخطيط موارد المؤسسات (ERP) مفتوح المصدر وقوي يساعد الشركات من جميع الأحجام على إدارة عملياتها في منصة واحدة متكاملة. من المحاسبة وإدارة المخزون إلى المبيعات وإدارة علاقات العملاء والموارد البشرية والتجارة الإلكترونية، يوفر أودو مجموعة كاملة من تطبيقات الأعمال المصممة لتبسيط العمليات وزيادة الكفاءة."
+
+msgid "Odoo is more than just an ERP system – it's a complete suite of business applications designed to simplify your operations, streamline processes, and boost productivity. From accounting and sales to HR, inventory, and eCommerce, Odoo integrates everything in one powerful platform tailored for your success."
+msgstr "أودو أكثر من مجرد نظام ERP — إنها مجموعة كاملة من تطبيقات الأعمال المصممة لتبسيط عملياتك، تبسيط الإجراءات، وزيادة الإنتاجية. من المحاسبة والمبيعات إلى الموارد البشرية، المخزون، والتجارة الإلكترونية، يدمج أودو كل شيء في منصة قوية مصممة لنجاحك."
+
+msgid "One of Soor Technologies posts on LinkedIn"
+msgstr "أحد منشورات Soor Technologies على لينكدإن"
+
+msgid "Open menu"
+msgstr "فتح القائمة"
+
+msgid "Our Partners"
+msgstr "شركاؤنا"
+
+msgid "Our Role"
+msgstr "دورنا"
+
+msgid "Our team provides ongoing support to help you maintain your Odoo solutions, ensuring long-term success."
+msgstr "يقدم فريقنا دعمًا مستمرًا لمساعدتك في الحفاظ على حلول أودو الخاصة بك، مما يضمن النجاح على المدى الطويل."
+
+msgid "Our vision is to deliver impactful solutions that bring measurable success, drive meaningful transformation, and accelerate growth. We focus on implementing tailored Odoo strategies that unlock efficiency and scalability, setting your business up for long-term success."
+msgstr "رؤيتنا هي تقديم حلول ذات تأثير تحقق نجاحًا قابلاً للقياس، وتدفع التحول الفعّال، وتسارع النمو. نركز على تنفيذ استراتيجيات أودو مصممة خصيصًا لفتح الكفاءة وقابلية التوسع، مما يهيئ عملك للنجاح طويل الأمد."
+
+msgid "Overview"
+msgstr "نظرة عامة"
+
+msgid "Partner logos"
+msgstr "شعارات الشركاء"
+
+msgid "Payments integration (Kuwait &amp; GCC)"
+msgstr "تكامل المدفوعات (الكويت والخليج)"
+
+msgid "Previous and next article"
+msgstr "المقال السابق والتالي"
+
+msgid "Primary"
+msgstr "أساسي"
+
+msgid "Prioritization"
+msgstr "تحديد الأولويات"
+
+msgid "Project Management"
+msgstr "إدارة المشاريع"
+
+msgid "Project Status"
+msgstr "حالة المشروع"
+
+msgid "Property Management System"
+msgstr "نظام إدارة الممتلكات"
+
+msgid "Responsibility"
+msgstr "المسؤولية"
+
+msgid "SERVICES"
+msgstr "الخدمات"
+
+msgid "SOOR Technologies"
+msgstr "SOOR Technologies"
+
+msgid "SOOR Technologies stands out for our commitment to personalized, high-quality solutions tailored to your business needs. We emphasize clear communication and a hands-on approach to align every project with your goals. Our expertise in Odoo ensures effective and sustainable solutions."
+msgstr "تتميز SOOR Technologies بالتزامنا بتقديم حلول عالية الجودة ومخصصة لتلبية احتياجات عملك. نؤكد على التواصل الواضح والأسلوب العملي لمواءمة كل مشروع مع أهدافك. تضمن خبرتنا في أودو حلولاً فعّالة ومستدامة."
+
+msgid "SOOR: Default language URLs only"
+msgstr "SOOR: عناوين URL باللغة الافتراضية فقط"
+
+msgid "Seamlessly connecting your existing systems and applications with Odoo to streamline your operations and enhance efficiency."
+msgstr "ربط أنظمتك وتطبيقاتك الحالية بأودو بسلاسة لتبسيط عملياتك وتعزيز الكفاءة."
+
+msgid "Seamlessly integrate and scale your operations with Odoo. Our expert guidance and innovative solutions help you drive efficiency, growth, and long-term success."
+msgstr "ادمج عملياتك وقم بتوسيعها بسلاسة مع أودو. تساعدك إرشاداتنا الخبيرة وحلولنا المبتكرة على تعزيز الكفاءة والنمو والنجاح على المدى الطويل."
+
+msgid "Security Solutions"
+msgstr "حلول الأمن"
+
+msgid "Send a Message"
+msgstr "إرسال رسالة"
+
+msgid "Services"
+msgstr "الخدمات"
+
+msgid "Site"
+msgstr "الموقع"
+
+msgid "Site menu"
+msgstr "قائمة الموقع"
+
+msgid "Smart solutions built on technology, strategy, and long-term partnerships."
+msgstr "حلول ذكية مبنية على التكنولوجيا والاستراتيجية والشراكات طويلة المدى."
+
+msgid "Soor Technologies harnesses the power of strategic IT partnerships to foster sustainable business success. We focus on creating long-term collaborations that align with your goals and support ongoing growth."
+msgstr "تستغل Soor Technologies قوة شراكات تكنولوجيا المعلومات الاستراتيجية لتعزيز نجاح الأعمال المستدام. نركز على إنشاء تعاونات طويلة الأمد تتماشى مع أهدافك وتدعم النمو المستمر."
+
+msgid "Soor Technologies is the official technology partner and system architect behind HessaPay. Our team is leading:"
+msgstr "تعد Soor Technologies الشريك التقني الرسمي والمهندس المعماري للنظام وراء هيسا باي. يقود فريقنا:"
+
+msgid "Succeed"
+msgstr "التفوق"
+
+msgid "Support"
+msgstr "الدعم"
+
+msgid "Tailoring the platform to specific needs using custom module development, user interface customization, and workflow adjustments."
+msgstr "تخصيص المنصة لتلبية الاحتياجات المحددة باستخدام تطوير وحدات مخصصة، تخصيص واجهة المستخدم، وتعديلات سير العمل."
+
+msgid "Thank You!"
+msgstr "شكراً لك!"
+
+msgid "Training"
+msgstr "التدريب"
+
+msgid "Transferring your data and functionalities from legacy systems to the Odoo platform while ensuring a smooth and efficient transition."
+msgstr "نقل بياناتك ووظائفك من الأنظمة القديمة إلى منصة أودو مع ضمان انتقال سلس وفعّال."
+
+msgid "Transform"
+msgstr "التحول"
+
+msgid "UX/UI design &amp; prototype testing"
+msgstr "تصميم UX/UI واختبار النماذج الأولية"
+
+msgid "We are driven by the belief that technology is a catalyst for progress, and we are dedicated to making a meaningful impact on our clients' businesses. Together, we can achieve remarkable results and shape a future where technology enables limitless possibilities."
+msgstr "يدفعنا الاعتقاد بأن التكنولوجيا هي محفز للتقدم، ونحن ملتزمون بإحداث تأثير ذي معنى على أعمال عملائنا. معاً، يمكننا تحقيق نتائج رائعة وتشكيل مستقبل تمكّن فيه التكنولوجيا إمكانيات غير محدودة."
+
+msgid "We leverage Odoo's features to create tailored solutions that enhance efficiency. From implementation to customization, we help you optimize Odoo for streamlined operations and improved productivity."
+msgstr "نستفيد من ميزات أودو لإنشاء حلول مخصصة تعزز الكفاءة. من التنفيذ إلى التخصيص، نساعدك على تحسين أودو لعمليات أكثر انسيابية وإنتاجية محسنة."
+
+msgid "We provide honest and unbiased advice, recommending only what will genuinely benefit your business in the long run."
+msgstr "نقدّم نصائح صادقة وغير متحيزة، ونوصي فقط بما سيعود بفائدة حقيقية على عملك على المدى الطويل."
+
+msgid "We specialize in providing exceptional services and expertise specifically tailored to the Odoo platform. Here are some areas where we excel in working with Odoo:"
+msgstr "نحن متخصصون في تقديم خدمات وخبرات استثنائية مصممة خصيصاً لمنصة أودو. فيما يلي بعض المجالات التي نتفوق فيها في العمل مع أودو:"
+
+msgid "We take full responsibility for the outcomes of our services, guaranteeing that our solutions meet your business needs and exceed expectations."
+msgstr "نحن نتحمل المسؤولية الكاملة عن نتائج خدماتنا، مما يضمن أن تلبي حلولنا احتياجات عملك وتفوق التوقعات."
+
+msgid "We take pride in our collaborations with clients across various industries, helping them achieve their business objectives with Odoo."
+msgstr "نحن نفتخر بتعاوننا مع عملاء من قطاعات مختلفة، ومساعدتهم على تحقيق أهداف أعمالهم باستخدام أودو."
+
+msgid "We take pride in our collaborations with clients across various industries, helping them achieve their business objectives with Odoo. Our references showcase the trust and satisfaction of our clients:"
+msgstr "نحن نفتخر بتعاوننا مع عملاء من مختلف الصناعات، ومساعدتهم على تحقيق أهداف أعمالهم باستخدام أودو. تعرض مراجعنا ثقة عملائنا ورضاهم:"
+
+msgid "We will get back to you shortly."
+msgstr "سنتواصل معك قريباً."
+
+msgid "Website"
+msgstr "الموقع الإلكتروني"
+
+msgid "What Do We Do <br/>with Odoo?"
+msgstr "ماذا نفعل <br/>بأودو؟"
+
+msgid "What is <br/>Our Vision?"
+msgstr "ما هي <br/>رؤيتنا؟"
+
+msgid "What is Odoo ERP?"
+msgstr "ما هو أودو ERP؟"
+
+msgid "What we excel in?"
+msgstr "فيما نتميز؟"
+
+msgid "Why HessaPay?"
+msgstr "لماذا هيسا باي؟"
+
+msgid "Why Odoo?"
+msgstr "لماذا أودو؟"
+
+msgid "With a relentless focus on staying ahead of the curve in the rapidly evolving IT landscape, we continuously embrace new technologies, methodologies, and best practices. By doing so, we empower our clients to adapt, innovate, and remain competitive in today's digital age."
+msgstr "مع تركيز لا يلين على البقاء في صدارة المشهد التكنولوجي المتطور بسرعة، نتبنى باستمرار تقنيات جديدة ومنهجيات وممارسات أفضل. من خلال ذلك، نمكّن عملائنا من التكيف والابتكار والبقاء تنافسيين في عصر الرقمية اليوم."
+
+msgid "Woocommerce Development"
+msgstr "تطوير ووكومرس"
+
+msgid "YouTube"
+msgstr "يوتيوب"
+
+msgid "Your success is our priority. We are dedicated to helping you achieve your business objectives through expert Odoo implementation."
+msgstr "نجاحك هو أولويتنا. نحن ملتزمون بمساعدتك على تحقيق أهداف عملك من خلال تنفيذ أودو الاحترافي."
+
+msgid "https://hessapay.com/"
+msgstr "https://hessapay.com/"
+
+msgid "✔ Accelerated development under the Motawer 2025 program"
+msgstr "✔ تطوير معزّز ضمن برنامج متوّر 2025"
+
+msgid "✔ Concept &amp; product design completed"
+msgstr "✔ تم إكمال تصميم المفهوم والمنتج"
+
+msgid "✔ Prototype and UX testing in progress"
+msgstr "✔ جاري اختبار النموذج الأولي وتجربة المستخدم"
+
+msgid "🚀 Public launch expected soon"
+msgstr "🚀 الإطلاق العام متوقع قريباً"
