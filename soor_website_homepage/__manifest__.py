@@ -24,7 +24,7 @@
     "assets": {
         "web.assets_frontend": [
             "soor_website_homepage/static/src/js/soor_counters.js",
-            # "soor_website_homepage/static/src/js/soor_rtl_sync.js",
+            "soor_website_homepage/static/src/js/soor_rtl_sync.js",
             "soor_website_homepage/static/src/scss/soor_homepage.scss",
             "soor_website_homepage/static/src/scss/soor_translate.scss",
             "soor_website_homepage/static/src/scss/soor_contact.scss",
