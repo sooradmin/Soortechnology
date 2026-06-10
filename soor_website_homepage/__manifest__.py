@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "SOOR Website Homepage",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.2.0",
     "summary": "Custom homepage design for SOOR website",
     "category": "Website",
     "author": "QasimALi",
@@ -24,7 +24,7 @@
     "assets": {
         "web.assets_frontend": [
             "soor_website_homepage/static/src/js/soor_counters.js",
-            "soor_website_homepage/static/src/js/soor_rtl_sync.js",
+            # "soor_website_homepage/static/src/js/soor_rtl_sync.js",
             "soor_website_homepage/static/src/scss/soor_homepage.scss",
             "soor_website_homepage/static/src/scss/soor_translate.scss",
             "soor_website_homepage/static/src/scss/soor_contact.scss",
