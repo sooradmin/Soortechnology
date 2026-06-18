@@ -24,7 +24,7 @@
     "assets": {
         "web.assets_frontend": [
             "soor_website_homepage/static/src/js/soor_counters.js",
-            "soor_website_homepage/static/src/js/soor_rtl_sync.js",
+            # "soor_website_homepage/static/src/js/soor_rtl_sync.js",
             "soor_website_homepage/static/src/scss/soor_homepage.scss",
             "soor_website_homepage/static/src/scss/soor_translate.scss",
             "soor_website_homepage/static/src/scss/soor_contact.scss",
@@ -33,7 +33,7 @@
             "soor_website_homepage/static/src/scss/soor_hessapay.scss",
             "soor_website_homepage/static/src/scss/soor_odoo.scss",
             "soor_website_homepage/static/src/scss/soor_blogs.scss",
-            "soor_website_homepage/static/src/scss/soor_rtl.scss",
+            # "soor_website_homepage/static/src/scss/soor_rtl.scss",
         ],
     },
     "installable": True,
