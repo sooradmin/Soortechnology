@@ -1196,9 +1196,39 @@ def _soor_blog_catalog():
     ]
 
 
+def _soor_blog_catalog_from_model():
+    """Fetch blog posts from blog.post model and return in the same format as _soor_blog_catalog()."""
+    posts = request.env['blog.post'].sudo().search(
+        [('website_published', '=', True)],
+        order='post_date desc',
+    )
+    result = []
+    for post in posts:
+        result.append({
+            'slug': post.website_url.rsplit('/', 1)[-1] if post.website_url else str(post.id),
+            'card_title': post.name,
+            'title': post.name,
+            'subtitle': post.subtitle or '',
+            'excerpt': post.teaser or '',
+            'date': post.post_date.strftime('%b %d, %Y') if post.post_date else '',
+            'read_time': '',
+            'image': '/web/image/blog.post/%d/cover_properties' % post.id,
+            'cover_image': '/web/image/blog.post/%d/cover_properties' % post.id,
+            'lead_paragraphs': [post.teaser] if post.teaser else [],
+            'sections': [
+                {
+                    'title': '',
+                    'paragraphs': [post.content or ''],
+                }
+            ],
+        })
+    return result
+
+
 def _soor_blog_posts_for_list():
     rows = []
-    for p in _soor_blog_catalog():
+    # for p in _soor_blog_catalog():
+    for p in _soor_blog_catalog_from_model():
         row = {k: v for k, v in p.items() if k not in ("lead_paragraphs", "sections")}
         row["title"] = p["card_title"]
         row["url"] = "/blog/%s" % p["slug"]
@@ -1207,7 +1237,8 @@ def _soor_blog_posts_for_list():
 
 
 def _soor_blog_detail_ctx(slug):
-    catalog = _soor_blog_catalog()
+    # catalog = _soor_blog_catalog()
+    catalog = _soor_blog_catalog_from_model()
     for i, post in enumerate(catalog):
         if post["slug"] != slug:
             continue
