@@ -160,25 +160,25 @@
                         <div class="soor-blog-post-stack">
                             <div class="soor-blog-post-wrap">
                                 <article class="soor-blog-post-article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
-                                <header class="soor-blog-post-header">
-                                    <h1 class="soor-blog-post-title" itemprop="headline"><t t-out="post['title']"/></h1>
-                                    <p class="soor-blog-post-kicker"><t t-out="post['subtitle']"/></p>
-                                </header>
-                                <div class="soor-blog-post-cover">
-                                    <img
-                                        t-att-src="'/soor_website_homepage/static/src/img/blog-page.png'"
-                                        alt=""
-                                        width="1078"
-                                        height="542"
-                                        loading="lazy"
-                                        decoding="async"
-                                        class="soor-blog-post-cover__img"
-                                        itemprop="image"
-                                    />
-                                </div>
-                                <t t-foreach="post['lead_paragraphs']" t-as="lead_p">
-                                    <p class="soor-blog-post-prose soor-blog-post-prose--lead"><t t-out="lead_p"/></p>
-                                </t>
+<!--                                <header class="soor-blog-post-header">-->
+<!--                                    <h1 class="soor-blog-post-title" itemprop="headline"><t t-out="post['title']"/></h1>-->
+<!--                                    <p class="soor-blog-post-kicker"><t t-out="post['subtitle']"/></p>-->
+<!--                                </header>-->
+<!--                                <div class="soor-blog-post-cover">-->
+<!--                                    <img-->
+<!--                                        t-att-src="'/soor_website_homepage/static/src/img/blog-page.png'"-->
+<!--                                        alt=""-->
+<!--                                        width="1078"-->
+<!--                                        height="542"-->
+<!--                                        loading="lazy"-->
+<!--                                        decoding="async"-->
+<!--                                        class="soor-blog-post-cover__img"-->
+<!--                                        itemprop="image"-->
+<!--                                    />-->
+<!--                                </div>-->
+<!--                                <t t-foreach="post['lead_paragraphs']" t-as="lead_p">-->
+<!--                                    <p class="soor-blog-post-prose soor-blog-post-prose&#45;&#45;lead"><t t-out="lead_p"/></p>-->
+<!--                                </t>-->
                                 <t t-foreach="post['sections']" t-as="section">
                                     <section class="soor-blog-post-section">
                                         <h2 class="soor-blog-post-section__title"><t t-out="section['title']"/></h2>

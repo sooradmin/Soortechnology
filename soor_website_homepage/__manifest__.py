@@ -39,4 +39,3 @@
     "installable": True,
     "application": False,
 }
-
