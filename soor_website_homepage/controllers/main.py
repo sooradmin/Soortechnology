@@ -1204,8 +1204,9 @@ def _soor_blog_catalog_from_model():
     )
     result = []
     for post in posts:
+        en_post = post.with_context(lang='en_US')
         result.append({
-            'slug': post.website_url.rsplit('/', 1)[-1] if post.website_url else str(post.id),
+            'slug': en_post.website_url.rsplit('/', 1)[-1] if en_post.website_url else str(post.id),
             'card_title': post.name,
             'title': post.name,
             'subtitle': post.subtitle or '',
