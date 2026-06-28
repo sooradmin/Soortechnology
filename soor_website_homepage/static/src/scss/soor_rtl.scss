@@ -28,6 +28,35 @@ html.translated-rtl .soor-page {
     text-align: right;
 }
 
+// ================================================================
+// 0b. NAVBAR — Odoo's <header> lives inside #wrapwrap but OUTSIDE
+//    #wrap.soor-page, so the rule above never reaches it.
+//    Odoo's website.ui.scss sets body { direction: ltr } which wins
+//    over the inherited html[dir="rtl"], leaving the navbar in LTR.
+//    We must set direction:rtl on the header explicitly.
+// ================================================================
+html[dir="rtl"] header,
+html.translated-rtl header {
+    direction: rtl;
+}
+
+// Dropdown menus: Bootstrap aligns them to the start edge by default.
+// In RTL "start" is the right side, so they open correctly — but if
+// Odoo's own CSS hard-codes left:0 on .dropdown-menu, correct it here.
+html[dir="rtl"] header .dropdown-menu,
+html.translated-rtl header .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+// Mobile nav drawer (soor-mnav__panel) is also outside .soor-page
+// on some page templates — ensure it gets RTL too.
+html[dir="rtl"] .soor-mnav__panel,
+html.translated-rtl .soor-mnav__panel {
+    direction: rtl;
+    text-align: right;
+}
+
 // Reset letter-spacing (Arabic typography needs no tracking)
 html[dir="rtl"] h1,
 html[dir="rtl"] h2,

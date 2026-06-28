@@ -1,0 +1,99 @@
+/* Header floats over main; inset 10% from left and right.
+   Fix clipping by using fixed positioning and reserving space in main. */
+main {
+  position: relative !important;
+  /* reserve vertical space so the floating header doesn't overlap content */
+//   padding-top: 80px;
+}
+
+header {
+  position: fixed;
+  left:17% !important;;
+  right: 17% !important;;
+  top: 16px;
+  transform: none;
+  z-index: 1000;
+  box-sizing: border-box;
+  nav {
+    background: #1a2236 !important;
+    box-shadow: none !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    li a {
+      color: #fff !important;
+    }
+    li a.active {
+      color: #ffffff ;
+      background: transparent !important;
+      box-shadow: none !important;
+      border: none !important;
+      // border-bottom: 2px solid rgb(255, 255, 255) !important;
+    }
+    li.dropdown ul li a.active  {
+      color: #000000 ;
+      background: transparent !important;
+      box-shadow: none !important;
+      border: none !important;
+      // border-bottom: 2px solid rgb(255, 255, 255) !important;
+    }
+
+    li a.active span {
+      // color: #fff !
+      border-bottom: 2px solid rgb(255, 255, 255) !important;
+    }
+
+    /* Override Odoo's built-in dropdown active/active item styles */
+    .dropdown-menu .dropdown-item.active,
+    .o_dropdown_menu .dropdown-item.active,
+    .dropdown-menu .dropdown-item:active,
+    .o_dropdown_menu .dropdown-item:active {
+      background-color: #3b578b !important;
+      color: #ffffff !important;
+    }
+
+    .dropdown-menu .dropdown-item.active h6,
+    .o_dropdown_menu .dropdown-item.active h6,
+    .dropdown-menu .dropdown-item:active h6,
+    .o_dropdown_menu .dropdown-item:active h6 {
+      color: #ffffff !important;
+    }
+
+    li a:hover {
+      color: #fff !important;
+      // border-bottom: 1px solid rgb(255, 255, 255) !important;
+      box-shadow: #fff !important;
+    }
+    
+    /* Override .ms-lg-auto inside nav to prevent margin expansion */
+    .ms-lg-auto {
+      margin-left: 0 !important;
+      display: none !important;
+    }
+    
+    margin-top : 10px;
+    margin-bottom : 10px;
+  }
+  padding-top: 0 !important;
+  padding-bottom: 10px !important;
+  width: auto;
+  background: #1a2236 !important;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 60px;
+  padding: 12px 20px;
+  backdrop-filter: blur(6px);
+}
+
+/* Center main menu items; .ms-lg-auto on user menu pushes it right */
+#top_menu {
+  justify-content: center !important;
+  // display: flex !important;
+  // flex-wrap: wrap !important;
+}
+
+.btn_cta {
+  background-color: #3272cb !important;
+  border-color: #3272cb !important;
+  color: #fff !important;
+  border-radius: 60px !important;
+}
+

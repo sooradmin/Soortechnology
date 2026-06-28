@@ -1,51 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="soor_services_page" name="SOOR Services">
-        <t t-set="no_header" t-value="True"/>
-        <t t-set="no_footer" t-value="True"/>
+    <template id="soor_services_page" name="SOOR Services" website_id="soor_website_homepage.soor_custom_website">
         <t t-call="website.layout">
             <div id="wrap" class="oe_structure oe_empty soor-page soor-services-page">
-                <!-- Floating glass nav (Figma) -->
-                <div class="soor-contact-nav">
-                    <div class="soor-contact-container soor-contact-nav-inner">
-                        <a href="/" class="soor-contact-logo soor-nav-logo-link">
-                            <img src="/soor_website_homepage/static/src/logos/nav-logo.png" alt="SOOR Technologies" class="soor-nav-logo-img" width="160" height="44" loading="eager"/>
-                        </a>
-                        <nav class="soor-contact-nav-links soor-nav--desktop">
-                            <a href="/">Home</a>
-                            <a href="/services" class="active">Services</a>
-                            <a href="/about">About Us</a>
-                            <a href="/blogs">Blog</a>
-                            <div class="soor-nav-more">
-                                <span class="soor-nav-more__trigger" tabindex="0">
-                                    More
-                                    <span class="soor-nav-more__caret" aria-hidden="true">
-                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </span>
-                                </span>
-                                <div class="soor-nav-more__panel" role="menu">
-                                    <a href="/odoo" role="menuitem">Odoo</a>
-                                    <a href="/hessapay" role="menuitem">Hessa Pay</a>
-                                    <a href="/soor_website_homepage/static/src/pdf/Digital-Profile.pdf" target="_blank" rel="noopener noreferrer" role="menuitem">Digital Profile</a>
-                                </div>
-                            </div>
-                        </nav>
-                        <a href="/contactus" class="soor-nav-contact-cta soor-contact-nav-cta soor-topbar__cta--desktop">
-                            <span class="soor-nav-contact-cta__label">Contact Us</span>
-                            <span class="soor-nav-contact-cta__arrow" aria-hidden="true">
-                                <svg width="16" height="11" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 6h12M11 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                        </a>
-                        <t t-call="soor_website_homepage.soor_mnav_toolbar">
-                            <t t-set="mnav_id" t-value="'soor-mnav-services'"/>
-                        </t>
-                    </div>
-                </div>
-
                 <t t-call="soor_website_homepage.soor_mnav_overlay">
                     <t t-set="mnav_id" t-value="'soor-mnav-services'"/>
                 </t>
@@ -65,27 +22,37 @@
                 <section class="soor-services-help-wrap">
                     <div class="soor-services-help">
                         <div class="soor-services-help__bridge" aria-hidden="true">
-                            <svg width="171" height="60" viewBox="0 0 171 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M127.61 34.23C109.66 -0.13 60.49 -0.13 42.54 34.23C34.26 50.07 17.87 60 0 60H171C153.13 60 136.74 50.07 127.61 34.23Z" fill="#ffffff"/>
-                                <path class="soor-hero-bridge-arrow" fill="#161616" d="M85 30C85.4 29.6 86 29.6 86.4 30L90 33.6V20C90 19.4 90.4 19 91 19C91.6 19 92 19.4 92 20V33.6L95.6 30C96 29.6 96.6 29.6 97 30C97.4 30.4 97.4 31 97 31.4L91.8 36.6C91.4 37 90.8 37 90.4 36.6L85.2 31.4C84.8 31 84.8 30.4 85 30Z"/>
+                            <svg width="171" height="60" viewBox="0 0 171 60" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M127.61 34.23C109.66 -0.13 60.49 -0.13 42.54 34.23C34.26 50.07 17.87 60 0 60H171C153.13 60 136.74 50.07 127.61 34.23Z"
+                                      fill="#ffffff"/>
+                                <path class="soor-hero-bridge-arrow" fill="#161616"
+                                      d="M85 30C85.4 29.6 86 29.6 86.4 30L90 33.6V20C90 19.4 90.4 19 91 19C91.6 19 92 19.4 92 20V33.6L95.6 30C96 29.6 96.6 29.6 97 30C97.4 30.4 97.4 31 97 31.4L91.8 36.6C91.4 37 90.8 37 90.4 36.6L85.2 31.4C84.8 31 84.8 30.4 85 30Z"/>
                             </svg>
                         </div>
                         <div class="soor-contact-container soor-services-help__row">
                             <div class="soor-services-help__media">
                                 <img
-                                    src="/soor_website_homepage/static/src/img/contract.png"
-                                    alt=""
-                                    width="505"
-                                    height="586"
-                                    loading="lazy"
-                                    decoding="async"
-                                    class="soor-services-help__img"
+                                        src="/soor_website_homepage/static/src/img/contract.png"
+                                        alt=""
+                                        width="505"
+                                        height="586"
+                                        loading="lazy"
+                                        decoding="async"
+                                        class="soor-services-help__img"
                                 />
                             </div>
                             <div class="soor-services-help__copy">
-                                <h2>How can <br/>we help you?</h2>
+                                <h2>How can<br/>we help you?
+                                </h2>
                                 <p>
-                                    At SOOR Technologies, we&apos;re dedicated to helping businesses thrive by harnessing the power of technology. Our innovative solutions are designed to transform operations, streamline processes, and elevate customer experiences. We believe in pushing boundaries, challenging the status quo, and enabling businesses to unlock new growth opportunities. Our commitment is to deliver results that matter — from enhanced operational efficiency to improved business outcomes.
+                                    At SOOR Technologies, we&apos;re dedicated to helping businesses thrive by
+                                    harnessing the power of technology. Our innovative solutions are designed to
+                                    transform operations, streamline processes, and elevate customer experiences. We
+                                    believe in pushing boundaries, challenging the status quo, and enabling businesses
+                                    to unlock new growth opportunities. Our commitment is to deliver results that matter
+                                    — from enhanced operational efficiency to improved business outcomes.
                                 </p>
                                 <a href="/contactus" class="soor-services-cta">
                                     <span class="soor-services-cta__sheen"/>
@@ -105,70 +72,120 @@
                             <article class="soor-services-offer-card">
                                 <span class="soor-services-offer-card__mesh" aria-hidden="true"/>
                                 <div class="soor-services-offer-card__icon" aria-hidden="true">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 3L4 7v6c0 5.5 3.8 10.7 8 12 4.2-1.3 8-6.5 8-12V7l-8-4z" stroke="#1E63AF" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#000" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 3L4 7v6c0 5.5 3.8 10.7 8 12 4.2-1.3 8-6.5 8-12V7l-8-4z"
+                                              stroke="#1E63AF" stroke-width="1.4" stroke-linejoin="round"/>
+                                        <path d="M9 12l2 2 4-4" stroke="#000" stroke-width="1.4" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </svg>
                                 </div>
                                 <h3>Security Solutions</h3>
                             </article>
                             <article class="soor-services-offer-card">
                                 <span class="soor-services-offer-card__mesh" aria-hidden="true"/>
                                 <div class="soor-services-offer-card__icon" aria-hidden="true">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 20V10l8-5 8 5v10H4z" stroke="#1E63AF" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 20v-6h6v6" stroke="#1E63AF" stroke-width="1.4"/><path d="M10 12h4" stroke="#000" stroke-width="1.2" stroke-linecap="round"/></svg>
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                        <path d="M4 20V10l8-5 8 5v10H4z" stroke="#1E63AF" stroke-width="1.4"
+                                              stroke-linejoin="round"/>
+                                        <path d="M9 20v-6h6v6" stroke="#1E63AF" stroke-width="1.4"/>
+                                        <path d="M10 12h4" stroke="#000" stroke-width="1.2" stroke-linecap="round"/>
+                                    </svg>
                                 </div>
                                 <h3>Property Management System</h3>
                             </article>
                             <article class="soor-services-offer-card">
                                 <span class="soor-services-offer-card__mesh" aria-hidden="true"/>
                                 <div class="soor-services-offer-card__icon" aria-hidden="true">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 4h14v16H5V4z" stroke="#1E63AF" stroke-width="1.4"/><path d="M8 8h8M8 12h5" stroke="#000" stroke-width="1.2" stroke-linecap="round"/><path d="M8 16h3" stroke="#000" stroke-width="1.2" stroke-linecap="round"/></svg>
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                        <path d="M5 4h14v16H5V4z" stroke="#1E63AF" stroke-width="1.4"/>
+                                        <path d="M8 8h8M8 12h5" stroke="#000" stroke-width="1.2"
+                                              stroke-linecap="round"/>
+                                        <path d="M8 16h3" stroke="#000" stroke-width="1.2" stroke-linecap="round"/>
+                                    </svg>
                                 </div>
                                 <h3>E-learning Management System</h3>
                             </article>
                             <article class="soor-services-offer-card">
                                 <span class="soor-services-offer-card__mesh" aria-hidden="true"/>
                                 <div class="soor-services-offer-card__icon" aria-hidden="true">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#1E63AF" stroke-width="1.4"/><path d="M8 10h8M8 14h5" stroke="#000" stroke-width="1.2" stroke-linecap="round"/></svg>
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                        <rect x="4" y="4" width="16" height="16" rx="2" stroke="#1E63AF"
+                                              stroke-width="1.4"/>
+                                        <path d="M8 10h8M8 14h5" stroke="#000" stroke-width="1.2"
+                                              stroke-linecap="round"/>
+                                    </svg>
                                 </div>
                                 <h3>Factory Management System</h3>
                             </article>
                             <article class="soor-services-offer-card">
                                 <span class="soor-services-offer-card__mesh" aria-hidden="true"/>
                                 <div class="soor-services-offer-card__icon" aria-hidden="true">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M7 18a4 4 0 018 0M6 10a6 6 0 1012 0 6 6 0 00-12 0z" stroke="#1E63AF" stroke-width="1.4"/><path d="M12 4v2M4 12h2M20 12h-2" stroke="#1E63AF" stroke-width="1.2" stroke-linecap="round"/></svg>
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                        <path d="M7 18a4 4 0 018 0M6 10a6 6 0 1012 0 6 6 0 00-12 0z" stroke="#1E63AF"
+                                              stroke-width="1.4"/>
+                                        <path d="M12 4v2M4 12h2M20 12h-2" stroke="#1E63AF" stroke-width="1.2"
+                                              stroke-linecap="round"/>
+                                    </svg>
                                 </div>
                                 <h3>Cloud Technologies</h3>
                             </article>
                             <article class="soor-services-offer-card">
                                 <span class="soor-services-offer-card__mesh" aria-hidden="true"/>
                                 <div class="soor-services-offer-card__icon" aria-hidden="true">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 19V5h14v14H5z" stroke="#1E63AF" stroke-width="1.4"/><path d="M9 15l2-4 2 3 2-6 2 7H9z" stroke="#000" stroke-width="1.2" stroke-linejoin="round" fill="none"/></svg>
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                        <path d="M5 19V5h14v14H5z" stroke="#1E63AF" stroke-width="1.4"/>
+                                        <path d="M9 15l2-4 2 3 2-6 2 7H9z" stroke="#000" stroke-width="1.2"
+                                              stroke-linejoin="round" fill="none"/>
+                                    </svg>
                                 </div>
                                 <h3>Business Intelligence</h3>
                             </article>
                             <article class="soor-services-offer-card">
                                 <span class="soor-services-offer-card__mesh" aria-hidden="true"/>
                                 <div class="soor-services-offer-card__icon" aria-hidden="true">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" rx="1" stroke="#1E63AF" stroke-width="1.3"/><rect x="13" y="4" width="7" height="7" rx="1" stroke="#1E63AF" stroke-width="1.3"/><rect x="4" y="13" width="16" height="7" rx="1" stroke="#1E63AF" stroke-width="1.3"/></svg>
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                        <rect x="4" y="4" width="7" height="7" rx="1" stroke="#1E63AF"
+                                              stroke-width="1.3"/>
+                                        <rect x="13" y="4" width="7" height="7" rx="1" stroke="#1E63AF"
+                                              stroke-width="1.3"/>
+                                        <rect x="4" y="13" width="16" height="7" rx="1" stroke="#1E63AF"
+                                              stroke-width="1.3"/>
+                                    </svg>
                                 </div>
                                 <h3>Project Management</h3>
                             </article>
                             <article class="soor-services-offer-card">
                                 <span class="soor-services-offer-card__mesh" aria-hidden="true"/>
                                 <div class="soor-services-offer-card__icon" aria-hidden="true">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M6 6h15v12H6V6z" stroke="#1E63AF" stroke-width="1.4"/><circle cx="9.5" cy="19.5" r="1.5" fill="#000" stroke="#1E63AF"/><circle cx="18.5" cy="19.5" r="1.5" fill="#000" stroke="#1E63AF"/><path d="M3 3h12v9H3V3z" stroke="#1E63AF" stroke-width="1.4"/></svg>
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 6h15v12H6V6z" stroke="#1E63AF" stroke-width="1.4"/>
+                                        <circle cx="9.5" cy="19.5" r="1.5" fill="#000" stroke="#1E63AF"/>
+                                        <circle cx="18.5" cy="19.5" r="1.5" fill="#000" stroke="#1E63AF"/>
+                                        <path d="M3 3h12v9H3V3z" stroke="#1E63AF" stroke-width="1.4"/>
+                                    </svg>
                                 </div>
                                 <h3>Woocommerce Development</h3>
                             </article>
                             <article class="soor-services-offer-card">
                                 <span class="soor-services-offer-card__mesh" aria-hidden="true"/>
                                 <div class="soor-services-offer-card__icon" aria-hidden="true">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M6 20a2 2 0 002 2h8a2 2 0 002-2v-9H6v9zM9 10V6a3 3 0 016 0v4" stroke="#1E63AF" stroke-width="1.4" stroke-linecap="round"/><path d="M8 12h8" stroke="#000" stroke-width="1.2" stroke-linecap="round"/></svg>
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 20a2 2 0 002 2h8a2 2 0 002-2v-9H6v9zM9 10V6a3 3 0 016 0v4"
+                                              stroke="#1E63AF" stroke-width="1.4" stroke-linecap="round"/>
+                                        <path d="M8 12h8" stroke="#000" stroke-width="1.2" stroke-linecap="round"/>
+                                    </svg>
                                 </div>
                                 <h3>E-Commerce Management System</h3>
                             </article>
                             <article class="soor-services-offer-card">
                                 <span class="soor-services-offer-card__mesh" aria-hidden="true"/>
                                 <div class="soor-services-offer-card__icon" aria-hidden="true">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="13" rx="2" stroke="#1E63AF" stroke-width="1.4"/><path d="M8 10h8M8 14h5" stroke="#000" stroke-width="1.2" stroke-linecap="round"/></svg>
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                        <rect x="3" y="6" width="18" height="13" rx="2" stroke="#1E63AF"
+                                              stroke-width="1.4"/>
+                                        <path d="M8 10h8M8 14h5" stroke="#000" stroke-width="1.2"
+                                              stroke-linecap="round"/>
+                                    </svg>
                                 </div>
                                 <h3>Enterprise Resource Planning</h3>
                             </article>
@@ -182,28 +199,53 @@
                         <div class="soor-services-excel-split__col">
                             <h2 class="soor-services-excel-split__title">What we excel in?</h2>
                             <p class="soor-services-excel-split__intro">
-                                We specialize in providing exceptional services and expertise specifically tailored to the Odoo platform. Here are some areas where we excel in working with Odoo:
+                                We specialize in providing exceptional services and expertise specifically tailored to
+                                the Odoo platform. Here are some areas where we excel in working with Odoo:
                             </p>
                             <ul class="soor-services-excel-list">
-                                <li><span class="soor-services-excel-list__ico" aria-hidden="true"/><span>Odoo Implementation</span></li>
-                                <li><span class="soor-services-excel-list__ico" aria-hidden="true"/><span>Customization and Development</span></li>
-                                <li><span class="soor-services-excel-list__ico" aria-hidden="true"/><span>Integration with Third-Party Systems</span></li>
-                                <li><span class="soor-services-excel-list__ico" aria-hidden="true"/><span>Migration and Upgrades</span></li>
-                                <li><span class="soor-services-excel-list__ico" aria-hidden="true"/><span>Training and Support</span></li>
-                                <li><span class="soor-services-excel-list__ico" aria-hidden="true"/><span>Consultation and Business Analysis</span></li>
-                                <li><span class="soor-services-excel-list__ico" aria-hidden="true"/><span>Web Technologies powered by Cloud Big Data</span></li>
-                                <li><span class="soor-services-excel-list__ico" aria-hidden="true"/><span>Cloud Hosting Service</span></li>
+                                <li>
+                                    <span class="soor-services-excel-list__ico" aria-hidden="true"/>
+                                    <span>Odoo Implementation</span>
+                                </li>
+                                <li>
+                                    <span class="soor-services-excel-list__ico" aria-hidden="true"/>
+                                    <span>Customization and Development</span>
+                                </li>
+                                <li>
+                                    <span class="soor-services-excel-list__ico" aria-hidden="true"/>
+                                    <span>Integration with Third-Party Systems</span>
+                                </li>
+                                <li>
+                                    <span class="soor-services-excel-list__ico" aria-hidden="true"/>
+                                    <span>Migration and Upgrades</span>
+                                </li>
+                                <li>
+                                    <span class="soor-services-excel-list__ico" aria-hidden="true"/>
+                                    <span>Training and Support</span>
+                                </li>
+                                <li>
+                                    <span class="soor-services-excel-list__ico" aria-hidden="true"/>
+                                    <span>Consultation and Business Analysis</span>
+                                </li>
+                                <li>
+                                    <span class="soor-services-excel-list__ico" aria-hidden="true"/>
+                                    <span>Web Technologies powered by Cloud Big Data</span>
+                                </li>
+                                <li>
+                                    <span class="soor-services-excel-list__ico" aria-hidden="true"/>
+                                    <span>Cloud Hosting Service</span>
+                                </li>
                             </ul>
                         </div>
                         <div class="soor-services-excel-split__media">
                             <img
-                                src="/soor_website_homepage/static/src/img/excel.png"
-                                alt=""
-                                width="505"
-                                height="586"
-                                loading="lazy"
-                                decoding="async"
-                                class="soor-services-excel-split__img"
+                                    src="/soor_website_homepage/static/src/img/excel.png"
+                                    alt=""
+                                    width="505"
+                                    height="586"
+                                    loading="lazy"
+                                    decoding="async"
+                                    class="soor-services-excel-split__img"
                             />
                         </div>
                     </div>
@@ -216,7 +258,8 @@
                         <div class="soor-services-excel-band__intro">
                             <h3 class="soor-services-excel-band__intro-title">What we excel in?</h3>
                             <p>
-                                We specialize in providing exceptional services and expertise specifically tailored to the Odoo platform. Here are some areas where we excel in working with Odoo:
+                                We specialize in providing exceptional services and expertise specifically tailored to
+                                the Odoo platform. Here are some areas where we excel in working with Odoo:
                             </p>
                         </div>
                         <div class="soor-services-excel-cards">
@@ -255,7 +298,9 @@
                                 </article>
                                 <article class="soor-services-excel-card soor-services-excel-card--tall">
                                     <span class="soor-services-excel-card__mesh" aria-hidden="true"/>
-                                    <span class="soor-services-excel-card__label">Active Development and Updates<br/>Global Presence</span>
+                                    <span class="soor-services-excel-card__label">Active Development and Updates<br/>
+                                        Global Presence
+                                    </span>
                                 </article>
                                 <article class="soor-services-excel-card">
                                     <span class="soor-services-excel-card__mesh" aria-hidden="true"/>
@@ -270,13 +315,13 @@
                     <div class="soor-contact-container soor-contact-partners-inner">
                         <h2 class="soor-contact-partners-title">Our Partners</h2>
                         <p class="soor-contact-partners-desc">
-                            We take pride in our collaborations with clients across various industries, helping them achieve their business objectives with Odoo. Our references showcase the trust and satisfaction of our clients:
+                            We take pride in our collaborations with clients across various industries, helping them
+                            achieve their business objectives with Odoo. Our references showcase the trust and
+                            satisfaction of our clients:
                         </p>
                         <t t-call="soor_website_homepage.soor_partner_logos_marquee"/>
                     </div>
                 </section>
-
-                <t t-call="soor_website_homepage.soor_site_footer"/>
             </div>
         </t>
     </template>

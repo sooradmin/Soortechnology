@@ -1,50 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="soor_hessapay_page" name="SOOR Hessa Pay">
-        <t t-set="no_header" t-value="True"/>
-        <t t-set="no_footer" t-value="True"/>
+    <template id="soor_hessapay_page" name="SOOR Hessa Pay" website_id="soor_website_homepage.soor_custom_website">
         <t t-call="website.layout">
             <div id="wrap" class="oe_structure oe_empty soor-page soor-hessapay-page">
-
-                <div class="soor-contact-nav">
-                    <div class="soor-contact-container soor-contact-nav-inner">
-                        <a href="/" class="soor-contact-logo soor-nav-logo-link">
-                            <img src="/soor_website_homepage/static/src/logos/nav-logo.png" alt="SOOR Technologies" class="soor-nav-logo-img" width="160" height="44" loading="eager"/>
-                        </a>
-                        <nav class="soor-contact-nav-links soor-nav--desktop">
-                            <a href="/">Home</a>
-                            <a href="/services">Services</a>
-                            <a href="/about">About Us</a>
-                            <a href="/blogs">Blog</a>
-                            <div class="soor-nav-more">
-                                <span class="soor-nav-more__trigger" tabindex="0">
-                                    More
-                                    <span class="soor-nav-more__caret" aria-hidden="true">
-                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </span>
-                                </span>
-                                <div class="soor-nav-more__panel" role="menu">
-                                    <a href="/odoo" role="menuitem">Odoo</a>
-                                    <a href="/hessapay" role="menuitem">Hessa Pay</a>
-                                    <a href="/soor_website_homepage/static/src/pdf/Digital-Profile.pdf" target="_blank" rel="noopener noreferrer" role="menuitem">Digital Profile</a>
-                                </div>
-                            </div>
-                        </nav>
-                        <a href="/contactus" class="soor-nav-contact-cta soor-contact-nav-cta soor-topbar__cta--desktop">
-                            <span class="soor-nav-contact-cta__label">Contact Us</span>
-                            <span class="soor-nav-contact-cta__arrow" aria-hidden="true">
-                                <svg width="16" height="11" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 6h12M11 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                        </a>
-                        <t t-call="soor_website_homepage.soor_mnav_toolbar">
-                            <t t-set="mnav_id" t-value="'soor-mnav-hessapay'"/>
-                        </t>
-                    </div>
-                </div>
 
                 <t t-call="soor_website_homepage.soor_mnav_overlay">
                     <t t-set="mnav_id" t-value="'soor-mnav-hessapay'"/>
@@ -172,8 +130,6 @@
                         <t t-call="soor_website_homepage.soor_partner_logos_marquee"/>
                     </div>
                 </section>
-
-                <t t-call="soor_website_homepage.soor_site_footer"/>
             </div>
         </t>
     </template>

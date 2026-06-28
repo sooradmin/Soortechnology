@@ -1,0 +1,14 @@
+<odoo>
+    <template id="soor_website_layout" inherit_id="website.layout"
+        website_id="soor_website_homepage.soor_custom_website">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer">
+                <t t-call="soor_website_homepage.soor_site_footer" />
+            </div>
+        </xpath>
+        <xpath expr="//header" position="attributes">
+            <!-- <attribute name="t-attf-class" add="o_header_standard" separator=" " /> -->
+            <attribute name="t-attf-class" add="o_header_fade_out" separator=" " />
+        </xpath>
+    </template>
+</odoo>

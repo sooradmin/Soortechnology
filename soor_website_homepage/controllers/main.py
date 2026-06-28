@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import pdb
+
 from odoo import http
 from odoo.http import request
 
@@ -1213,7 +1215,8 @@ def _soor_blog_catalog_from_model():
             'excerpt': post.teaser or '',
             'date': post.post_date.strftime('%b %d, %Y') if post.post_date else '',
             'read_time': '',
-            'image': '/web/image/blog.post/%d/cover_properties' % post.id,
+            # 'image': '/web/image/blog.post/%d/cover_properties' % post.id,
+            'image': post._get_background() !='none' and remove_url_wrapper(post._get_background()) or '/soor_website_homepage/static/src/img/blog.png',
             'cover_image': '/web/image/blog.post/%d/cover_properties' % post.id,
             'lead_paragraphs': [post.teaser] if post.teaser else [],
             'sections': [
@@ -1225,6 +1228,10 @@ def _soor_blog_catalog_from_model():
         })
     return result
 
+def remove_url_wrapper(value):
+    if isinstance(value, str) and value.startswith("url(") and value.endswith(")"):
+        return value[4:-1]
+    return value
 
 def _soor_blog_posts_for_list():
     rows = []

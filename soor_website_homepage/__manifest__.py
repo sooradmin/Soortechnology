@@ -11,6 +11,8 @@
     "data": [
         "data/partner_logos_attachments.xml",
         "data/website_language_setup.xml",
+        "data/soor_custom_website.xml",
+        "data/soor_website_menus.xml",
         "views/website_soor_settings.xml",
         "views/website_translate.xml",
         "views/website_homepage.xml",
@@ -20,6 +22,7 @@
         "views/website_hessapay.xml",
         "views/website_odoo.xml",
         "views/website_blogs.xml",
+          "views/soor_header_footer.xml",
     ],
     "assets": {
         "web.assets_frontend": [
@@ -34,6 +37,7 @@
             "soor_website_homepage/static/src/scss/soor_odoo.scss",
             "soor_website_homepage/static/src/scss/soor_blogs.scss",
             # "soor_website_homepage/static/src/scss/soor_rtl.scss",
+            "soor_website_homepage/static/src/scss/soor_header.scss",
         ],
     },
     "installable": True,

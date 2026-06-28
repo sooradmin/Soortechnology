@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Create main menu for Soor Custom Website -->
+        <record id="soor_website_main_menu" model="website.menu">
+            <field name="name">SOOR Main Menu</field>
+            <field name="website_id" ref="soor_website_homepage.soor_custom_website"/>
+            <field name="is_mega_menu">False</field>
+        </record>
+
+        <!-- Home menu -->
+        <record id="soor_menu_home" model="website.menu">
+            <field name="name">Home</field>
+            <field name="url">/</field>
+            <field name="parent_id" ref="soor_website_main_menu"/>
+            <field name="website_id" ref="soor_website_homepage.soor_custom_website"/>
+            <field name="sequence">1</field>
+        </record>
+
+        <!-- Services menu -->
+        <record id="soor_menu_services" model="website.menu">
+            <field name="name">Services</field>
+            <field name="url">/services</field>
+            <field name="parent_id" ref="soor_website_main_menu"/>
+            <field name="website_id" ref="soor_website_homepage.soor_custom_website"/>
+            <field name="sequence">2</field>
+        </record>
+
+        <!-- About Us menu -->
+        <record id="soor_menu_about" model="website.menu">
+            <field name="name">About Us</field>
+            <field name="url">/about</field>
+            <field name="parent_id" ref="soor_website_main_menu"/>
+            <field name="website_id" ref="soor_website_homepage.soor_custom_website"/>
+            <field name="sequence">3</field>
+        </record>
+
+        <!-- Blog menu -->
+        <record id="soor_menu_blog" model="website.menu">
+            <field name="name">Blog</field>
+            <field name="url">/blogs</field>
+            <field name="parent_id" ref="soor_website_main_menu"/>
+            <field name="website_id" ref="soor_website_homepage.soor_custom_website"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <!-- More menu -->
+        <record id="soor_menu_more" model="website.menu">
+            <field name="name">More</field>
+            <field name="website_id" ref="soor_website_homepage.soor_custom_website"/>
+            <field name="parent_id" ref="soor_website_main_menu"/>
+            <field name="sequence">5</field>
+        </record>
+
+        <!-- Odoo menu -->
+        <record id="soor_menu_odoo" model="website.menu">
+            <field name="name">Odoo</field>
+            <field name="url">/odoo</field>
+            <field name="parent_id" ref="soor_menu_more"/>
+            <field name="website_id" ref="soor_website_homepage.soor_custom_website"/>
+            <field name="sequence">1</field>
+        </record>
+
+        <!-- Hessa Pay menu -->
+        <record id="soor_menu_hessapay" model="website.menu">
+            <field name="name">Hessa Pay</field>
+            <field name="url">/hessapay</field>
+            <field name="parent_id" ref="soor_menu_more"/>
+            <field name="website_id" ref="soor_website_homepage.soor_custom_website"/>
+            <field name="sequence">2</field>
+        </record>
+
+        <!-- Digital Profile menu -->
+        <record id="soor_menu_digital_profile" model="website.menu">
+            <field name="name">Digital Profile</field>
+            <field name="url">/soor_website_homepage/static/src/pdf/Digital-Profile.pdf</field>
+            <field name="parent_id" ref="soor_menu_more"/>
+            <field name="website_id" ref="soor_website_homepage.soor_custom_website"/>
+            <field name="sequence">3</field>
+        </record>
+    </data>
+</odoo>

@@ -1,57 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="soor_blogs_nav_hero" name="SOOR Blogs nav + hero">
-        <div class="soor-blogs-nav">
-            <div class="soor-contact-container soor-blogs-nav-inner">
-                <a href="/" class="soor-blogs-nav-brand soor-nav-logo-link">
-                    <img src="/soor_website_homepage/static/src/logos/nav-logo.png" alt="SOOR Technologies" class="soor-nav-logo-img soor-blogs-nav-brand__img" width="160" height="44" loading="eager"/>
-                </a>
-                <nav class="soor-blogs-nav-links soor-nav--desktop">
-                    <a href="/">Home</a>
-                    <a href="/services">Services</a>
-                    <a href="/about">About Us</a>
-                    <a href="/blogs" class="active">Blog</a>
-                    <div class="soor-nav-more">
-                        <span class="soor-nav-more__trigger" tabindex="0">
-                            More
-                            <span class="soor-nav-more__caret" aria-hidden="true">
-                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                        </span>
-                        <div class="soor-nav-more__panel" role="menu">
-                            <a href="/odoo" role="menuitem">Odoo</a>
-                            <a href="/hessapay" role="menuitem">Hessa Pay</a>
-                            <a href="/soor_website_homepage/static/src/pdf/Digital-Profile.pdf" target="_blank" rel="noopener noreferrer" role="menuitem">Digital Profile</a>
-                        </div>
-                    </div>
-                </nav>
-                <a href="/contactus" class="soor-nav-contact-cta soor-topbar__cta--desktop">
-                    <span class="soor-nav-contact-cta__label">Contact Us</span>
-                    <span class="soor-nav-contact-cta__arrow" aria-hidden="true">
-                        <svg width="16" height="11" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 6h12M11 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </span>
-                </a>
-                <div class="soor-topbar__mobile soor-blogs-mnav-wrap">
-                    <a href="/contactus" class="soor-nav-contact-cta soor-mnav__contact-cta">
-                        <span class="soor-nav-contact-cta__label">Contact Us</span>
-                        <span class="soor-nav-contact-cta__arrow" aria-hidden="true">
-                            <svg width="14" height="10" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 6h12M11 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </a>
-                    <label for="soor-mnav-blogs" class="soor-mnav__burger" aria-label="Open menu">
-                        <span class="soor-mnav__burger-line"/>
-                        <span class="soor-mnav__burger-line"/>
-                        <span class="soor-mnav__burger-line"/>
-                    </label>
-                </div>
-            </div>
-        </div>
+    <template id="soor_blogs_nav_hero" name="SOOR Blogs nav + hero" website_id="soor_website_homepage.soor_custom_website">
         <t t-call="soor_website_homepage.soor_mnav_overlay">
             <t t-set="mnav_id" t-value="'soor-mnav-blogs'"/>
         </t>
@@ -66,9 +15,7 @@
         </section>
     </template>
 
-    <template id="soor_blogs_page" name="SOOR Blogs">
-        <t t-set="no_header" t-value="True"/>
-        <t t-set="no_footer" t-value="True"/>
+    <template id="soor_blogs_page" name="SOOR Blogs" website_id="soor_website_homepage.soor_custom_website">
         <t t-call="website.layout">
             <div id="wrap" class="oe_structure oe_empty soor-page soor-blogs-page">
                 <t t-call="soor_website_homepage.soor_blogs_nav_hero"/>
@@ -76,9 +23,13 @@
                 <section class="soor-blogs-main-wrap">
                     <div class="soor-blogs-main-card">
                         <div class="soor-blogs-main-card__bridge" aria-hidden="true">
-                            <svg width="171" height="60" viewBox="0 0 171 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M127.61 34.23C109.66 -0.13 60.49 -0.13 42.54 34.23C34.26 50.07 17.87 60 0 60H171C153.13 60 136.74 50.07 127.61 34.23Z" fill="#ffffff"/>
-                                <path class="soor-hero-bridge-arrow" fill="#161616" d="M85 30C85.4 29.6 86 29.6 86.4 30L90 33.6V20C90 19.4 90.4 19 91 19C91.6 19 92 19.4 92 20V33.6L95.6 30C96 29.6 96.6 29.6 97 30C97.4 30.4 97.4 31 97 31.4L91.8 36.6C91.4 37 90.8 37 90.4 36.6L85.2 31.4C84.8 31 84.8 30.4 85 30Z"/>
+                            <svg width="171" height="60" viewBox="0 0 171 60" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M127.61 34.23C109.66 -0.13 60.49 -0.13 42.54 34.23C34.26 50.07 17.87 60 0 60H171C153.13 60 136.74 50.07 127.61 34.23Z"
+                                      fill="#ffffff"/>
+                                <path class="soor-hero-bridge-arrow" fill="#161616"
+                                      d="M85 30C85.4 29.6 86 29.6 86.4 30L90 33.6V20C90 19.4 90.4 19 91 19C91.6 19 92 19.4 92 20V33.6L95.6 30C96 29.6 96.6 29.6 97 30C97.4 30.4 97.4 31 97 31.4L91.8 36.6C91.4 37 90.8 37 90.4 36.6L85.2 31.4C84.8 31 84.8 30.4 85 30Z"/>
                             </svg>
                         </div>
                         <div class="soor-blogs-main-card__inner">
@@ -88,26 +39,36 @@
                                         <a t-att-href="post.get('url') or '#'" class="soor-blogs-card__link">
                                             <div class="soor-blogs-card__media">
                                                 <img
-                                                    t-att-src="'/soor_website_homepage/static/src/img/blog.png'"
-                                                    alt=""
-                                                    width="354"
-                                                    height="212"
-                                                    loading="lazy"
-                                                    decoding="async"
-                                                    class="soor-blogs-card__img"
+                                                        t-att-src="post.get('image','')"
+                                                        alt=""
+                                                        width="354"
+                                                        height="212"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="soor-blogs-card__img"
                                                 />
                                             </div>
                                             <div class="soor-blogs-card__body">
-                                                <h2 class="soor-blogs-card__title"><t t-out="post['title']"/></h2>
-                                                <p class="soor-blogs-card__excerpt"><t t-out="post['excerpt']"/></p>
+                                                <h2 class="soor-blogs-card__title">
+                                                    <t t-out="post['title']"/>
+                                                </h2>
+                                                <p class="soor-blogs-card__excerpt">
+                                                    <t t-out="post['excerpt']"/>
+                                                </p>
                                                 <div class="soor-blogs-card__meta">
                                                     <span class="soor-blogs-card__meta-item">
-                                                        <i class="fa fa-calendar-o soor-blogs-card__fa" aria-hidden="true"/>
-                                                        <span class="soor-blogs-card__meta-text"><t t-out="post['date']"/></span>
+                                                        <i class="fa fa-calendar-o soor-blogs-card__fa"
+                                                           aria-hidden="true"/>
+                                                        <span class="soor-blogs-card__meta-text">
+                                                            <t t-out="post['date']"/>
+                                                        </span>
                                                     </span>
                                                     <span class="soor-blogs-card__meta-item">
-                                                        <i class="fa fa-clock-o soor-blogs-card__fa" aria-hidden="true"/>
-                                                        <span class="soor-blogs-card__meta-text"><t t-out="post['read_time']"/></span>
+                                                        <i class="fa fa-clock-o soor-blogs-card__fa"
+                                                           aria-hidden="true"/>
+                                                        <span class="soor-blogs-card__meta-text">
+                                                            <t t-out="post['read_time']"/>
+                                                        </span>
                                                     </span>
                                                 </div>
                                             </div>
@@ -124,10 +85,13 @@
                         <div class="soor-contact-container">
                             <div class="soor-blogs-partners-head">
                                 <h2 class="soor-blogs-partners-title">
-                                    <span class="soor-blogs-partners-title__a">Our </span><span class="soor-blogs-partners-title__b">Partners</span>
+                                    <span class="soor-blogs-partners-title__a">Our</span>
+                                    <span class="soor-blogs-partners-title__b">Partners</span>
                                 </h2>
                                 <p class="soor-blogs-partners-desc">
-                                    We take pride in our collaborations with clients across various industries, helping them achieve their business objectives with Odoo. Our references showcase the trust and satisfaction of our clients:
+                                    We take pride in our collaborations with clients across various industries, helping
+                                    them achieve their business objectives with Odoo. Our references showcase the trust
+                                    and satisfaction of our clients:
                                 </p>
                                 <div class="soor-blogs-partners-rule" aria-hidden="true"/>
                             </div>
@@ -136,15 +100,12 @@
                             </div>
                         </div>
                     </div>
-                    <t t-call="soor_website_homepage.soor_site_footer"/>
                 </div>
             </div>
         </t>
     </template>
 
-    <template id="soor_blog_post_page" name="SOOR Blog post">
-        <t t-set="no_header" t-value="True"/>
-        <t t-set="no_footer" t-value="True"/>
+    <template id="soor_blog_post_page" name="SOOR Blog post" website_id="soor_website_homepage.soor_custom_website">
         <t t-call="website.layout">
             <div id="wrap" class="oe_structure oe_empty soor-page soor-blogs-page soor-blog-post-page">
                 <t t-call="soor_website_homepage.soor_blogs_nav_hero"/>
@@ -152,76 +113,98 @@
                 <section class="soor-blogs-main-wrap">
                     <div class="soor-blogs-main-card soor-blog-post-shell">
                         <div class="soor-blogs-main-card__bridge" aria-hidden="true">
-                            <svg width="171" height="60" viewBox="0 0 171 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M127.61 34.23C109.66 -0.13 60.49 -0.13 42.54 34.23C34.26 50.07 17.87 60 0 60H171C153.13 60 136.74 50.07 127.61 34.23Z" fill="#ffffff"/>
-                                <path class="soor-hero-bridge-arrow" fill="#161616" d="M85 30C85.4 29.6 86 29.6 86.4 30L90 33.6V20C90 19.4 90.4 19 91 19C91.6 19 92 19.4 92 20V33.6L95.6 30C96 29.6 96.6 29.6 97 30C97.4 30.4 97.4 31 97 31.4L91.8 36.6C91.4 37 90.8 37 90.4 36.6L85.2 31.4C84.8 31 84.8 30.4 85 30Z"/>
+                            <svg width="171" height="60" viewBox="0 0 171 60" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M127.61 34.23C109.66 -0.13 60.49 -0.13 42.54 34.23C34.26 50.07 17.87 60 0 60H171C153.13 60 136.74 50.07 127.61 34.23Z"
+                                      fill="#ffffff"/>
+                                <path class="soor-hero-bridge-arrow" fill="#161616"
+                                      d="M85 30C85.4 29.6 86 29.6 86.4 30L90 33.6V20C90 19.4 90.4 19 91 19C91.6 19 92 19.4 92 20V33.6L95.6 30C96 29.6 96.6 29.6 97 30C97.4 30.4 97.4 31 97 31.4L91.8 36.6C91.4 37 90.8 37 90.4 36.6L85.2 31.4C84.8 31 84.8 30.4 85 30Z"/>
                             </svg>
                         </div>
                         <div class="soor-blog-post-stack">
                             <div class="soor-blog-post-wrap">
-                                <article class="soor-blog-post-article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
-<!--                                <header class="soor-blog-post-header">-->
-<!--                                    <h1 class="soor-blog-post-title" itemprop="headline"><t t-out="post['title']"/></h1>-->
-<!--                                    <p class="soor-blog-post-kicker"><t t-out="post['subtitle']"/></p>-->
-<!--                                </header>-->
-<!--                                <div class="soor-blog-post-cover">-->
-<!--                                    <img-->
-<!--                                        t-att-src="'/soor_website_homepage/static/src/img/blog-page.png'"-->
-<!--                                        alt=""-->
-<!--                                        width="1078"-->
-<!--                                        height="542"-->
-<!--                                        loading="lazy"-->
-<!--                                        decoding="async"-->
-<!--                                        class="soor-blog-post-cover__img"-->
-<!--                                        itemprop="image"-->
-<!--                                    />-->
-<!--                                </div>-->
-<!--                                <t t-foreach="post['lead_paragraphs']" t-as="lead_p">-->
-<!--                                    <p class="soor-blog-post-prose soor-blog-post-prose&#45;&#45;lead"><t t-out="lead_p"/></p>-->
-<!--                                </t>-->
-                                <t t-foreach="post['sections']" t-as="section">
-                                    <section class="soor-blog-post-section">
-                                        <h2 class="soor-blog-post-section__title"><t t-out="section['title']"/></h2>
-                                        <t t-foreach="section['paragraphs']" t-as="sec_p">
-                                            <p class="soor-blog-post-prose"><t t-out="sec_p"/></p>
-                                        </t>
-                                    </section>
-                                </t>
+                                <article class="soor-blog-post-article" itemscope="itemscope"
+                                         itemtype="http://schema.org/BlogPosting">
+                                    <!--                                <header class="soor-blog-post-header">-->
+                                    <!--                                    <h1 class="soor-blog-post-title" itemprop="headline"><t t-out="post['title']"/></h1>-->
+                                    <!--                                    <p class="soor-blog-post-kicker"><t t-out="post['subtitle']"/></p>-->
+                                    <!--                                </header>-->
+                                    <!--                                <div class="soor-blog-post-cover">-->
+                                    <!--                                    <img-->
+                                    <!--                                        t-att-src="'/soor_website_homepage/static/src/img/blog-page.png'"-->
+                                    <!--                                        alt=""-->
+                                    <!--                                        width="1078"-->
+                                    <!--                                        height="542"-->
+                                    <!--                                        loading="lazy"-->
+                                    <!--                                        decoding="async"-->
+                                    <!--                                        class="soor-blog-post-cover__img"-->
+                                    <!--                                        itemprop="image"-->
+                                    <!--                                    />-->
+                                    <!--                                </div>-->
+                                    <!--                                <t t-foreach="post['lead_paragraphs']" t-as="lead_p">-->
+                                    <!--                                    <p class="soor-blog-post-prose soor-blog-post-prose&#45;&#45;lead"><t t-out="lead_p"/></p>-->
+                                    <!--                                </t>-->
+                                    <t t-foreach="post['sections']" t-as="section">
+                                        <section class="soor-blog-post-section">
+                                            <h2 class="soor-blog-post-section__title">
+                                                <t t-out="section['title']"/>
+                                            </h2>
+                                            <t t-foreach="section['paragraphs']" t-as="sec_p">
+                                                <p class="soor-blog-post-prose">
+                                                    <t t-out="sec_p"/>
+                                                </p>
+                                            </t>
+                                        </section>
+                                    </t>
                                 </article>
                             </div>
 
                             <nav class="soor-blog-post-adj" aria-label="Previous and next article">
                                 <t t-if="prev_post">
-                                    <a t-att-href="'/blog/' + prev_post['slug']" class="soor-blog-post-adj__cell soor-blog-post-adj__cell--prev">
+                                    <a t-att-href="'/blog/' + prev_post['slug']"
+                                       class="soor-blog-post-adj__cell soor-blog-post-adj__cell--prev">
                                         <span class="soor-blog-post-adj__row">
                                             <span class="soor-blog-post-adj__ico" aria-hidden="true">
-                                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8 1L1 9l7 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8 1L1 9l7 8" stroke="currentColor" stroke-width="1.5"
+                                                          stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </span>
                                             <span class="soor-blog-post-adj__label">Previous</span>
                                         </span>
-                                        <span class="soor-blog-post-adj__title"><t t-out="prev_post['card_title']"/></span>
+                                        <span class="soor-blog-post-adj__title">
+                                            <t t-out="prev_post['card_title']"/>
+                                        </span>
                                     </a>
                                 </t>
                                 <t t-if="not prev_post">
-                                    <div class="soor-blog-post-adj__cell soor-blog-post-adj__cell--prev soor-blog-post-adj__cell--empty" aria-hidden="true"/>
+                                    <div class="soor-blog-post-adj__cell soor-blog-post-adj__cell--prev soor-blog-post-adj__cell--empty"
+                                         aria-hidden="true"/>
                                 </t>
                                 <t t-if="next_post">
-                                    <a t-att-href="'/blog/' + next_post['slug']" class="soor-blog-post-adj__cell soor-blog-post-adj__cell--next">
+                                    <a t-att-href="'/blog/' + next_post['slug']"
+                                       class="soor-blog-post-adj__cell soor-blog-post-adj__cell--next">
                                         <span class="soor-blog-post-adj__row">
-                                            <span class="soor-blog-post-adj__ico soor-blog-post-adj__ico--flip" aria-hidden="true">
-                                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8 1L1 9l7 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <span class="soor-blog-post-adj__ico soor-blog-post-adj__ico--flip"
+                                                  aria-hidden="true">
+                                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8 1L1 9l7 8" stroke="currentColor" stroke-width="1.5"
+                                                          stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </span>
                                             <span class="soor-blog-post-adj__label">Next</span>
                                         </span>
-                                        <span class="soor-blog-post-adj__title"><t t-out="next_post['card_title']"/></span>
+                                        <span class="soor-blog-post-adj__title">
+                                            <t t-out="next_post['card_title']"/>
+                                        </span>
                                     </a>
                                 </t>
                                 <t t-if="not next_post">
-                                    <div class="soor-blog-post-adj__cell soor-blog-post-adj__cell--next soor-blog-post-adj__cell--empty" aria-hidden="true"/>
+                                    <div class="soor-blog-post-adj__cell soor-blog-post-adj__cell--next soor-blog-post-adj__cell--empty"
+                                         aria-hidden="true"/>
                                 </t>
                             </nav>
                         </div>
@@ -233,10 +216,13 @@
                         <div class="soor-contact-container">
                             <div class="soor-blogs-partners-head">
                                 <h2 class="soor-blogs-partners-title">
-                                    <span class="soor-blogs-partners-title__a">Our </span><span class="soor-blogs-partners-title__b">Partners</span>
+                                    <span class="soor-blogs-partners-title__a">Our</span>
+                                    <span class="soor-blogs-partners-title__b">Partners</span>
                                 </h2>
                                 <p class="soor-blogs-partners-desc">
-                                    We take pride in our collaborations with clients across various industries, helping them achieve their business objectives with Odoo. Our references showcase the trust and satisfaction of our clients:
+                                    We take pride in our collaborations with clients across various industries, helping
+                                    them achieve their business objectives with Odoo. Our references showcase the trust
+                                    and satisfaction of our clients:
                                 </p>
                                 <div class="soor-blogs-partners-rule" aria-hidden="true"/>
                             </div>
@@ -245,7 +231,6 @@
                             </div>
                         </div>
                     </div>
-                    <t t-call="soor_website_homepage.soor_site_footer"/>
                 </div>
             </div>
         </t>
