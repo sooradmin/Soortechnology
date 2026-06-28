@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="soor_language_switcher" inherit_id="website.layout" name="SOOR Language Switcher" website_id="soor_website_homepage.soor_custom_website">
+    <template id="soor_language_switcher" inherit_id="website.layout" name="SOOR Language Switcher" >
         <xpath expr="//div[@id='wrapwrap']" position="before">
             <t t-if="request.website and len(request.website.language_ids) > 1">
                 <t t-set="languages" t-value="request.website.language_ids.sorted(key=lambda r: r.name)"/>
