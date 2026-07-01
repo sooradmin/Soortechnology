@@ -1,0 +1,11 @@
+/* Pin the language selector to the bottom-left corner of the viewport,
+   detached from the copyright bar flow. */
+.o_footer_copyright {
+  .js_language_selector {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1055;
+    border: 1px solid;
+  }
+}

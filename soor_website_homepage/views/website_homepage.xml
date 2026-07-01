@@ -882,42 +882,4 @@
         </div>
     </template>
 
-    <template id="soor_partner_logos_markup" name="SOOR partner logos">
-        <span class="soor-partner-logo">
-            <img src="/web/image/soor_website_homepage.soor_partner_logo_9165" alt="" loading="lazy" decoding="async"/>
-        </span>
-        <span class="soor-partner-logo">
-            <img src="/web/image/soor_website_homepage.soor_partner_logo_9167" alt="" loading="lazy" decoding="async"/>
-        </span>
-        <span class="soor-partner-logo">
-            <img src="/web/image/soor_website_homepage.soor_partner_logo_9168" alt="" loading="lazy" decoding="async"/>
-        </span>
-        <span class="soor-partner-logo">
-            <img src="/web/image/soor_website_homepage.soor_partner_logo_9169" alt="" loading="lazy" decoding="async"/>
-        </span>
-        <span class="soor-partner-logo">
-            <img src="/web/image/soor_website_homepage.soor_partner_logo_9170" alt="" loading="lazy" decoding="async"/>
-        </span>
-        <span class="soor-partner-logo">
-            <img src="/web/image/soor_website_homepage.soor_partner_logo_9172" alt="" loading="lazy" decoding="async"/>
-        </span>
-        <span class="soor-partner-logo">
-            <img src="/web/image/soor_website_homepage.soor_partner_logo_9174" alt="" loading="lazy" decoding="async"/>
-        </span>
-        <span class="soor-partner-logo">
-            <img src="/web/image/soor_website_homepage.soor_partner_logo_9175" alt="" loading="lazy" decoding="async"/>
-        </span>
-        <span class="soor-partner-logo">
-            <img src="/web/image/soor_website_homepage.soor_partner_logo_9179" alt="" loading="lazy" decoding="async"/>
-        </span>
-        <span class="soor-partner-logo">
-            <img src="/web/image/soor_website_homepage.soor_partner_logo_9182" alt="" loading="lazy" decoding="async"/>
-        </span>
-        <span class="soor-partner-logo">
-            <img src="/web/image/soor_website_homepage.soor_partner_logo_9185" alt="" loading="lazy" decoding="async"/>
-        </span>
-        <span class="soor-partner-logo">
-            <img src="/web/image/soor_website_homepage.soor_partner_logo_9190" alt="" loading="lazy" decoding="async"/>
-        </span>
-    </template>
 </odoo>
